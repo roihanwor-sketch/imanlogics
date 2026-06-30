@@ -2,6 +2,8 @@ import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { FadeIn } from '@/components/shared/FadeIn';
 import berandaData from '@/data/beranda.json';
+import roadmapData from '@/data/roadmap.json';
+import { BadgeConfig } from '@/lib/ui-configs';
 import Link from 'next/link';
 
 export default function Home() {
@@ -134,6 +136,54 @@ export default function Home() {
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-white">{item.title}</h3>
                     <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
+                  </FadeIn>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Roadmap Section */}
+        <section id="roadmap" className="py-24 px-6 relative border-t border-white/5 bg-white/[0.01]">
+          <div className="max-w-7xl mx-auto">
+            <FadeIn>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold mb-4 text-white">🗺️ Roadmap <span className="text-gradient">Pengembangan</span></h2>
+                <p className="text-slate-400 max-w-2xl mx-auto">Rencana pengembangan proyek dan eksperimen sistem digital ke depan.</p>
+              </div>
+            </FadeIn>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+              {/* Garis penghubung timeline di belakang kartu pada desktop */}
+              <div className="hidden lg:block absolute top-[110px] left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-cyan-500/25 to-transparent pointer-events-none z-0"></div>
+
+              {roadmapData.items.map((item, index) => {
+                const accentClasses: Record<string, string> = {
+                  inprogress: 'hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(6,182,212,0.15)]',
+                  prototype: 'hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)]',
+                  research: 'hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)]',
+                  concept: 'hover:border-zinc-500/50 hover:shadow-[0_0_20px_rgba(113,113,122,0.15)]'
+                };
+                const hoverAccent = accentClasses[item.status.toLowerCase()] || accentClasses.concept;
+
+                return (
+                  <FadeIn key={index} delay={0.1 * index} className="group relative z-10 h-full">
+                    <div className={`glass-card p-6 md:p-8 rounded-2xl border border-white/5 flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-2 ${hoverAccent}`}>
+                      {/* Watermark penomoran fase */}
+                      <span className="absolute top-4 right-6 text-7xl font-bold font-mono text-white/[0.02] group-hover:text-white/[0.06] transition-colors pointer-events-none select-none">
+                        0{index + 1}
+                      </span>
+                      
+                      <div className="mb-6 relative">
+                        <h3 className="text-lg font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors duration-300 pr-4">{item.title}</h3>
+                        <p className="text-xs text-slate-400 leading-relaxed">{item.description}</p>
+                      </div>
+                      
+                      <div className="pt-4 border-t border-white/5 mt-auto flex items-center justify-between">
+                        <BadgeConfig status={item.status} />
+                        <span className="text-[10px] font-mono text-slate-500 tracking-wider">PHASE 0{index + 1}</span>
+                      </div>
+                    </div>
                   </FadeIn>
                 );
               })}

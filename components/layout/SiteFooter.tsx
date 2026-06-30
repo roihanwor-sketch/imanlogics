@@ -20,7 +20,7 @@ export function SiteFooter() {
           <div>
             <h4 className="text-white font-medium mb-4 text-sm">Navigasi</h4>
             <ul className="space-y-3 text-sm text-slate-400">
-              {globalData.footer.nav.slice(0, 5).map((item) => (
+              {globalData.footer.nav.map((item) => (
                 <li key={item.label}>
                   <Link href={item.link} className="hover:text-cyan-400 transition-colors">
                     {item.label}

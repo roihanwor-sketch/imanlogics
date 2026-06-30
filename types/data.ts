@@ -1,4 +1,4 @@
-import { ProductConfig, NavItem } from "@/types";
+import { ProductConfig } from "@/types";
 
 export interface GlobalData {
   bg_color: string;

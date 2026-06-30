@@ -2,6 +2,24 @@ import { ProductConfig } from '@/types';
 import { ArrowRight, CheckCircle2, Gift } from 'lucide-react';
 import { FadeIn } from '../shared/FadeIn';
 
+// Render teks fitur dengan aman: menebalkan "Gratis update" jika ditemukan
+function RenderFeature({ text }: { text: string }) {
+  if (text.includes('Gratis update')) {
+    const parts = text.split('Gratis update');
+    return <>{parts[0]}<strong>Gratis update</strong>{parts[1]}</>;
+  }
+  return <>{text}</>;
+}
+
+// Render teks bonus dengan aman: menebalkan teks sebelum tanda kurung
+function RenderBonus({ text }: { text: string }) {
+  const parenIndex = text.indexOf('(');
+  if (parenIndex > 0) {
+    return <><strong>{text.slice(0, parenIndex)}</strong>{text.slice(parenIndex)}</>;
+  }
+  return <strong>{text}</strong>;
+}
+
 interface PricingSectionProps {
   pricing: NonNullable<ProductConfig['pricing']>;
 }
@@ -42,7 +60,7 @@ export function PricingSection({ pricing }: PricingSectionProps) {
                   {pricing.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle2 className="w-6 h-6 text-emerald-500 mr-4 shrink-0 mt-0.5" />
-                      <span dangerouslySetInnerHTML={{ __html: feature.replace("Gratis update", "<strong>Gratis update") + (feature.includes("Gratis update") ? "</strong>" : "") }} />
+                      <span><RenderFeature text={feature} /></span>
                     </li>
                   ))}
                 </ul>
@@ -57,7 +75,7 @@ export function PricingSection({ pricing }: PricingSectionProps) {
                       {pricing.bonuses.map((bonus, index) => (
                         <li key={index} className="flex items-start">
                           <span className="text-amber-500 mr-4 font-bold text-xl leading-none">+</span>
-                          <span dangerouslySetInnerHTML={{ __html: bonus.replace(/([^\(]+)/, "<strong>$1</strong>") }} />
+                          <span><RenderBonus text={bonus} /></span>
                         </li>
                       ))}
                     </ul>

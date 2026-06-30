@@ -2,13 +2,15 @@ import { ProductConfig } from '@/types';
 import Link from 'next/link';
 import { ArrowRight, Bot } from 'lucide-react';
 import { FadeIn } from '../shared/FadeIn';
+import { BadgeConfig } from '@/lib/ui-configs';
 
 interface HeroSectionProps {
   hero: ProductConfig['hero'];
   badge: string;
+  status: string;
 }
 
-export function HeroSection({ hero, badge }: HeroSectionProps) {
+export function HeroSection({ hero, badge, status }: HeroSectionProps) {
   return (
     <section className="relative z-10 flex flex-col items-center text-center mb-16 pt-12 md:pt-20">
       <FadeIn delay={0.1}>
@@ -19,9 +21,7 @@ export function HeroSection({ hero, badge }: HeroSectionProps) {
 
       <FadeIn delay={0.2} className="flex flex-wrap items-center justify-center gap-3 mb-6">
         <span className="text-xs font-bold text-emerald-500 uppercase tracking-widest">{badge}</span>
-        <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-          Tersedia
-        </span>
+        <BadgeConfig status={status} />
       </FadeIn>
 
       <FadeIn delay={0.3}>

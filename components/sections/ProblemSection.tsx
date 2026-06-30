@@ -1,14 +1,6 @@
 import { ProductConfig, ProblemItem } from '@/types';
-import { CircleHelp, PenLine, Search, Clock, Bot } from 'lucide-react';
+import { IconConfig } from '@/lib/ui-configs';
 import { FadeIn } from '../shared/FadeIn';
-
-const iconMap: Record<string, React.ReactNode> = {
-  'brain-off': <CircleHelp className="w-6 h-6" />,
-  'edit-3': <PenLine className="w-6 h-6" />,
-  'search': <Search className="w-6 h-6" />,
-  'clock': <Clock className="w-6 h-6" />,
-  'bot': <Bot className="w-6 h-6" />,
-};
 
 interface ProblemSectionProps {
   problems: NonNullable<ProductConfig['problems']>;
@@ -31,7 +23,7 @@ export function ProblemSection({ problems }: ProblemSectionProps) {
           <FadeIn key={item.id} delay={0.1 * (i + 1)} className="w-full md:w-[calc(50%-12px)]">
             <div className="bg-[#0B0F19] border border-white/5 rounded-3xl p-8 hover:border-emerald-500/30 transition-all group h-full">
               <div className="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition-all">
-                {iconMap[item.icon]}
+                <IconConfig name={item.icon} className="w-6 h-6" />
               </div>
               <h4 className="text-lg font-bold text-white mb-3">{item.title}</h4>
               <p className="text-sm text-slate-400 leading-relaxed">{item.description}</p>
@@ -43,7 +35,7 @@ export function ProblemSection({ problems }: ProblemSectionProps) {
         <FadeIn delay={0.5} className="w-full md:w-[calc(50%-12px)] text-center md:text-left">
           <div className="bg-[#0B0F19] border border-white/5 rounded-3xl p-8 hover:border-emerald-500/30 transition-all group h-full">
             <div className="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/20 transition-all md:mx-0 mx-auto">
-              {iconMap[problems.highlightedItem.icon]}
+              <IconConfig name={problems.highlightedItem.icon} className="w-6 h-6" />
             </div>
             <h4 className="text-lg font-bold text-white mb-3">{problems.highlightedItem.title}</h4>
             <p className="text-sm text-slate-400 leading-relaxed max-w-3xl">

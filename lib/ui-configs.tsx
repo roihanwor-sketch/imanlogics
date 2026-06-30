@@ -1,4 +1,4 @@
-import { Zap, ShieldCheck, Book, Beaker, FileText, Video, Globe, BrainCircuit } from 'lucide-react';
+import { Zap, ShieldCheck, Book, Beaker, FileText, Video, Globe, BrainCircuit, CircleHelp, PenLine, Search, Clock, Bot, Timer, LayoutList, Languages, BookOpen, Mic } from 'lucide-react';
 
 export function BadgeConfig({ status }: { status: string }) {
   const BADGES: Record<string, string> = {
@@ -31,6 +31,7 @@ export function BadgeConfig({ status }: { status: string }) {
 
 export function IconConfig({ name, className }: { name: string, className?: string }) {
   const SVGS: Record<string, React.ElementType> = {
+    // Ikon kartu produk/portofolio
     lightning: Zap,
     shield: ShieldCheck,
     book: Book,
@@ -38,9 +39,22 @@ export function IconConfig({ name, className }: { name: string, className?: stri
     document: FileText,
     video: Video,
     globe: Globe,
-    brain: BrainCircuit
+    brain: BrainCircuit,
+    // Ikon section masalah (ProblemSection)
+    'brain-off': CircleHelp,
+    'edit-3': PenLine,
+    search: Search,
+    clock: Clock,
+    bot: Bot,
+    // Ikon section manfaat (BenefitsGrid)
+    timer: Timer,
+    'layout-list': LayoutList,
+    languages: Languages,
+    'book-open': BookOpen,
+    mic: Mic,
   };
 
   const Icon = SVGS[name.toLowerCase()] || Zap;
   return <Icon className={className} />;
 }
+

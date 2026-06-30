@@ -10,14 +10,6 @@
         "link": "/#beranda"
       },
       {
-        "label": "Tentang Website",
-        "link": "/#tentang"
-      },
-      {
-        "label": "Tentang Pembuat",
-        "link": "/about"
-      },
-      {
         "label": "Portofolio",
         "link": "/portfolio"
       },
@@ -28,6 +20,14 @@
       {
         "label": "Roadmap",
         "link": "/#roadmap"
+      },
+      {
+        "label": "Tentang Website",
+        "link": "/#tentang"
+      },
+      {
+        "label": "Tentang Pembuat",
+        "link": "/about"
       }
     ],
     "socials": [

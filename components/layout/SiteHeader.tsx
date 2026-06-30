@@ -19,7 +19,7 @@ export function SiteHeader() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
-          {globalData.footer.nav.slice(0, 5).map((item) => (
+          {globalData.footer.nav.map((item) => (
             <Link key={item.label} href={item.link} className="hover:text-white transition-colors">
               {item.label}
             </Link>
@@ -49,7 +49,7 @@ export function SiteHeader() {
         }`}
       >
         <nav className="flex flex-col items-center space-y-6 text-lg font-medium text-slate-300 w-full mt-4">
-          {globalData.footer.nav.slice(0, 5).map((item) => (
+          {globalData.footer.nav.map((item) => (
             <Link
               key={item.label}
               href={item.link}
