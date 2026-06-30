@@ -1,0 +1,6 @@
+{
+  "name": "Zaadul Khotib 2.0 Landing Page",
+  "description": "A high-converting, modern landing page for Zaadul Khotib 2.0, built on Next.js 15 App Router as part of the Iman Logics digital ecosystem foundation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

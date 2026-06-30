@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "Website Etalase Produk Digital",
+      "description": "Menyempurnakan platform utama untuk mendistribusikan seluruh produk digital Iman Logics.",
+      "status": "inprogress"
+    },
+    {
+      "title": "Gem YouTube Video Analyzer & Summarizer",
+      "description": "Pengujian alat bantu untuk mempercepat akuisisi pengetahuan dari konten video durasi panjang.",
+      "status": "prototype"
+    },
+    {
+      "title": "Gem/GPT CV Maker & End-to-End Product Maker",
+      "description": "Riset sistem logika dan arsitektur *prompt* untuk menghasilkan *output* standar industri secara otomatis.",
+      "status": "research"
+    },
+    {
+      "title": "ThinkForge, Khutbah Generator & Personality Analyzer",
+      "description": "Pemetaan awal fitur. Fokus pada pengembangan *ThinkForge* sebagai *AI Cognitive Coach* (Level 1: Curiosity Training hingga Level 8: Independent Thinker).",
+      "status": "concept"
+    }
+  ]
+}

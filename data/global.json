@@ -1,0 +1,54 @@
+{
+  "bg_color": "#0B0F19",
+  "footer": {
+    "brand_prefix": "Iman",
+    "brand_suffix": "Logics",
+    "tagline": "AI • Systems • Digital Products",
+    "nav": [
+      {
+        "label": "Beranda",
+        "link": "/#beranda"
+      },
+      {
+        "label": "Tentang Website",
+        "link": "/#tentang"
+      },
+      {
+        "label": "Tentang Pembuat",
+        "link": "/about"
+      },
+      {
+        "label": "Portofolio",
+        "link": "/portfolio"
+      },
+      {
+        "label": "Jelajahi Produk",
+        "link": "/products"
+      },
+      {
+        "label": "Roadmap",
+        "link": "/#roadmap"
+      }
+    ],
+    "socials": [
+      {
+        "label": "Email",
+        "link": "mailto:imanlogics@gmail.com"
+      },
+      {
+        "label": "X / Twitter",
+        "link": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "link": "#"
+      },
+      {
+        "label": "GitHub",
+        "link": "#"
+      }
+    ],
+    "copyright": "© 2026 Iman Logics. All rights reserved.",
+    "built_with": "Built as a Digital Garden."
+  }
+}

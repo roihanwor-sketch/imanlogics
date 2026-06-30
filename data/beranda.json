@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "title": "Portofolio dan Produk Digital yang Dibangun dengan",
+    "highlight": "AI, Logika, dan Sistem.",
+    "description": "Saya membangun berbagai proyek, eksperimen, dan produk digital yang bertujuan membantu orang belajar, bekerja, berpikir, dan berkembang dengan lebih efektif.",
+    "btn_primary": "Lihat Portofolio",
+    "btn_secondary": "Jelajahi Produk"
+  },
+  "fokus": {
+    "title": "Fokus Utama Iman Logics",
+    "items": [
+      "Portofolio Pribadi",
+      "Produk Digital",
+      "Eksperimen AI",
+      "Website & Sistem",
+      "Tool Berbasis Pengetahuan",
+      "Produktivitas & Otomasi"
+    ]
+  },
+  "tentang": {
+    "title": "Laboratorium",
+    "highlight": "Sistem & Pengetahuan.",
+    "paragraphs": [
+      "Iman Logics adalah ruang tempat saya mendokumentasikan proyek, eksperimen, dan produk digital yang saya bangun di persimpangan antara AI, logika, sistem, dan pengetahuan.",
+      "Saya tertarik pada bagaimana teknologi dapat membantu manusia belajar lebih cepat, berpikir lebih jernih, dan mengubah ide menjadi sesuatu yang bernilai.",
+      "Website ini berfungsi sebagai portofolio, laboratorium eksperimen, dan etalase produk digital yang terus berkembang."
+    ],
+    "badge": {
+      "sys": "SYS.CORE",
+      "title": "Iman Logics Framework",
+      "subtitle": "Idea → System → Product"
+    }
+  },
+  "alur": {
+    "title": "Alur Logika",
+    "subtitle": "Pendekatan sistematis bagaimana sebuah masalah diubah menjadi produk fungsional.",
+    "items": [
+      {
+        "step": "1",
+        "title": "Ide",
+        "desc": "Masalah atau kebutuhan diidentifikasi. Mengumpulkan data mentah dan tujuan yang ingin dicapai."
+      },
+      {
+        "step": "2",
+        "title": "Sistem",
+        "desc": "Ide disusun menjadi struktur dan *workflow*. Menerapkan logika agar berjalan otomatis dan efisien."
+      },
+      {
+        "step": "3",
+        "title": "Produk",
+        "desc": "Sistem diubah menjadi alat, website, atau produk digital yang elegan dan siap digunakan."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sedang Membangun Sesuatu",
+    "highlight": "yang Menarik.",
+    "description": "Jelajahi proyek, eksperimen, dan produk digital yang sedang saya kembangkan.",
+    "btn_primary": "Lihat Portofolio",
+    "btn_secondary": "Jelajahi Produk"
+  }
+}
