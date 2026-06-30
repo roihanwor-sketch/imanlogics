@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     default: 'Iman Logics',
   },
   description: 'Ekosistem Digital Berbasis AI untuk berbagai kebutuhan.',
+  icons: {
+    icon: '/imanlogics2/icon.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
