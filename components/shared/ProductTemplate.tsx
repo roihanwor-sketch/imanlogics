@@ -17,9 +17,10 @@ interface ProductTemplateProps {
   product: ProductConfig;
   backUrl: string;
   backLabel: string;
+  isPortfolio?: boolean;
 }
 
-export function ProductTemplate({ product, backUrl, backLabel }: ProductTemplateProps) {
+export function ProductTemplate({ product, backUrl, backLabel, isPortfolio }: ProductTemplateProps) {
   return (
     <>
       <div className="fixed w-[800px] h-[800px] bg-emerald-900/20 top-[-300px] left-1/2 -translate-x-1/2 rounded-full blur-[100px] z-[-1] pointer-events-none"></div>
@@ -45,12 +46,20 @@ export function ProductTemplate({ product, backUrl, backLabel }: ProductTemplate
             {product.trustBar && product.trustBar.length > 0 && <TrustBar items={product.trustBar} />}
             {product.showcaseImages && <ShowcaseSection images={product.showcaseImages} />}
             {product.problems && <ProblemSection problems={product.problems} />}
-            {product.solution && <SolutionSection solution={product.solution} />}
+            {product.solution && <SolutionSection solution={product.solution} productSlug={product.slug} isPortfolio={isPortfolio} />}
             {product.howItWorks && <HowItWorksSection howItWorks={product.howItWorks} />}
             {product.benefits && <BenefitsGrid benefits={product.benefits} />}
             
             {product.hero && (
               <div className="mt-12 text-center flex justify-center mb-12 relative z-10 border-b border-white/5 pb-16">
+                {isPortfolio ? (
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
+                  >
+                    Kunjungi Halaman Produk di Etalase
+                  </Link>
+                ) : (
                   <a
                     href={product.hero.primaryCta.href}
                     target="_blank"
@@ -59,6 +68,7 @@ export function ProductTemplate({ product, backUrl, backLabel }: ProductTemplate
                   >
                     Amankan Akses {product.name}
                   </a>
+                )}
               </div>
             )}
 

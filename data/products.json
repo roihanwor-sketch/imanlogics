@@ -7,6 +7,13 @@
       "description": "Asisten AI Khutbah Jum'at untuk menyusun draft khutbah berkualitas secara sistematis dalam hitungan menit.",
       "status": "live",
       "icon": "book",
+      "logoImage": "zaadul-logo.png",
+      "showcaseImages": [
+        "zaadul-proof-1.png",
+        "zaadul-proof-2.png",
+        "zaadul-proof-3.png",
+        "zaadul-proof-4.png"
+      ],
       "hero": {
         "title": "Susun Khutbah Berkualitas dalam Hitungan Menit, Bukan Berjam-jam.",
         "description": "Zaadul Khotib 2.0 membantu Anda menyusun draft khutbah Jum'at berbahasa Indonesia maupun Arab dengan struktur yang sistematis, referensi yang relevan, serta gaya bahasa yang mudah dipahami—sehingga Anda dapat lebih fokus mempersiapkan penyampaian, bukan memulai dari halaman kosong.",

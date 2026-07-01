@@ -30,10 +30,10 @@ export default function PortfolioPage() {
             </div>
           </FadeIn>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {items.map((item, index) => (
-              <FadeIn key={item.slug} delay={0.1 * index}>
-                <div className="glass-card p-6 rounded-2xl flex flex-col h-full group">
+              <FadeIn key={item.slug} delay={0.1 * index} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex flex-col">
+                <div className="glass-card p-6 rounded-2xl flex flex-col h-full group w-full">
                   <div className="flex justify-between items-start mb-6">
                     <div className={`rounded-xl bg-white/5 text-slate-300 w-12 h-12 flex items-center justify-center overflow-hidden ${!item.logoImage ? 'p-3' : ''}`}>
                       {item.logoImage ? (

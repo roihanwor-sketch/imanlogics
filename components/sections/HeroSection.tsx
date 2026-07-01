@@ -43,18 +43,28 @@ export function HeroSection({ hero, badge, status, logoImage }: HeroSectionProps
       </FadeIn>
 
       <FadeIn delay={0.5} className="flex flex-col sm:flex-row justify-center items-center gap-5 w-full">
-        <a
-          href={hero.primaryCta.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
-        >
-          {hero.primaryCta.text}
-          <ArrowRight className="w-5 h-5 ml-2" />
-        </a>
+        {hero.primaryCta.href.startsWith('/') && !hero.primaryCta.href.startsWith('http') ? (
+          <Link
+            href={hero.primaryCta.href}
+            className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
+          >
+            {hero.primaryCta.text}
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </Link>
+        ) : (
+          <a
+            href={hero.primaryCta.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
+          >
+            {hero.primaryCta.text}
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </a>
+        )}
         <Link
           href={hero.secondaryCta.href}
-          className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-semibold text-slate-300 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 inline-flex items-center justify-center transition-all"
+          className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-semibold text-slate-300 btn-glass inline-flex items-center justify-center"
         >
           {hero.secondaryCta.text}
         </Link>

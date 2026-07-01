@@ -1,12 +1,23 @@
 import { ProductConfig } from '@/types';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { FadeIn } from '../shared/FadeIn';
+import Link from 'next/link';
 
 interface SolutionSectionProps {
   solution: NonNullable<ProductConfig['solution']>;
+  productSlug: string;
+  isPortfolio?: boolean;
 }
 
-export function SolutionSection({ solution }: SolutionSectionProps) {
+export function SolutionSection({ solution, productSlug, isPortfolio }: SolutionSectionProps) {
+  const isHash = solution.cta.href.startsWith('#');
+  const href = isPortfolio ? `/products/${productSlug}` : solution.cta.href;
+  const text = isPortfolio ? 'Lihat Detail & Penawaran Produk' : solution.cta.text;
+
+  const isInternal = isHash || isPortfolio;
+  const target = isInternal ? undefined : '_blank';
+  const rel = isInternal ? undefined : 'noopener noreferrer';
+
   return (
     <FadeIn>
       <div className="p-8 sm:p-12 md:p-16 rounded-[2.5rem] bg-emerald-500/5 border border-emerald-500/20 shadow-[0_0_50px_rgba(16,185,129,0.05)] text-center max-w-4xl mx-auto mb-16 relative z-10">
@@ -29,15 +40,15 @@ export function SolutionSection({ solution }: SolutionSectionProps) {
       </div>
 
       <div className="mt-12 text-center flex justify-center mb-24 relative z-10">
-        <a
-          href={solution.cta.href}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={href}
+          target={target}
+          rel={rel}
           className="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
         >
-          {solution.cta.text}
+          {text}
           <ArrowRight className="w-5 h-5 ml-2" />
-        </a>
+        </Link>
       </div>
     </FadeIn>
   );

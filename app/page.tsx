@@ -33,7 +33,7 @@ export default function Home() {
                   {hero.btn_primary}
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </Link>
-                <Link href="/products" className="w-full sm:w-auto px-8 py-3.5 rounded-lg text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-all flex items-center justify-center">
+                <Link href="/products" className="w-full sm:w-auto px-8 py-3.5 rounded-lg text-sm font-semibold text-white btn-glass flex items-center justify-center">
                   {hero.btn_secondary}
                 </Link>
               </div>
@@ -364,7 +364,7 @@ export default function Home() {
                 <Link href="/portfolio" className="w-full sm:w-auto px-8 py-3.5 rounded-lg text-sm font-semibold text-cyan-50 btn-primary">
                   {cta.btn_primary}
                 </Link>
-                <Link href="/products" className="w-full sm:w-auto px-8 py-3.5 rounded-lg text-sm font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+                <Link href="/products" className="w-full sm:w-auto px-8 py-3.5 rounded-lg text-sm font-semibold text-white btn-glass flex items-center justify-center">
                   {cta.btn_secondary}
                 </Link>
               </div>

@@ -33,6 +33,7 @@ export default async function PortfolioDetailPage({ params }: { params: Promise<
       product={portfolio} 
       backUrl="/portfolio" 
       backLabel="Kembali ke Portofolio" 
+      isPortfolio={true}
     />
   );
 }

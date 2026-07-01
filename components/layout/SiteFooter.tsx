@@ -9,7 +9,9 @@ export function SiteFooter() {
         <div className="md:col-span-1">
           <Link href="/" className="text-xl font-bold tracking-tight text-white flex items-center gap-2.5 mb-4">
             <Image src="/imanlogics2/logo.png" alt="Iman Logics" width={32} height={32} className="rounded-md" />
-            {globalData.footer.brand_prefix}<span className="text-slate-400 font-normal">{globalData.footer.brand_suffix}</span>
+            <span>
+              {globalData.footer.brand_prefix} <span className="text-slate-400">{globalData.footer.brand_suffix}</span>
+            </span>
           </Link>
           <p className="text-sm font-medium text-slate-500 tracking-wide uppercase">
             {globalData.footer.tagline}

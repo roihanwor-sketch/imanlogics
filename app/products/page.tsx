@@ -32,10 +32,10 @@ export default function ProductsPage() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {items.map((item, index) => (
-              <FadeIn key={item.slug} delay={0.1 * index}>
-                <div className="glass-card rounded-2xl p-5 flex flex-col hover:border-purple-500/30 group h-full">
+              <FadeIn key={item.slug} delay={0.1 * index} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] flex flex-col">
+                <div className="glass-card rounded-2xl p-5 flex flex-col hover:border-purple-500/30 group h-full w-full">
                   <div className="flex justify-between items-start mb-4">
                     <div className={`rounded-xl bg-white/5 text-slate-300 w-12 h-12 flex items-center justify-center overflow-hidden ${!item.logoImage ? 'p-3' : ''}`}>
                       {item.logoImage ? (
