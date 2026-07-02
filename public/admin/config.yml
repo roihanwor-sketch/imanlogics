@@ -105,12 +105,31 @@ collections:
         name: "profil"
         file: "data/profil.json"
         fields:
-          - {label: "Nama", name: "name", widget: "string", default: "Rizqul Mujahidin"}
+          - {label: "Nama", name: "name", widget: "string", default: "Iman Logics"}
           - {label: "Deskripsi Profil", name: "description", widget: "text"}
           - label: "Daftar Badge (Keahlian/Minat)"
             name: "badges"
             widget: "list"
             field: {label: "Nama Badge", name: "badge", widget: "string"}
+
+      - label: "Halaman Bio Link"
+        name: "links"
+        file: "data/links.json"
+        fields:
+          - {label: "Avatar Profil", name: "avatar", widget: "image", default: "/logo.png"}
+          - {label: "Nama Profil", name: "title", widget: "string", default: "Iman Logics"}
+          - {label: "Tagline", name: "tagline", widget: "string", default: "AI Systems • Digital Products"}
+          - label: "Tombol Tautan"
+            name: "buttons"
+            widget: "list"
+            fields:
+              - {label: "Judul Tombol", name: "title", widget: "string"}
+              - {label: "Subjudul/Deskripsi", name: "subtitle", widget: "string", required: false}
+              - {label: "Tautan (URL)", name: "url", widget: "string"}
+              - {label: "Tipe Ikon", name: "type", widget: "select", options: ["product", "website", "whatsapp", "custom"]}
+              - {label: "Gambar Kiri (Opsional)", name: "image", widget: "image", required: false}
+          - {label: "Copyright", name: "copyright", widget: "string", default: "© 2026 Iman Logics. All rights reserved."}
+          - {label: "Teks Pendukung Footer", name: "built_with", widget: "string", default: "Built as a Digital Garden."}
 
   - name: "portfolio"
     label: "📂 Portofolio & Eksperimen"
@@ -127,8 +146,11 @@ collections:
               - {label: "Slug (URL)", name: "slug", widget: "string"}
               - {label: "Nama/Judul", name: "name", widget: "string"}
               - {label: "Kategori/Badge", name: "badge", widget: "string"}
+              - {label: "Deskripsi", name: "description", widget: "text"}
               - {label: "Status", name: "status", widget: "select", options: ["concept", "research", "prototype", "inprogress", "available", "live"]}
               - {label: "Icon", name: "icon", widget: "string", default: "lightning"}
+              - {label: "Logo Image", name: "logoImage", widget: "image", required: false}
+              - {label: "Showcase Images", name: "showcaseImages", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
               - label: "Hero"
                 name: "hero"
                 widget: "object"
@@ -256,6 +278,8 @@ collections:
               - {label: "Deskripsi", name: "description", widget: "text"}
               - {label: "Status", name: "status", widget: "select", options: ["concept", "research", "prototype", "inprogress", "available", "live"]}
               - {label: "Icon", name: "icon", widget: "string", default: "lightning"}
+              - {label: "Logo Image", name: "logoImage", widget: "image", required: false}
+              - {label: "Showcase Images", name: "showcaseImages", widget: "list", field: {label: "Image", name: "image", widget: "image"}, required: false}
               - label: "Hero"
                 name: "hero"
                 widget: "object"

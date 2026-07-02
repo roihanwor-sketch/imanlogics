@@ -1,0 +1,26 @@
+{
+  "avatar": "/logo.png",
+  "title": "Iman Logics",
+  "tagline": "AI Systems • Digital Products",
+  "buttons": [
+    {
+      "title": "Asisten AI Zaadul Khotib 2.0",
+      "subtitle": "Susun Khutbah Berkualitas dalam Hitungan Menit",
+      "url": "/products/zaadul-khotib",
+      "type": "product",
+      "image": "/assets/uploads/zaadul-logo.png"
+    },
+    {
+      "title": "Kunjungi Website Iman Logics",
+      "url": "/",
+      "type": "website"
+    },
+    {
+      "title": "Hubungi Kami via WhatsApp",
+      "url": "https://wa.me/6285190846209",
+      "type": "whatsapp"
+    }
+  ],
+  "copyright": "© 2026 Iman Logics. All rights reserved.",
+  "built_with": "Built as a Digital Garden."
+}

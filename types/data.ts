@@ -70,3 +70,18 @@ export interface RoadmapData {
 export interface ListData {
   items: ProductConfig[];
 }
+
+export interface LinksData {
+  avatar: string;
+  title: string;
+  tagline: string;
+  buttons: {
+    title: string;
+    subtitle?: string;
+    url: string;
+    type: 'product' | 'website' | 'whatsapp' | 'custom';
+    image?: string;
+  }[];
+  copyright: string;
+  built_with: string;
+}

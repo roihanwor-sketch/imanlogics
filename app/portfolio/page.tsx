@@ -40,7 +40,7 @@ export default function PortfolioPage() {
                   <div className="flex justify-between items-start mb-6">
                     <div className={`rounded-xl bg-white/5 text-slate-300 w-12 h-12 flex items-center justify-center overflow-hidden ${!item.logoImage ? 'p-3' : ''}`}>
                       {item.logoImage ? (
-                        <img src={`/assets/uploads/${item.logoImage}`} alt="Logo" className="w-full h-full object-cover" />
+                        <img src={item.logoImage.startsWith('/') ? item.logoImage : `/assets/uploads/${item.logoImage}`} alt="Logo" className="w-full h-full object-cover" />
                       ) : (
                         <IconConfig name={item.icon} className="w-6 h-6" />
                       )}
