@@ -8,7 +8,7 @@ import { LinksData } from '@/types/data';
 const linksData = linksDataRaw as LinksData;
 
 export const metadata: Metadata = {
-  title: 'Hubungan Bio | Iman Logics',
+  title: 'Bio Link',
   description: 'AI Systems & Digital Products - Hubungi kami, kunjungi website utama, dan akses asisten cerdas.',
   alternates: {
     canonical: '/links',
@@ -94,16 +94,16 @@ export default function LinksPage() {
 
       {/* Main Container */}
       <div className="w-full max-w-[420px] z-10 flex flex-col items-center flex-grow pt-14 pb-8">
-        
+
         {/* Profile Card Header */}
         <div className="flex flex-col items-center mb-10">
           <div className="relative w-24 h-24 rounded-full p-[2px] bg-gradient-to-tr from-cyan-500 via-emerald-500 to-indigo-500 shadow-xl shadow-cyan-900/20">
             <div className="w-full h-full rounded-full bg-[#0B0F19] flex items-center justify-center p-1 overflow-hidden">
-              <Image 
-                src={avatarUrl} 
-                alt={linksData.title} 
-                width={88} 
-                height={88} 
+              <Image
+                src={avatarUrl}
+                alt={linksData.title}
+                width={88}
+                height={88}
                 className="rounded-full object-cover"
                 priority
               />
@@ -182,11 +182,11 @@ export default function LinksPage() {
               if (imgUrl) {
                 iconContainer = (
                   <div className="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center flex-shrink-0 overflow-hidden relative">
-                    <Image 
-                      src={imgUrl} 
-                      alt={btn.title} 
-                      width={48} 
-                      height={48} 
+                    <Image
+                      src={imgUrl}
+                      alt={btn.title}
+                      width={48}
+                      height={48}
                       className="object-cover w-full h-full group-hover:scale-105 transition-all duration-300"
                     />
                   </div>
@@ -244,7 +244,7 @@ export default function LinksPage() {
 
       {/* Footer Branded Note */}
       <div className="z-10 pb-8 text-center">
-        <p className="text-[10px] text-slate-500 tracking-wide leading-relaxed">
+        <p className="text-[11px] md:text-xs text-slate-400/90 tracking-wide leading-relaxed">
           {linksData.copyright}<br />{linksData.built_with}
         </p>
       </div>
