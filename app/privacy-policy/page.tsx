@@ -1,9 +1,9 @@
-import { Metadata } from 'next';
-import { SiteHeader } from '@/components/layout/SiteHeader';
-import { SiteFooter } from '@/components/layout/SiteFooter';
-import { FadeIn } from '@/components/shared/FadeIn';
-import { marked } from 'marked';
-import privacyData from '@/data/privacy-policy.json';
+import { Metadata } from 'next'
+import { SiteHeader } from '@/components/layout/SiteHeader'
+import { SiteFooter } from '@/components/layout/SiteFooter'
+import { FadeIn } from '@/components/shared/FadeIn'
+import { marked } from 'marked'
+import privacyData from '@/data/privacy-policy.json'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -12,11 +12,11 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: {
       canonical: '/privacy-policy/',
     },
-  };
+  }
 }
 
 export default async function PrivacyPolicyPage() {
-  const contentHtml = await marked.parse(privacyData.body);
+  const contentHtml = await marked.parse(privacyData.body)
 
   return (
     <>
@@ -29,15 +29,17 @@ export default async function PrivacyPolicyPage() {
       <main className="flex-grow pt-32 pb-24 px-6 relative z-10 min-h-screen">
         <div className="max-w-4xl mx-auto">
           <FadeIn>
-            <div className="mb-12 border-b border-white/10 pb-8">
-              <h1 className="text-4xl font-bold mb-4 text-white">{privacyData.title}</h1>
-              <p className="text-slate-400">
+            <div className="mb-12 border-b border-slate-200 dark:border-white/10 pb-8">
+              <h1 className="text-4xl font-bold mb-4 text-slate-900 dark:text-white">
+                {privacyData.title}
+              </h1>
+              <p className="text-slate-600 dark:text-slate-400">
                 Terakhir Diperbarui: {privacyData.last_updated}
               </p>
             </div>
 
-            <div 
-              className="prose prose-invert max-w-none text-slate-300 leading-relaxed"
+            <div
+              className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
           </FadeIn>
@@ -46,5 +48,5 @@ export default async function PrivacyPolicyPage() {
 
       <SiteFooter />
     </>
-  );
+  )
 }
