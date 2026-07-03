@@ -48,6 +48,15 @@ export function SiteFooter() {
 
       <div className="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
         <p>{globalData.footer.copyright}</p>
+        <div className="flex gap-4 mt-2 md:mt-0">
+          <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors">
+            Kebijakan Privasi
+          </Link>
+          <span className="text-white/10">|</span>
+          <Link href="/terms-of-service" className="hover:text-cyan-400 transition-colors">
+            Syarat &amp; Ketentuan
+          </Link>
+        </div>
         <p className="mt-2 md:mt-0">{globalData.footer.built_with}</p>
       </div>
     </footer>

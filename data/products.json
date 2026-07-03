@@ -1,37 +1,62 @@
 {
   "items": [
     {
-      "slug": "zaadul-khotib",
-      "name": "Zaadul Khotib 2.0",
       "badge": "Asisten AI Khutbah",
-      "description": "Asisten AI Khutbah Jum'at untuk menyusun draft khutbah berkualitas secara sistematis dalam hitungan menit.",
-      "status": "live",
-      "icon": "book",
-      "logoImage": "zaadul-logo.png",
       "showcaseImages": [
         "zaadul-proof-1.png",
         "zaadul-proof-2.png",
         "zaadul-proof-3.png",
         "zaadul-proof-4.png"
       ],
-      "hero": {
-        "title": "Susun Khutbah Berkualitas dalam Hitungan Menit, Bukan Berjam-jam.",
-        "description": "Zaadul Khotib 2.0 membantu Anda menyusun draft khutbah Jum'at berbahasa Indonesia maupun Arab dengan struktur yang sistematis, referensi yang relevan, serta gaya bahasa yang mudah dipahami—sehingga Anda dapat lebih fokus mempersiapkan penyampaian, bukan memulai dari halaman kosong.",
-        "primaryCta": {
-          "text": "Akses Zaadul Khotib Sekarang",
-          "href": "https://imanlogics.myr.id/pl/zaadul-khotib-20"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
+      "pricing": {
+        "title": "Siapkan Khutbah dengan Lebih Efisien",
+        "subtitle": "Hemat waktu dalam menyusun draft khutbah tanpa mengurangi kesempatan untuk tetap menelaah dan menyempurnakan isi sesuai kebutuhan jamaah.",
+        "originalPrice": "Rp 299.000",
+        "currentPrice": "Rp 199.000",
+        "features": [
+          "Akses penuh sistem Asisten Zaadul Khotib 2.0",
+          "Bebas setel Muqaddimah (Dinamis / Khutbatul Hajah)",
+          "Output Naskah Bahasa Indonesia & Arab",
+          "Panduan penggunaan lengkap & Dukungan dasar",
+          "Gratis update sistem & penyempurnaan selamanya"
+        ],
+        "bonuses": [
+          "Bank 200 Tema Khutbah Sepanjang Masa (Dibagi sistematis berdasar kalender Hijriyah & Masehi)",
+          "3 PDF Khutbah Bahasa Arab Awqaf UAE (Naskah utuh selama 3 Tahun: 2023-2025)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Mau Akses & Semua Bonusnya",
+          "href": "#"
         }
       },
-      "trustBar": [
-        "Bahasa Indonesia & Arab",
-        "Struktur Khutbah Otomatis",
-        "Siap Disesuaikan Kembali",
-        "Khusus untuk Khutbah"
-      ],
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Persingkat waktu penulisan, maksimalkan waktu persiapan.",
+        "steps": [
+          {
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Pilih atau Ketik Tema",
+            "description": "Ketik ide Anda sendiri, atau biarkan Asisten memilihkan tema yang dijamin relevan dengan momen tanggal dan kondisi jamaah saat ini."
+          },
+          {
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "Biarkan AI Bekerja",
+            "description": "Zaadul Khotib akan menyusun struktur khutbah beserta pencarian dalil Al-Qur'an & Hadits shahih secara otomatis untuk Anda."
+          },
+          {
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Tinjau & Sesuaikan",
+            "description": "Tambahkan sentuhan pribadi Anda. Edit yang kurang pas, salin teks utuhnya, dan khutbah siap digunakan."
+          }
+        ]
+      },
+      "name": "Zaadul Khotib 2.0",
+      "slug": "zaadul-khotib",
+      "logoImage": "zaadul-logo.png",
+      "status": "live",
       "problems": {
         "title": "Jujur, pernah ngerasa kaya gini gak?",
         "subtitle": "Refleksi Pribadi",
@@ -68,6 +93,28 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Sistem",
+        "items": [
+          {
+            "question": "Apakah ini menggantikan peran seorang khatib?",
+            "answer": "Tidak. Zaadul Khotib adalah alat bantu penyusunan draft khutbah. Hasil akhirnya tetap perlu ditinjau, dibaca ulang, dan disesuaikan oleh kebijaksanaan Anda."
+          },
+          {
+            "question": "Apakah bisa digunakan dalam Bahasa Arab?",
+            "answer": "Ya. Sistem ini mendukung Bahasa Indonesia maupun Bahasa Arab secara penuh."
+          },
+          {
+            "question": "Apakah saya harus paham IT atau AI?",
+            "answer": "Tidak. Tampilannya semudah berkirim pesan di WhatsApp. Anda cukup mengetikkan tema atau klik tombol, sistem yang akan bekerja di belakang layar."
+          },
+          {
+            "question": "Berapa kali saya bisa membuat naskah?",
+            "answer": "Tanpa batas. Tidak ada limit jumlah penyusunan khutbah selama Anda memiliki akses ke layanan AI (gratis) yang kami tunjuk dalam panduan."
+          }
+        ]
+      },
+      "icon": "book",
       "solution": {
         "title": "Kenalkan, Zaadul Khotib 2.0",
         "description": [
@@ -77,33 +124,27 @@
         "quote": "\"Menyusun khutbah memang membutuhkan ilmu, ketelitian, dan waktu. Zaadul Khotib 2.0 tidak menggantikan peran Anda sebagai khatib, tetapi mengambil alih beban penyusunan draft mentah, sehingga Anda dapat lebih fokus pada penyempurnaan isi dan penyampaiannya.\"",
         "cta": {
           "text": "Ya, Bantu Saya Susun Khutbah",
-          "href": "https://imanlogics.myr.id/pl/zaadul-khotib-20"
+          "href": "#"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Persingkat waktu penulisan, maksimalkan waktu persiapan.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Pilih atau Ketik Tema",
-            "description": "Ketik ide Anda sendiri, atau biarkan Asisten memilihkan tema yang dijamin relevan dengan momen tanggal dan kondisi jamaah saat ini."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "Biarkan AI Bekerja",
-            "description": "Zaadul Khotib akan menyusun struktur khutbah beserta pencarian dalil Al-Qur'an & Hadits shahih secara otomatis untuk Anda."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Tinjau & Sesuaikan",
-            "description": "Tambahkan sentuhan pribadi Anda. Edit yang kurang pas, salin teks utuhnya, dan khutbah siap digunakan."
-          }
-        ]
+      "hero": {
+        "title": "Susun Khutbah Berkualitas dalam Hitungan Menit, Bukan Berjam-jam.",
+        "description": "Zaadul Khotib 2.0 membantu Anda menyusun draft khutbah Jum'at berbahasa Indonesia maupun Arab dengan struktur yang sistematis, referensi yang relevan, serta gaya bahasa yang mudah dipahami—sehingga Anda dapat lebih fokus mempersiapkan penyampaian, bukan memulai dari halaman kosong.",
+        "primaryCta": {
+          "text": "Akses Zaadul Khotib Sekarang",
+          "href": "#"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "Bahasa Indonesia & Arab",
+        "Struktur Khutbah Otomatis",
+        "Siap Disesuaikan Kembali",
+        "Khusus untuk Khutbah"
+      ],
       "benefits": {
         "title": "Mengapa Memilih Zaadul Khotib 2.0?",
         "items": [
@@ -139,74 +180,63 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Sistem",
-        "items": [
+      "description": "Asisten AI Khutbah Jum'at untuk menyusun draft khutbah berkualitas secara sistematis dalam hitungan menit."
+    },
+    {
+      "badge": "AI Coach • Cognitive Training",
+      "showcaseImages": [
+        "placeholder-showcase-1.png",
+        "placeholder-showcase-2.png"
+      ],
+      "pricing": {
+        "title": "Ambil Kendali atas Cara Berpikir Anda",
+        "subtitle": "Orang sukses tidak selalu memiliki informasi paling banyak, tetapi mampu mengolah informasi dengan lebih baik. ThinkForge membantu Anda membangun kemampuan tersebut sedikit demi sedikit.",
+        "originalPrice": "Rp 399.000",
+        "currentPrice": "Rp 249.000",
+        "features": [
+          "Akses penuh ThinkForge AI Cognitive Coach",
+          "Framework berpikir kritis siap pakai",
+          "Analisis bias kognitif otomatis",
+          "Mode diskusi dan refleksi mendalam",
+          "Prompt yang terus diperbarui",
+          "Gratis seluruh update sistem selamanya"
+        ],
+        "bonuses": [
+          "100 Framework Mental Model (Berkumpul dari Charlie Munger, Farnam Street, Naval Ravikant, First Principles, Second-order Thinking, dll.)",
+          "50 Studi Kasus Pengambilan Keputusan (Untuk melatih logika dan analisis melalui simulasi dunia nyata.)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Ingin Mengakses ThinkForge",
+          "href": "#"
+        }
+      },
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Alur diskusi yang terstruktur untuk menguji dan menajamkan pemikiran Anda.",
+        "steps": [
           {
-            "question": "Apakah ini menggantikan peran seorang khatib?",
-            "answer": "Tidak. Zaadul Khotib adalah alat bantu penyusunan draft khutbah. Hasil akhirnya tetap perlu ditinjau, dibaca ulang, dan disesuaikan oleh kebijaksanaan Anda."
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Ceritakan Masalah atau Ide Anda",
+            "description": "Tuliskan keputusan yang sedang Anda hadapi, argumen yang ingin diuji, atau sekadar pemikiran yang ingin Anda diskusikan."
           },
           {
-            "question": "Apakah bisa digunakan dalam Bahasa Arab?",
-            "answer": "Ya. Sistem ini mendukung Bahasa Indonesia maupun Bahasa Arab secara penuh."
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "Berdiskusi dengan AI Coach",
+            "description": "ThinkForge tidak langsung memberikan jawaban. Ia akan bertanya balik, menguji logika Anda, menunjukkan bias yang mungkin muncul, serta membantu memperjelas cara berpikir."
           },
           {
-            "question": "Apakah saya harus paham IT atau AI?",
-            "answer": "Tidak. Tampilannya semudah berkirim pesan di WhatsApp. Anda cukup mengetikkan tema atau klik tombol, sistem yang akan bekerja di belakang layar."
-          },
-          {
-            "question": "Berapa kali saya bisa membuat naskah?",
-            "answer": "Tanpa batas. Tidak ada limit jumlah penyusunan khutbah selama Anda memiliki akses ke layanan AI (gratis) yang kami tunjuk dalam panduan."
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Ambil Kesimpulan yang Lebih Matang",
+            "description": "Di akhir sesi, Anda memperoleh rangkuman pola pikir, kelemahan argumen, alternatif solusi, serta langkah berikutnya yang lebih rasional."
           }
         ]
       },
-      "pricing": {
-        "title": "Siapkan Khutbah dengan Lebih Efisien",
-        "subtitle": "Hemat waktu dalam menyusun draft khutbah tanpa mengurangi kesempatan untuk tetap menelaah dan menyempurnakan isi sesuai kebutuhan jamaah.",
-        "originalPrice": "Rp 299.000",
-        "currentPrice": "Rp 199.000",
-        "features": [
-          "Akses penuh sistem Asisten Zaadul Khotib 2.0",
-          "Bebas setel Muqaddimah (Dinamis / Khutbatul Hajah)",
-          "Output Naskah Bahasa Indonesia & Arab",
-          "Panduan penggunaan lengkap & Dukungan dasar",
-          "Gratis update sistem & penyempurnaan selamanya"
-        ],
-        "bonuses": [
-          "Bank 200 Tema Khutbah Sepanjang Masa (Dibagi sistematis berdasar kalender Hijriyah & Masehi)",
-          "3 PDF Khutbah Bahasa Arab Awqaf UAE (Naskah utuh selama 3 Tahun: 2023-2025)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Mau Akses & Semua Bonusnya",
-          "href": "https://imanlogics.myr.id/pl/zaadul-khotib-20"
-        }
-      }
-    },
-    {
-      "slug": "thinkforge",
       "name": "ThinkForge",
-      "badge": "AI Coach • Cognitive Training",
-      "description": "\"Dari Rajin Menjadi Tajam\". AI Cognitive Coach yang dirancang untuk melatih cara berpikir kritis, mengenali bias, dan membangun refleksi diri.",
+      "slug": "thinkforge",
       "status": "concept",
-      "icon": "lightning",
-      "hero": {
-        "title": "Berhenti Sekadar Mengonsumsi Informasi. Mulailah Melatih Cara Berpikir Anda.",
-        "description": "ThinkForge adalah AI Cognitive Coach yang dirancang untuk membantu Anda berpikir lebih jernih, mengenali bias, mempertajam logika, serta membangun kebiasaan berpikir kritis melalui percakapan yang interaktif dan personal.",
-        "primaryCta": {
-          "text": "Mulai Melatih Cara Berpikir Saya",
-          "href": "#pricing"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
-        }
-      },
-      "trustBar": [
-        "AI Cognitive Coach",
-        "Critical Thinking Training",
-        "Bias Detection",
-        "Personal Reflection"
-      ],
       "problems": {
         "title": "Jujur, pernah merasa seperti ini?",
         "subtitle": "Refleksi Pribadi",
@@ -249,6 +279,32 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Sistem",
+        "items": [
+          {
+            "question": "Apakah ThinkForge akan selalu memberi jawaban yang benar?",
+            "answer": "Tidak. ThinkForge dirancang untuk membantu proses berpikir. Keputusan akhir tetap berada di tangan Anda."
+          },
+          {
+            "question": "Apakah cocok untuk mahasiswa?",
+            "answer": "Sangat cocok. ThinkForge membantu menganalisis tugas, penelitian, diskusi akademik, hingga pengambilan keputusan."
+          },
+          {
+            "question": "Apakah hanya untuk orang pintar?",
+            "answer": "Justru tidak. Siapa pun dapat menggunakan ThinkForge untuk melatih cara berpikir secara bertahap."
+          },
+          {
+            "question": "Apakah saya harus memahami psikologi atau filsafat?",
+            "answer": "Tidak sekali pun. Anda cukup menceritakan masalah atau ide yang sedang dipikirkan, lalu AI akan memandu proses diskusi."
+          },
+          {
+            "question": "Apakah bisa digunakan setiap hari?",
+            "answer": "Ya. Bahkan penggunaan rutin akan membantu membangun pola berpikir yang semakin tajam dari waktu ke waktu."
+          }
+        ]
+      },
+      "icon": "lightning",
       "solution": {
         "title": "Kenalkan, ThinkForge",
         "description": [
@@ -261,30 +317,24 @@
           "href": "#pricing"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Alur diskusi yang terstruktur untuk menguji dan menajamkan pemikiran Anda.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Ceritakan Masalah atau Ide Anda",
-            "description": "Tuliskan keputusan yang sedang Anda hadapi, argumen yang ingin diuji, atau sekadar pemikiran yang ingin Anda diskusikan."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "Berdiskusi dengan AI Coach",
-            "description": "ThinkForge tidak langsung memberikan jawaban. Ia akan bertanya balik, menguji logika Anda, menunjukkan bias yang mungkin muncul, serta membantu memperjelas cara berpikir."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Ambil Kesimpulan yang Lebih Matang",
-            "description": "Di akhir sesi, Anda memperoleh rangkuman pola pikir, kelemahan argumen, alternatif solusi, serta langkah berikutnya yang lebih rasional."
-          }
-        ]
+      "hero": {
+        "title": "Berhenti Sekadar Mengonsumsi Informasi. Mulailah Melatih Cara Berpikir Anda.",
+        "description": "ThinkForge adalah AI Cognitive Coach yang dirancang untuk membantu Anda berpikir lebih jernih, mengenali bias, mempertajam logika, serta membangun kebiasaan berpikir kritis melalui percakapan yang interaktif dan personal.",
+        "primaryCta": {
+          "text": "Mulai Melatih Cara Berpikir Saya",
+          "href": "#pricing"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "AI Cognitive Coach",
+        "Critical Thinking Training",
+        "Bias Detection",
+        "Personal Reflection"
+      ],
       "benefits": {
         "title": "Mengapa Memilih ThinkForge?",
         "items": [
@@ -326,83 +376,63 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Sistem",
-        "items": [
-          {
-            "question": "Apakah ThinkForge akan selalu memberi jawaban yang benar?",
-            "answer": "Tidak. ThinkForge dirancang untuk membantu proses berpikir. Keputusan akhir tetap berada di tangan Anda."
-          },
-          {
-            "question": "Apakah cocok untuk mahasiswa?",
-            "answer": "Sangat cocok. ThinkForge membantu menganalisis tugas, penelitian, diskusi akademik, hingga pengambilan keputusan."
-          },
-          {
-            "question": "Apakah hanya untuk orang pintar?",
-            "answer": "Justru tidak. Siapa pun dapat menggunakan ThinkForge untuk melatih cara berpikir secara bertahap."
-          },
-          {
-            "question": "Apakah saya harus memahami psikologi atau filsafat?",
-            "answer": "Tidak sekali pun. Anda cukup menceritakan masalah atau ide yang sedang dipikirkan, lalu AI akan memandu proses diskusi."
-          },
-          {
-            "question": "Apakah bisa digunakan setiap hari?",
-            "answer": "Ya. Bahkan penggunaan rutin akan membantu membangun pola berpikir yang semakin tajam dari waktu ke waktu."
-          }
-        ]
-      },
-      "pricing": {
-        "title": "Ambil Kendali atas Cara Berpikir Anda",
-        "subtitle": "Orang sukses tidak selalu memiliki informasi paling banyak, tetapi mampu mengolah informasi dengan lebih baik. ThinkForge membantu Anda membangun kemampuan tersebut sedikit demi sedikit.",
-        "originalPrice": "Rp 399.000",
-        "currentPrice": "Rp 249.000",
-        "features": [
-          "Akses penuh ThinkForge AI Cognitive Coach",
-          "Framework berpikir kritis siap pakai",
-          "Analisis bias kognitif otomatis",
-          "Mode diskusi dan refleksi mendalam",
-          "Prompt yang terus diperbarui",
-          "Gratis seluruh update sistem selamanya"
-        ],
-        "bonuses": [
-          "100 Framework Mental Model (Berkumpul dari Charlie Munger, Farnam Street, Naval Ravikant, First Principles, Second-order Thinking, dll.)",
-          "50 Studi Kasus Pengambilan Keputusan (Untuk melatih logika dan analisis melalui simulasi dunia nyata.)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Ingin Mengakses ThinkForge",
-          "href": "#"
-        }
-      },
+      "description": "\"Dari Rajin Menjadi Tajam\". AI Cognitive Coach yang dirancang untuk melatih cara berpikir kritis, mengenali bias, dan membangun refleksi diri."
+    },
+    {
+      "badge": "AI • Self Development",
       "showcaseImages": [
         "placeholder-showcase-1.png",
         "placeholder-showcase-2.png"
-      ]
-    },
-    {
-      "slug": "ai-personality-analyzer",
-      "name": "PersonaIQ",
-      "badge": "AI • Self Development",
-      "description": "Platform analisis diri terintegrasi untuk memetakan kepribadian, kecerdasan, potensi, dan gaya belajar guna pengambilan keputusan karier.",
-      "status": "concept",
-      "icon": "shield",
-      "hero": {
-        "title": "Kenali Diri Anda Lebih Dalam. Ambil Keputusan Karier dengan Lebih Percaya Diri.",
-        "description": "AI Personality, Intelligence & Career Analyzer membantu memetakan kepribadian, kecerdasan, gaya belajar, kekuatan, kelemahan, hingga rekomendasi karier berdasarkan hasil analisis yang komprehensif—bukan sekadar tes kepribadian biasa.",
-        "primaryCta": {
-          "text": "Analisis Diri Saya Sekarang",
-          "href": "#pricing"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
+      ],
+      "pricing": {
+        "title": "Memahami Diri Adalah Investasi Terbaik",
+        "subtitle": "Semakin baik Anda mengenal diri sendiri, semakin kecil kemungkinan mengambil keputusan hanya karena ikut-ikutan. Bangun masa depan berdasarkan potensi Anda sendiri.",
+        "originalPrice": "Rp 349.000",
+        "currentPrice": "Rp 199.000",
+        "features": [
+          "AI Personality Analyzer",
+          "Multiple Intelligence Mapping",
+          "Learning Style Analysis",
+          "Career Recommendation Report",
+          "Personal Strength & Weakness Report",
+          "Gratis seluruh update sistem selamanya"
+        ],
+        "bonuses": [
+          "Panduan Pengembangan Diri 12 Bulan (Roadmap peningkatan kemampuan berdasarkan hasil analisis Anda.)",
+          "Database 300+ Profesi Modern (Dilengkapi skill utama, prospek masa depan, dan kecocokan karakter.)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Ingin Memahami Potensi Saya",
+          "href": "#"
         }
       },
-      "trustBar": [
-        "Analisis Kepribadian",
-        "Multiple Intelligence",
-        "Career Recommendation",
-        "Learning Style"
-      ],
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Proses analisis cerdas untuk membuka wawasan baru tentang potensi diri Anda.",
+        "steps": [
+          {
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Jawab Pertanyaan Reflektif",
+            "description": "Jawablah serangkaian pertanyaan mengenai kebiasaan, cara berpikir, pengalaman, minat, dan preferensi Anda."
+          },
+          {
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "AI Menganalisis Seluruh Pola",
+            "description": "Sistem akan memetakan hubungan antar jawaban untuk menemukan pola kepribadian, kecerdasan dominan, gaya belajar, serta kekuatan dan tantangan Anda."
+          },
+          {
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Terima Laporan Lengkap",
+            "description": "Anda memperoleh laporan komprehensif beserta rekomendasi karier, metode belajar, lingkungan kerja ideal, dan langkah pengembangan diri berikutnya."
+          }
+        ]
+      },
+      "name": "PersonaIQ",
+      "slug": "ai-personality-analyzer",
+      "status": "concept",
       "problems": {
         "title": "Pernah mengalami hal-hal seperti ini?",
         "subtitle": "Refleksi Pribadi",
@@ -445,6 +475,32 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Sistem",
+        "items": [
+          {
+            "question": "Apakah ini tes psikologi resmi?",
+            "answer": "Bukan. Ini merupakan sistem analisis berbasis AI yang dirancang sebagai alat refleksi dan pengembangan diri, bukan pengganti asesmen psikolog profesional."
+          },
+          {
+            "question": "Apakah hasilnya selalu akurat?",
+            "answer": "Keakuratan sangat bergantung pada kejujuran dan kelengkapan jawaban yang Anda berikan."
+          },
+          {
+            "question": "Apakah cocok untuk mahasiswa?",
+            "answer": "Ya. Sangat membantu menentukan arah belajar, memilih jurusan lanjutan, maupun mempersiapkan karier."
+          },
+          {
+            "question": "Berapa lama proses analisisnya?",
+            "answer": "Hanya beberapa menit setelah seluruh pertanyaan selesai dijawab."
+          },
+          {
+            "question": "Bisakah digunakan berkali-kali?",
+            "answer": "Tentu. Anda dapat mengulang analisis kapan pun untuk melihat perkembangan diri dari waktu ke waktu."
+          }
+        ]
+      },
+      "icon": "shield",
       "solution": {
         "title": "Kenalkan, AI Personality, Intelligence & Career Analyzer",
         "description": [
@@ -457,30 +513,24 @@
           "href": "#pricing"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Proses analisis cerdas untuk membuka wawasan baru tentang potensi diri Anda.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Jawab Pertanyaan Reflektif",
-            "description": "Jawablah serangkaian pertanyaan mengenai kebiasaan, cara berpikir, pengalaman, minat, dan preferensi Anda."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "AI Menganalisis Seluruh Pola",
-            "description": "Sistem akan memetakan hubungan antar jawaban untuk menemukan pola kepribadian, kecerdasan dominan, gaya belajar, serta kekuatan dan tantangan Anda."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Terima Laporan Lengkap",
-            "description": "Anda memperoleh laporan komprehensif beserta rekomendasi karier, metode belajar, lingkungan kerja ideal, dan langkah pengembangan diri berikutnya."
-          }
-        ]
+      "hero": {
+        "title": "Kenali Diri Anda Lebih Dalam. Ambil Keputusan Karier dengan Lebih Percaya Diri.",
+        "description": "AI Personality, Intelligence & Career Analyzer membantu memetakan kepribadian, kecerdasan, gaya belajar, kekuatan, kelemahan, hingga rekomendasi karier berdasarkan hasil analisis yang komprehensif—bukan sekadar tes kepribadian biasa.",
+        "primaryCta": {
+          "text": "Analisis Diri Saya Sekarang",
+          "href": "#pricing"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "Analisis Kepribadian",
+        "Multiple Intelligence",
+        "Career Recommendation",
+        "Learning Style"
+      ],
       "benefits": {
         "title": "Mengapa Memilih Sistem Ini?",
         "items": [
@@ -522,83 +572,66 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Sistem",
-        "items": [
-          {
-            "question": "Apakah ini tes psikologi resmi?",
-            "answer": "Bukan. Ini merupakan sistem analisis berbasis AI yang dirancang sebagai alat refleksi dan pengembangan diri, bukan pengganti asesmen psikolog profesional."
-          },
-          {
-            "question": "Apakah hasilnya selalu akurat?",
-            "answer": "Keakuratan sangat bergantung pada kejujuran dan kelengkapan jawaban yang Anda berikan."
-          },
-          {
-            "question": "Apakah cocok untuk mahasiswa?",
-            "answer": "Ya. Sangat membantu menentukan arah belajar, memilih jurusan lanjutan, maupun mempersiapkan karier."
-          },
-          {
-            "question": "Berapa lama proses analisisnya?",
-            "answer": "Hanya beberapa menit setelah seluruh pertanyaan selesai dijawab."
-          },
-          {
-            "question": "Bisakah digunakan berkali-kali?",
-            "answer": "Tentu. Anda dapat mengulang analisis kapan pun untuk melihat perkembangan diri dari waktu ke waktu."
-          }
-        ]
-      },
-      "pricing": {
-        "title": "Memahami Diri Adalah Investasi Terbaik",
-        "subtitle": "Semakin baik Anda mengenal diri sendiri, semakin kecil kemungkinan mengambil keputusan hanya karena ikut-ikutan. Bangun masa depan berdasarkan potensi Anda sendiri.",
-        "originalPrice": "Rp 349.000",
-        "currentPrice": "Rp 199.000",
-        "features": [
-          "AI Personality Analyzer",
-          "Multiple Intelligence Mapping",
-          "Learning Style Analysis",
-          "Career Recommendation Report",
-          "Personal Strength & Weakness Report",
-          "Gratis seluruh update sistem selamanya"
-        ],
-        "bonuses": [
-          "Panduan Pengembangan Diri 12 Bulan (Roadmap peningkatan kemampuan berdasarkan hasil analisis Anda.)",
-          "Database 300+ Profesi Modern (Dilengkapi skill utama, prospek masa depan, dan kecocokan karakter.)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Ingin Memahami Potensi Saya",
-          "href": "#"
-        }
-      },
+      "description": "Platform analisis diri terintegrasi untuk memetakan kepribadian, kecerdasan, potensi, dan gaya belajar guna pengambilan keputusan karier."
+    },
+    {
+      "badge": "System / Framework",
       "showcaseImages": [
         "placeholder-showcase-1.png",
         "placeholder-showcase-2.png"
-      ]
-    },
-    {
-      "slug": "digital-product-maker",
-      "name": "ForgeStudio",
-      "badge": "System / Framework",
-      "description": "Sistem komprehensif yang membantu mengubah ide mentah menjadi konsep produk digital yang siap dikembangkan.",
-      "status": "research",
-      "icon": "beaker",
-      "hero": {
-        "title": "Dari Ide Acak Menjadi Produk Digital yang Siap Dijual.",
-        "description": "Gem End-to-End Digital Product Maker adalah sistem AI dan framework terintegrasi yang memandu Anda melalui seluruh proses membangun produk digital—mulai dari validasi ide, riset pasar, perancangan fitur, hingga penyusunan roadmap pengembangan.",
-        "primaryCta": {
-          "text": "Mulai Membangun Produk Saya",
-          "href": "#pricing"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
+      ],
+      "pricing": {
+        "title": "Bangun Produk dengan Cara yang Lebih Cerdas",
+        "subtitle": "Kesalahan terbesar bukanlah gagal meluncurkan produk, tetapi menghabiskan waktu membangun sesuatu yang sejak awal tidak dibutuhkan pasar. Mulailah dengan fondasi yang tepat.",
+        "originalPrice": "Rp 499.000",
+        "currentPrice": "Rp 299.000",
+        "features": [
+          "AI Product Discovery Framework",
+          "Idea Validation System",
+          "Product Blueprint Generator",
+          "MVP Feature Planner",
+          "User Persona Generator",
+          "User Flow Generator",
+          "Product Requirement Draft (PRD)",
+          "Launch & Roadmap Planner",
+          "Gratis update sistem selamanya"
+        ],
+        "bonuses": [
+          "50 Template Product Requirement Document (PRD) (Dokumen siap pakai untuk berbagai jenis produk digital seperti AI, SaaS, marketplace, LMS, CRM, dan aplikasi mobile.)",
+          "100 Ide Produk Digital yang Sudah Divalidasi (Kumpulan inspirasi produk digital berdasarkan kebutuhan nyata di berbagai industri, lengkap dengan analisis peluang dan model bisnisnya.)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Ingin Membangun Produk Digital Saya",
+          "href": "#"
         }
       },
-      "trustBar": [
-        "Idea Validation",
-        "Product Blueprint",
-        "Feature Planning",
-        "Launch Strategy"
-      ],
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Mengubah coretan ide Anda menjadi lembar spesifikasi teknis siap bangun.",
+        "steps": [
+          {
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Ceritakan Ide Anda",
+            "description": "Tidak perlu lengkap. Cukup jelaskan masalah yang ingin diselesaikan atau gambaran kasar produk yang ingin dibuat."
+          },
+          {
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "Biarkan Sistem Menyusun Blueprint",
+            "description": "AI akan membantu memvalidasi ide, menyusun target pengguna, fitur inti, user flow, roadmap, model bisnis, hingga spesifikasi awal."
+          },
+          {
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Bangun dengan Lebih Percaya Diri",
+            "description": "Gunakan blueprint tersebut sebagai panduan untuk mengembangkan produk sendiri atau menyerahkannya kepada developer."
+          }
+        ]
+      },
+      "name": "ForgeStudio",
+      "slug": "digital-product-maker",
+      "status": "research",
       "problems": {
         "title": "Pernah berada di posisi seperti ini?",
         "subtitle": "Refleksi Pribadi",
@@ -641,6 +674,32 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Sistem",
+        "items": [
+          {
+            "question": "Apakah sistem ini bisa membuat aplikasi secara otomatis?",
+            "answer": "Tidak. Sistem ini membantu menyusun seluruh perencanaan dan blueprint produk. Proses pengembangan tetap dilakukan menggunakan platform atau developer pilihan Anda."
+          },
+          {
+            "question": "Apakah hanya untuk startup?",
+            "answer": "Tidak. Cocok untuk siapa saja yang ingin membuat website, AI Assistant, SaaS, aplikasi mobile, sistem internal perusahaan, maupun produk digital lainnya."
+          },
+          {
+            "question": "Apakah saya harus bisa coding?",
+            "answer": "Tidak sama sekali. Sistem ini dirancang agar founder non-teknis tetap mampu merancang produk secara profesional."
+          },
+          {
+            "question": "Apakah hasilnya bisa langsung diberikan kepada developer?",
+            "answer": "Ya. Justru salah satu tujuan utama sistem ini adalah menghasilkan dokumen yang jauh lebih mudah dipahami oleh tim pengembang."
+          },
+          {
+            "question": "Apakah satu akses bisa digunakan untuk banyak ide?",
+            "answer": "Ya. Anda bebas menggunakan framework ini untuk sebanyak mungkin produk digital."
+          }
+        ]
+      },
+      "icon": "beaker",
       "solution": {
         "title": "Kenalkan, Gem End-to-End Digital Product Maker",
         "description": [
@@ -653,30 +712,24 @@
           "href": "#pricing"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Mengubah coretan ide Anda menjadi lembar spesifikasi teknis siap bangun.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Ceritakan Ide Anda",
-            "description": "Tidak perlu lengkap. Cukup jelaskan masalah yang ingin diselesaikan atau gambaran kasar produk yang ingin dibuat."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "Biarkan Sistem Menyusun Blueprint",
-            "description": "AI akan membantu memvalidasi ide, menyusun target pengguna, fitur inti, user flow, roadmap, model bisnis, hingga spesifikasi awal."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Bangun dengan Lebih Percaya Diri",
-            "description": "Gunakan blueprint tersebut sebagai panduan untuk mengembangkan produk sendiri atau menyerahkannya kepada developer."
-          }
-        ]
+      "hero": {
+        "title": "Dari Ide Acak Menjadi Produk Digital yang Siap Dijual.",
+        "description": "Gem End-to-End Digital Product Maker adalah sistem AI dan framework terintegrasi yang memandu Anda melalui seluruh proses membangun produk digital—mulai dari validasi ide, riset pasar, perancangan fitur, hingga penyusunan roadmap pengembangan.",
+        "primaryCta": {
+          "text": "Mulai Membangun Produk Saya",
+          "href": "#pricing"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "Idea Validation",
+        "Product Blueprint",
+        "Feature Planning",
+        "Launch Strategy"
+      ],
       "benefits": {
         "title": "Mengapa Memilih Gem End-to-End Digital Product Maker?",
         "items": [
@@ -718,86 +771,64 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Sistem",
-        "items": [
-          {
-            "question": "Apakah sistem ini bisa membuat aplikasi secara otomatis?",
-            "answer": "Tidak. Sistem ini membantu menyusun seluruh perencanaan dan blueprint produk. Proses pengembangan tetap dilakukan menggunakan platform atau developer pilihan Anda."
-          },
-          {
-            "question": "Apakah hanya untuk startup?",
-            "answer": "Tidak. Cocok untuk siapa saja yang ingin membuat website, AI Assistant, SaaS, aplikasi mobile, sistem internal perusahaan, maupun produk digital lainnya."
-          },
-          {
-            "question": "Apakah saya harus bisa coding?",
-            "answer": "Tidak sama sekali. Sistem ini dirancang agar founder non-teknis tetap mampu merancang produk secara profesional."
-          },
-          {
-            "question": "Apakah hasilnya bisa langsung diberikan kepada developer?",
-            "answer": "Ya. Justru salah satu tujuan utama sistem ini adalah menghasilkan dokumen yang jauh lebih mudah dipahami oleh tim pengembang."
-          },
-          {
-            "question": "Apakah satu akses bisa digunakan untuk banyak ide?",
-            "answer": "Ya. Anda bebas menggunakan framework ini untuk sebanyak mungkin produk digital."
-          }
-        ]
-      },
-      "pricing": {
-        "title": "Bangun Produk dengan Cara yang Lebih Cerdas",
-        "subtitle": "Kesalahan terbesar bukanlah gagal meluncurkan produk, tetapi menghabiskan waktu membangun sesuatu yang sejak awal tidak dibutuhkan pasar. Mulailah dengan fondasi yang tepat.",
-        "originalPrice": "Rp 499.000",
-        "currentPrice": "Rp 299.000",
-        "features": [
-          "AI Product Discovery Framework",
-          "Idea Validation System",
-          "Product Blueprint Generator",
-          "MVP Feature Planner",
-          "User Persona Generator",
-          "User Flow Generator",
-          "Product Requirement Draft (PRD)",
-          "Launch & Roadmap Planner",
-          "Gratis update sistem selamanya"
-        ],
-        "bonuses": [
-          "50 Template Product Requirement Document (PRD) (Dokumen siap pakai untuk berbagai jenis produk digital seperti AI, SaaS, marketplace, LMS, CRM, dan aplikasi mobile.)",
-          "100 Ide Produk Digital yang Sudah Divalidasi (Kumpulan inspirasi produk digital berdasarkan kebutuhan nyata di berbagai industri, lengkap dengan analisis peluang dan model bisnisnya.)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Ingin Membangun Produk Digital Saya",
-          "href": "#"
-        }
-      },
+      "description": "Sistem komprehensif yang membantu mengubah ide mentah menjadi konsep produk digital yang siap dikembangkan."
+    },
+    {
+      "badge": "AI Tool",
       "showcaseImages": [
         "placeholder-showcase-1.png",
         "placeholder-showcase-2.png"
-      ]
-    },
-    {
-      "slug": "cv-maker",
-      "name": "CareerPilot",
-      "badge": "AI Tool",
-      "description": "Tool cerdas untuk membantu membuat, memperbaiki, dan menganalisis CV agar sesuai standar industri terkini.",
-      "status": "research",
-      "icon": "document",
-      "hero": {
-        "title": "Jangan Biarkan CV Anda Gugur Sebelum Dibaca Manusia.",
-        "description": "Gem CV Maker, Optimizer & Analyzer membantu Anda membuat, memperbaiki, menganalisis, dan mengoptimalkan CV agar lebih profesional, ATS-friendly, serta mampu menampilkan potensi terbaik Anda kepada recruiter.",
-        "primaryCta": {
-          "text": "Optimalkan CV Saya Sekarang",
-          "href": "#pricing"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
+      ],
+      "pricing": {
+        "title": "Tingkatkan Peluang Dipanggil Interview",
+        "subtitle": "Recruiter sering hanya menghabiskan beberapa detik untuk melihat sebuah CV. Pastikan beberapa detik tersebut cukup untuk membuat mereka ingin mengenal Anda lebih jauh.",
+        "originalPrice": "Rp 249.000",
+        "currentPrice": "Rp 149.000",
+        "features": [
+          "AI CV Builder",
+          "CV Analyzer",
+          "ATS Optimization",
+          "Professional Rewrite",
+          "Keyword Optimization",
+          "Career Improvement Suggestions",
+          "Gratis seluruh update sistem selamanya"
+        ],
+        "bonuses": [
+          "100 Contoh CV Berbagai Profesi (Mulai dari fresh graduate, software engineer, guru, desainer, akuntan, hingga manajer.)",
+          "150 Contoh Kalimat Achievement (Kumpulan contoh bullet point profesional yang dapat disesuaikan dengan pengalaman Anda.)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Ingin Membuat CV yang Lebih Profesional",
+          "href": "#"
         }
       },
-      "trustBar": [
-        "ATS Friendly",
-        "CV Analyzer",
-        "Professional Rewrite",
-        "Career Optimization"
-      ],
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Transformasi CV Anda dalam tiga langkah terstruktur menuju standar industri.",
+        "steps": [
+          {
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Upload atau Ceritakan CV Anda",
+            "description": "Masukkan CV yang sudah dimiliki, atau cukup jelaskan latar belakang pendidikan, pengalaman, dan pekerjaan yang diinginkan."
+          },
+          {
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "AI Menganalisis Seluruh Isi",
+            "description": "Sistem mengevaluasi struktur, tata bahasa, ATS score, kekuatan isi, kelemahan, keyword, hingga daya tarik keseluruhan CV."
+          },
+          {
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Gunakan CV yang Lebih Kompetitif",
+            "description": "Terima versi CV yang telah diperbaiki lengkap beserta alasan setiap perubahan dan rekomendasi peningkatan berikutnya."
+          }
+        ]
+      },
+      "name": "CareerPilot",
+      "slug": "cv-maker",
+      "status": "research",
       "problems": {
         "title": "Pernah mengalami salah satu masalah ini?",
         "subtitle": "Refleksi Pribadi",
@@ -840,6 +871,32 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Sistem",
+        "items": [
+          {
+            "question": "Apakah sistem ini membuat desain CV?",
+            "answer": "Fokus utama sistem adalah kualitas isi, struktur, dan optimasi ATS. Hasilnya dapat dipindahkan ke template desain pilihan Anda."
+          },
+          {
+            "question": "Apakah cocok untuk fresh graduate?",
+            "answer": "Sangat cocok. Sistem membantu menonjolkan proyek, organisasi, sertifikat, dan kemampuan meskipun belum memiliki pengalaman kerja."
+          },
+          {
+            "question": "Apakah bisa menganalisis CV lama saya?",
+            "answer": "Ya. Anda cukup mengunggah CV lama, lalu sistem akan memberikan analisis lengkap beserta versi revisinya."
+          },
+          {
+            "question": "Apakah hanya mendukung Bahasa Indonesia?",
+            "answer": "Tidak. Sistem dapat membantu penyusunan CV dalam Bahasa Indonesia maupun Bahasa Inggris."
+          },
+          {
+            "question": "Bisakah digunakan berkali-kali?",
+            "answer": "Ya. Anda bebas mengoptimalkan CV untuk berbagai posisi pekerjaan yang berbeda."
+          }
+        ]
+      },
+      "icon": "document",
       "solution": {
         "title": "Kenalkan, Gem CV Maker, Optimizer & Analyzer",
         "description": [
@@ -852,30 +909,24 @@
           "href": "#pricing"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Transformasi CV Anda dalam tiga langkah terstruktur menuju standar industri.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Upload atau Ceritakan CV Anda",
-            "description": "Masukkan CV yang sudah dimiliki, atau cukup jelaskan latar belakang pendidikan, pengalaman, dan pekerjaan yang diinginkan."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "AI Menganalisis Seluruh Isi",
-            "description": "Sistem mengevaluasi struktur, tata bahasa, ATS score, kekuatan isi, kelemahan, keyword, hingga daya tarik keseluruhan CV."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Gunakan CV yang Lebih Kompetitif",
-            "description": "Terima versi CV yang telah diperbaiki lengkap beserta alasan setiap perubahan dan rekomendasi peningkatan berikutnya."
-          }
-        ]
+      "hero": {
+        "title": "Jangan Biarkan CV Anda Gugur Sebelum Dibaca Manusia.",
+        "description": "Gem CV Maker, Optimizer & Analyzer membantu Anda membuat, memperbaiki, menganalisis, dan mengoptimalkan CV agar lebih profesional, ATS-friendly, serta mampu menampilkan potensi terbaik Anda kepada recruiter.",
+        "primaryCta": {
+          "text": "Optimalkan CV Saya Sekarang",
+          "href": "#pricing"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "ATS Friendly",
+        "CV Analyzer",
+        "Professional Rewrite",
+        "Career Optimization"
+      ],
       "benefits": {
         "title": "Mengapa Memilih Gem Ini?",
         "items": [
@@ -917,84 +968,64 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Sistem",
-        "items": [
-          {
-            "question": "Apakah sistem ini membuat desain CV?",
-            "answer": "Fokus utama sistem adalah kualitas isi, struktur, dan optimasi ATS. Hasilnya dapat dipindahkan ke template desain pilihan Anda."
-          },
-          {
-            "question": "Apakah cocok untuk fresh graduate?",
-            "answer": "Sangat cocok. Sistem membantu menonjolkan proyek, organisasi, sertifikat, dan kemampuan meskipun belum memiliki pengalaman kerja."
-          },
-          {
-            "question": "Apakah bisa menganalisis CV lama saya?",
-            "answer": "Ya. Anda cukup mengunggah CV lama, lalu sistem akan memberikan analisis lengkap beserta versi revisinya."
-          },
-          {
-            "question": "Apakah hanya mendukung Bahasa Indonesia?",
-            "answer": "Tidak. Sistem dapat membantu penyusunan CV dalam Bahasa Indonesia maupun Bahasa Inggris."
-          },
-          {
-            "question": "Bisakah digunakan berkali-kali?",
-            "answer": "Ya. Anda bebas mengoptimalkan CV untuk berbagai posisi pekerjaan yang berbeda."
-          }
-        ]
-      },
-      "pricing": {
-        "title": "Tingkatkan Peluang Dipanggil Interview",
-        "subtitle": "Recruiter sering hanya menghabiskan beberapa detik untuk melihat sebuah CV. Pastikan beberapa detik tersebut cukup untuk membuat mereka ingin mengenal Anda lebih jauh.",
-        "originalPrice": "Rp 249.000",
-        "currentPrice": "Rp 149.000",
-        "features": [
-          "AI CV Builder",
-          "CV Analyzer",
-          "ATS Optimization",
-          "Professional Rewrite",
-          "Keyword Optimization",
-          "Career Improvement Suggestions",
-          "Gratis seluruh update sistem selamanya"
-        ],
-        "bonuses": [
-          "100 Contoh CV Berbagai Profesi (Mulai dari fresh graduate, software engineer, guru, desainer, akuntan, hingga manajer.)",
-          "150 Contoh Kalimat Achievement (Kumpulan contoh bullet point profesional yang dapat disesuaikan dengan pengalaman Anda.)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Ingin Membuat CV yang Lebih Profesional",
-          "href": "#"
-        }
-      },
+      "description": "Tool cerdas untuk membantu membuat, memperbaiki, dan menganalisis CV agar sesuai standar industri terkini."
+    },
+    {
+      "badge": "AI Research Assistant",
       "showcaseImages": [
         "placeholder-showcase-1.png",
         "placeholder-showcase-2.png"
-      ]
-    },
-    {
-      "slug": "youtube-analyzer",
-      "name": "InsightTube",
-      "badge": "AI Research Assistant",
-      "description": "Tool cerdas untuk mengekstrak ringkasan, alur pembahasan, dan insight penting dari video YouTube.",
-      "status": "prototype",
-      "icon": "video",
-      "hero": {
-        "title": "Belajar dari Video YouTube dalam Hitungan Menit, Bukan Berjam-jam.",
-        "description": "Gem YouTube Video Analyzer & Summarizer membantu Anda menganalisis isi video YouTube secara mendalam, menyusun ringkasan yang terstruktur, mengekstrak insight penting, serta mengubah video panjang menjadi materi belajar yang jauh lebih mudah dipahami.",
-        "primaryCta": {
-          "text": "Analisis Video Sekarang",
-          "href": "#pricing"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
+      ],
+      "pricing": {
+        "title": "Belajar Lebih Banyak dengan Waktu yang Lebih Sedikit",
+        "subtitle": "Tidak semua ilmu harus dipelajari dengan menghabiskan berjam-jam di depan layar. Gunakan waktu Anda untuk memahami inti, bukan sekadar menonton.",
+        "originalPrice": "Rp 199.000",
+        "currentPrice": "Rp 99.000",
+        "features": [
+          "AI YouTube Video Analyzer",
+          "Smart Summarizer",
+          "Key Insight Extractor",
+          "Actionable Takeaways",
+          "Question & Answer Mode",
+          "Multi-format Summary",
+          "Gratis seluruh update sistem selamanya"
+        ],
+        "bonuses": [
+          "50 Prompt Belajar dengan AI (Kumpulan prompt untuk mempercepat proses memahami buku, artikel, podcast, jurnal, hingga video pembelajaran.)",
+          "Framework Active Learning (Panduan mengubah hasil ringkasan menjadi catatan belajar, flashcard, dan rencana aksi agar ilmu lebih mudah diingat.)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Ingin Belajar Lebih Efisien",
+          "href": "#"
         }
       },
-      "trustBar": [
-        "Smart Summarization",
-        "Deep Content Analysis",
-        "Key Insights Extraction",
-        "Actionable Takeaways"
-      ],
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Alur pemrosesan video yang sederhana dan instan.",
+        "steps": [
+          {
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Kirim Link Video YouTube",
+            "description": "Cukup tempelkan URL video yang ingin dipelajari."
+          },
+          {
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "Biarkan AI Menganalisis",
+            "description": "Gem akan membaca isi video, memahami struktur pembahasannya, lalu menyusun analisis yang sistematis."
+          },
+          {
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Pelajari Hasilnya",
+            "description": "Terima ringkasan lengkap, insight utama, poin penting, rekomendasi tindakan, serta jawaban atas pertanyaan yang ingin Anda ketahui."
+          }
+        ]
+      },
+      "name": "InsightTube",
+      "slug": "youtube-analyzer",
+      "status": "prototype",
       "problems": {
         "title": "Pernah mengalami situasi seperti ini?",
         "subtitle": "Refleksi Pribadi",
@@ -1037,6 +1068,32 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Sistem",
+        "items": [
+          {
+            "question": "Apakah semua video bisa dianalisis?",
+            "answer": "Selama video memiliki konten yang dapat dipahami AI, sistem dapat membantu membuat analisisnya."
+          },
+          {
+            "question": "Apakah hanya membuat ringkasan?",
+            "answer": "Tidak. Sistem juga menyusun insight, poin penting, argumen utama, rekomendasi tindakan, serta dapat menjawab pertanyaan berdasarkan isi video."
+          },
+          {
+            "question": "Apakah cocok untuk mahasiswa?",
+            "answer": "Sangat cocok. Membantu meringkas kuliah online, webinar, maupun video pembelajaran dengan cepat."
+          },
+          {
+            "question": "Apakah cocok untuk content creator?",
+            "answer": "Ya. Sistem membantu mempelajari strategi, struktur penyampaian, dan ide dari video-video inspiratif."
+          },
+          {
+            "question": "Apakah bisa digunakan tanpa pengetahuan teknis?",
+            "answer": "Tentu. Anda cukup menempelkan link video, kemudian sistem akan melakukan seluruh proses analisis."
+          }
+        ]
+      },
+      "icon": "video",
       "solution": {
         "title": "Kenalkan, Gem YouTube Video Analyzer & Summarizer",
         "description": [
@@ -1049,30 +1106,24 @@
           "href": "#pricing"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Alur pemrosesan video yang sederhana dan instan.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Kirim Link Video YouTube",
-            "description": "Cukup tempelkan URL video yang ingin dipelajari."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "Biarkan AI Menganalisis",
-            "description": "Gem akan membaca isi video, memahami struktur pembahasannya, lalu menyusun analisis yang sistematis."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Pelajari Hasilnya",
-            "description": "Terima ringkasan lengkap, insight utama, poin penting, rekomendasi tindakan, serta jawaban atas pertanyaan yang ingin Anda ketahui."
-          }
-        ]
+      "hero": {
+        "title": "Belajar dari Video YouTube dalam Hitungan Menit, Bukan Berjam-jam.",
+        "description": "Gem YouTube Video Analyzer & Summarizer membantu Anda menganalisis isi video YouTube secara mendalam, menyusun ringkasan yang terstruktur, mengekstrak insight penting, serta mengubah video panjang menjadi materi belajar yang jauh lebih mudah dipahami.",
+        "primaryCta": {
+          "text": "Analisis Video Sekarang",
+          "href": "#pricing"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "Smart Summarization",
+        "Deep Content Analysis",
+        "Key Insights Extraction",
+        "Actionable Takeaways"
+      ],
       "benefits": {
         "title": "Mengapa Memilih Gem Ini?",
         "items": [
@@ -1114,84 +1165,67 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Sistem",
-        "items": [
-          {
-            "question": "Apakah semua video bisa dianalisis?",
-            "answer": "Selama video memiliki konten yang dapat dipahami AI, sistem dapat membantu membuat analisisnya."
-          },
-          {
-            "question": "Apakah hanya membuat ringkasan?",
-            "answer": "Tidak. Sistem juga menyusun insight, poin penting, argumen utama, rekomendasi tindakan, serta dapat menjawab pertanyaan berdasarkan isi video."
-          },
-          {
-            "question": "Apakah cocok untuk mahasiswa?",
-            "answer": "Sangat cocok. Membantu meringkas kuliah online, webinar, maupun video pembelajaran dengan cepat."
-          },
-          {
-            "question": "Apakah cocok untuk content creator?",
-            "answer": "Ya. Sistem membantu mempelajari strategi, struktur penyampaian, dan ide dari video-video inspiratif."
-          },
-          {
-            "question": "Apakah bisa digunakan tanpa pengetahuan teknis?",
-            "answer": "Tentu. Anda cukup menempelkan link video, kemudian sistem akan melakukan seluruh proses analisis."
-          }
-        ]
-      },
-      "pricing": {
-        "title": "Belajar Lebih Banyak dengan Waktu yang Lebih Sedikit",
-        "subtitle": "Tidak semua ilmu harus dipelajari dengan menghabiskan berjam-jam di depan layar. Gunakan waktu Anda untuk memahami inti, bukan sekadar menonton.",
-        "originalPrice": "Rp 199.000",
-        "currentPrice": "Rp 99.000",
-        "features": [
-          "AI YouTube Video Analyzer",
-          "Smart Summarizer",
-          "Key Insight Extractor",
-          "Actionable Takeaways",
-          "Question & Answer Mode",
-          "Multi-format Summary",
-          "Gratis seluruh update sistem selamanya"
-        ],
-        "bonuses": [
-          "50 Prompt Belajar dengan AI (Kumpulan prompt untuk mempercepat proses memahami buku, artikel, podcast, jurnal, hingga video pembelajaran.)",
-          "Framework Active Learning (Panduan mengubah hasil ringkasan menjadi catatan belajar, flashcard, dan rencana aksi agar ilmu lebih mudah diingat.)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Ingin Belajar Lebih Efisien",
-          "href": "#"
-        }
-      },
+      "description": "Tool cerdas untuk mengekstrak ringkasan, alur pembahasan, dan insight penting dari video YouTube."
+    },
+    {
+      "badge": "Website Template",
       "showcaseImages": [
         "placeholder-showcase-1.png",
         "placeholder-showcase-2.png"
-      ]
-    },
-    {
-      "slug": "website-etalase",
-      "name": "Digital Showcase Kit",
-      "badge": "Website Template",
-      "description": "Template website portfolio dan etalase produk digital modern untuk memamerkan karya dan produk Anda secara profesional.",
-      "status": "inprogress",
-      "icon": "globe",
-      "hero": {
-        "title": "Jual Produk Digital dengan Website yang Profesional, Bukan Sekadar Link Berantakan.",
-        "description": "Website Etalase Produk Digital membantu Anda menampilkan seluruh produk digital dalam satu website modern, cepat, responsif, dan mudah dikelola—sehingga calon pembeli lebih percaya, lebih mudah menjelajah, dan lebih yakin untuk membeli.",
-        "primaryCta": {
-          "text": "Bangun Website Saya Sekarang",
-          "href": "#pricing"
-        },
-        "secondaryCta": {
-          "text": "Lihat Cara Kerjanya ↓",
-          "href": "#masalah"
+      ],
+      "pricing": {
+        "title": "Bangun Kepercayaan Sebelum Menawarkan Produk",
+        "subtitle": "Calon pelanggan sering kali menilai kualitas bisnis dari tampilan websitenya. Website yang profesional membantu membangun kredibilitas bahkan sebelum mereka membaca detail produk Anda.",
+        "originalPrice": "Rp 599.000",
+        "currentPrice": "Rp 349.000",
+        "features": [
+          "Template Website Premium",
+          "Landing Page Produk",
+          "Halaman Portofolio",
+          "Halaman Roadmap",
+          "Halaman Tentang",
+          "Sistem Showcase Produk",
+          "Responsive Design",
+          "SEO Ready Structure",
+          "Panduan Instalasi Lengkap",
+          "Gratis seluruh update selamanya"
+        ],
+        "bonuses": [
+          "Template Copywriting Landing Page (Kumpulan template Hero Section, Problem, Solution, FAQ, CTA, dan Sales Section yang siap digunakan untuk berbagai jenis produk digital.)",
+          "Panduan Deploy Website (Tutorial langkah demi langkah untuk menjalankan website menggunakan GitHub Pages, Cloudflare Pages, Netlify, maupun Vercel tanpa biaya hosting di tahap awal.)"
+        ],
+        "cta": {
+          "text": "Ya, Saya Ingin Memiliki Website Produk Digital Saya",
+          "href": "#"
         }
       },
-      "trustBar": [
-        "Modern Landing Page",
-        "Product Showcase",
-        "Mobile Responsive",
-        "No Coding Required"
-      ],
+      "howItWorks": {
+        "title": "Hanya 3 Langkah",
+        "subtitle": "Luncurkan etalase digital premium Anda dalam hitungan menit.",
+        "steps": [
+          {
+            "id": "step-1",
+            "stepNumber": 1,
+            "title": "Ganti Identitas Brand",
+            "description": "Ubah logo, nama bisnis, warna, dan informasi kontak sesuai identitas Anda."
+          },
+          {
+            "id": "step-2",
+            "stepNumber": 2,
+            "title": "Tambahkan Produk Digital",
+            "description": "Masukkan produk, deskripsi, gambar, harga, bonus, serta tautan pembelian tanpa harus mengubah struktur website."
+          },
+          {
+            "id": "step-3",
+            "stepNumber": 3,
+            "title": "Publikasikan Website",
+            "description": "Deploy ke hosting pilihan Anda dan mulai membagikan website kepada calon pelanggan."
+          }
+        ]
+      },
+      "name": "Digital Showcase Kit",
+      "slug": "website-etalase",
+      "status": "inprogress",
       "problems": {
         "title": "Pernah mengalami situasi seperti ini?",
         "subtitle": "Refleksi Pribadi",
@@ -1234,6 +1268,32 @@
           "icon": "bot"
         }
       },
+      "faq": {
+        "title": "Pertanyaan Seputar Website",
+        "items": [
+          {
+            "question": "Apakah saya harus bisa coding?",
+            "answer": "Tidak harus. Sebagian besar konten dapat diubah melalui file konfigurasi yang sederhana. Pengetahuan dasar akan membantu jika ingin melakukan kustomisasi lebih lanjut."
+          },
+          {
+            "question": "Apakah bisa digunakan untuk banyak produk?",
+            "answer": "Ya. Website memang dirancang sebagai etalase yang mampu menampilkan banyak produk digital dalam satu tempat."
+          },
+          {
+            "question": "Apakah sudah responsif?",
+            "answer": "Ya. Tampilan telah dioptimalkan agar nyaman digunakan di desktop, tablet, maupun smartphone."
+          },
+          {
+            "question": "Apakah saya bebas mengubah desainnya?",
+            "answer": "Tentu. Anda bebas mengubah warna, font, gambar, layout, maupun menambahkan halaman baru sesuai kebutuhan."
+          },
+          {
+            "question": "Apakah ada biaya langganan?",
+            "answer": "Tidak. Setelah membeli, website menjadi milik Anda. Biaya yang mungkin diperlukan hanyalah domain dan hosting pilihan Anda."
+          }
+        ]
+      },
+      "icon": "globe",
       "solution": {
         "title": "Kenalkan, Website Etalase Produk Digital",
         "description": [
@@ -1247,30 +1307,24 @@
           "href": "#pricing"
         }
       },
-      "howItWorks": {
-        "title": "Hanya 3 Langkah",
-        "subtitle": "Luncurkan etalase digital premium Anda dalam hitungan menit.",
-        "steps": [
-          {
-            "id": "step-1",
-            "stepNumber": 1,
-            "title": "Ganti Identitas Brand",
-            "description": "Ubah logo, nama bisnis, warna, dan informasi kontak sesuai identitas Anda."
-          },
-          {
-            "id": "step-2",
-            "stepNumber": 2,
-            "title": "Tambahkan Produk Digital",
-            "description": "Masukkan produk, deskripsi, gambar, harga, bonus, serta tautan pembelian tanpa harus mengubah struktur website."
-          },
-          {
-            "id": "step-3",
-            "stepNumber": 3,
-            "title": "Publikasikan Website",
-            "description": "Deploy ke hosting pilihan Anda dan mulai membagikan website kepada calon pelanggan."
-          }
-        ]
+      "hero": {
+        "title": "Jual Produk Digital dengan Website yang Profesional, Bukan Sekadar Link Berantakan.",
+        "description": "Website Etalase Produk Digital membantu Anda menampilkan seluruh produk digital dalam satu website modern, cepat, responsif, dan mudah dikelola—sehingga calon pembeli lebih percaya, lebih mudah menjelajah, dan lebih yakin untuk membeli.",
+        "primaryCta": {
+          "text": "Bangun Website Saya Sekarang",
+          "href": "#pricing"
+        },
+        "secondaryCta": {
+          "text": "Lihat Cara Kerjanya ↓",
+          "href": "#masalah"
+        }
       },
+      "trustBar": [
+        "Modern Landing Page",
+        "Product Showcase",
+        "Mobile Responsive",
+        "No Coding Required"
+      ],
       "benefits": {
         "title": "Mengapa Memilih Website Ini?",
         "items": [
@@ -1312,61 +1366,7 @@
           "icon": "mic"
         }
       },
-      "faq": {
-        "title": "Pertanyaan Seputar Website",
-        "items": [
-          {
-            "question": "Apakah saya harus bisa coding?",
-            "answer": "Tidak harus. Sebagian besar konten dapat diubah melalui file konfigurasi yang sederhana. Pengetahuan dasar akan membantu jika ingin melakukan kustomisasi lebih lanjut."
-          },
-          {
-            "question": "Apakah bisa digunakan untuk banyak produk?",
-            "answer": "Ya. Website memang dirancang sebagai etalase yang mampu menampilkan banyak produk digital dalam satu tempat."
-          },
-          {
-            "question": "Apakah sudah responsif?",
-            "answer": "Ya. Tampilan telah dioptimalkan agar nyaman digunakan di desktop, tablet, maupun smartphone."
-          },
-          {
-            "question": "Apakah saya bebas mengubah desainnya?",
-            "answer": "Tentu. Anda bebas mengubah warna, font, gambar, layout, maupun menambahkan halaman baru sesuai kebutuhan."
-          },
-          {
-            "question": "Apakah ada biaya langganan?",
-            "answer": "Tidak. Setelah membeli, website menjadi milik Anda. Biaya yang mungkin diperlukan hanyalah domain dan hosting pilihan Anda."
-          }
-        ]
-      },
-      "pricing": {
-        "title": "Bangun Kepercayaan Sebelum Menawarkan Produk",
-        "subtitle": "Calon pelanggan sering kali menilai kualitas bisnis dari tampilan websitenya. Website yang profesional membantu membangun kredibilitas bahkan sebelum mereka membaca detail produk Anda.",
-        "originalPrice": "Rp 599.000",
-        "currentPrice": "Rp 349.000",
-        "features": [
-          "Template Website Premium",
-          "Landing Page Produk",
-          "Halaman Portofolio",
-          "Halaman Roadmap",
-          "Halaman Tentang",
-          "Sistem Showcase Produk",
-          "Responsive Design",
-          "SEO Ready Structure",
-          "Panduan Instalasi Lengkap",
-          "Gratis seluruh update selamanya"
-        ],
-        "bonuses": [
-          "Template Copywriting Landing Page (Kumpulan template Hero Section, Problem, Solution, FAQ, CTA, dan Sales Section yang siap digunakan untuk berbagai jenis produk digital.)",
-          "Panduan Deploy Website (Tutorial langkah demi langkah untuk menjalankan website menggunakan GitHub Pages, Cloudflare Pages, Netlify, maupun Vercel tanpa biaya hosting di tahap awal.)"
-        ],
-        "cta": {
-          "text": "Ya, Saya Ingin Memiliki Website Produk Digital Saya",
-          "href": "#"
-        }
-      },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "description": "Template website portfolio dan etalase produk digital modern untuk memamerkan karya dan produk Anda secara profesional."
     }
   ]
 }

@@ -29,6 +29,15 @@ jobs:
           node-version: "20"
           cache: npm
 
+      - name: Cache Next.js build cache
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-next-${{ hashFiles('package-lock.json') }}-${{ hashFiles('**/*.{js,jsx,ts,tsx}') }}
+          restore-keys: |
+            ${{ runner.os }}-next-${{ hashFiles('package-lock.json') }}-
+            ${{ runner.os }}-next-
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
@@ -36,6 +45,8 @@ jobs:
         run: npm ci
 
       - name: Build Next.js
+        env:
+          NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID || 'G-R9ZB8DVK8W' }}
         run: npm run build
 
       - name: Remove admin folder from static build

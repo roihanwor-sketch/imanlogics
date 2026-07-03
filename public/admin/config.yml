@@ -407,3 +407,25 @@ collections:
                 widget: "select"
                 options: ["concept", "research", "prototype", "inprogress"]
                 default: "inprogress"
+
+  - name: "legal"
+    label: "⚖️ Halaman Legal"
+    files:
+      - label: "Kebijakan Privasi"
+        name: "privacy_policy"
+        file: "data/privacy-policy.json"
+        fields:
+          - {label: "Judul", name: "title", widget: "string"}
+          - {label: "Tanggal Update", name: "last_updated", widget: "string"}
+          - {label: "SEO Title", name: "seo_title", widget: "string"}
+          - {label: "SEO Description", name: "seo_description", widget: "text"}
+          - {label: "Isi Halaman (Markdown)", name: "body", widget: "markdown"}
+      - label: "Syarat & Ketentuan"
+        name: "terms_of_service"
+        file: "data/terms-of-service.json"
+        fields:
+          - {label: "Judul", name: "title", widget: "string"}
+          - {label: "Tanggal Update", name: "last_updated", widget: "string"}
+          - {label: "SEO Title", name: "seo_title", widget: "string"}
+          - {label: "SEO Description", name: "seo_description", widget: "text"}
+          - {label: "Isi Halaman (Markdown)", name: "body", widget: "markdown"}
