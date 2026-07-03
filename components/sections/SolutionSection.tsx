@@ -1,22 +1,22 @@
-import { ProductConfig } from '@/types';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { FadeIn } from '../shared/FadeIn';
-import Link from 'next/link';
+import { ProductConfig } from '@/types'
+import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { FadeIn } from '../shared/FadeIn'
+import Link from 'next/link'
 
 interface SolutionSectionProps {
-  solution: NonNullable<ProductConfig['solution']>;
-  productSlug: string;
-  isPortfolio?: boolean;
+  solution: NonNullable<ProductConfig['solution']>
+  productSlug: string
+  isPortfolio?: boolean
 }
 
 export function SolutionSection({ solution, productSlug, isPortfolio }: SolutionSectionProps) {
-  const isHash = solution.cta.href.startsWith('#');
-  const href = isPortfolio ? `/products/${productSlug}` : solution.cta.href;
-  const text = isPortfolio ? 'Lihat Detail & Penawaran Produk' : solution.cta.text;
+  const isHash = solution.cta.href.startsWith('#')
+  const href = isPortfolio ? `/products/${productSlug}` : solution.cta.href
+  const text = isPortfolio ? 'Lihat Detail & Penawaran Produk' : solution.cta.text
 
-  const isInternal = isHash || isPortfolio;
-  const target = isInternal ? undefined : '_blank';
-  const rel = isInternal ? undefined : 'noopener noreferrer';
+  const isInternal = isHash || isPortfolio
+  const target = isInternal ? undefined : '_blank'
+  const rel = isInternal ? undefined : 'noopener noreferrer'
 
   return (
     <FadeIn>
@@ -26,14 +26,14 @@ export function SolutionSection({ solution, productSlug, isPortfolio }: Solution
         </div>
         <h3 className="text-2xl md:text-3xl font-bold text-emerald-400 mb-8">{solution.title}</h3>
 
-        <div className="space-y-6 text-base md:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+        <div className="space-y-6 text-base md:text-lg text-slate-700 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto">
           {solution.description.map((desc, i) => (
             <p key={i}>{desc}</p>
           ))}
         </div>
 
         <div className="mt-12 pt-10 border-t border-emerald-500/10">
-          <p className="text-base italic text-slate-400 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-base italic text-slate-500 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto">
             {solution.quote}
           </p>
         </div>
@@ -51,5 +51,5 @@ export function SolutionSection({ solution, productSlug, isPortfolio }: Solution
         </Link>
       </div>
     </FadeIn>
-  );
+  )
 }
