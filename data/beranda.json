@@ -18,12 +18,13 @@
     ]
   },
   "tentang": {
-    "title": "Laboratorium",
-    "highlight": "Sistem & Pengetahuan.",
+    "title": "Membangun solusi digital yang",
+    "highlight": "sederhana, bermanfaat, dan berdampak.",
     "paragraphs": [
-      "Iman Logics adalah ruang tempat saya mendokumentasikan proyek, eksperimen, dan produk digital yang saya bangun di persimpangan antara AI, logika, sistem, dan pengetahuan.",
-      "Saya tertarik pada bagaimana teknologi dapat membantu manusia belajar lebih cepat, berpikir lebih jernih, dan mengubah ide menjadi sesuatu yang bernilai.",
-      "Website ini berfungsi sebagai portofolio, laboratorium eksperimen, dan etalase produk digital yang terus berkembang."
+      "Iman Logics adalah laboratorium digital yang berfokus pada pengembangan solusi berbasis kecerdasan buatan (AI), sistem, dan pengetahuan untuk membantu orang belajar lebih efektif, bekerja lebih produktif, serta mengubah ide menjadi sesuatu yang bernilai.",
+      "Berawal dari eksplorasi teknologi dan rasa ingin tahu, Iman Logics menjadi tempat lahirnya berbagai eksperimen, aplikasi AI, template, dan inovasi yang dirancang untuk memberikan manfaat nyata.",
+      "Selain menghadirkan berbagai solusi, Iman Logics juga membagikan artikel, dokumentasi, dan insight seputar AI, teknologi, produktivitas, serta pengembangan sistem melalui blog sebagai bagian dari komitmen untuk berbagi pengetahuan.",
+      "Website ini menjadi portofolio, laboratorium eksperimen, pusat dokumentasi, blog, sekaligus etalase berbagai solusi digital yang akan terus berkembang seiring lahirnya inovasi-inovasi baru."
     ],
     "badge": {
       "sys": "SYS.CORE",
