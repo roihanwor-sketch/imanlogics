@@ -5,6 +5,7 @@ import { FadeIn } from '@/components/shared/FadeIn'
 import { getProductItems } from '@/lib/products'
 import Link from 'next/link'
 import { BadgeConfig, IconConfig } from '@/lib/ui-configs'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Etalase Produk Digital',
@@ -50,13 +51,15 @@ export default function ProductsPage() {
                       className={`rounded-xl bg-slate-500/5 dark:bg-white/5 text-slate-700 dark:text-slate-300 w-12 h-12 flex items-center justify-center overflow-hidden ${!item.logoImage ? 'p-3' : ''}`}
                     >
                       {item.logoImage ? (
-                        <img
+                        <Image
                           src={
                             item.logoImage.startsWith('/')
                               ? item.logoImage
                               : `/assets/uploads/${item.logoImage}`
                           }
                           alt="Logo"
+                          width={48}
+                          height={48}
                           className="w-full h-full object-cover"
                         />
                       ) : (

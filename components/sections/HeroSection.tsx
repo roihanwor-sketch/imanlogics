@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, Bot } from 'lucide-react'
 import { FadeIn } from '../shared/FadeIn'
 import { BadgeConfig } from '@/lib/ui-configs'
+import Image from 'next/image'
 
 interface HeroSectionProps {
   hero: ProductConfig['hero']
@@ -19,10 +20,12 @@ export function HeroSection({ hero, badge, status, logoImage }: HeroSectionProps
           className={`w-20 h-20 md:w-24 md:h-24 rounded-[2rem] bg-slate-500/5 dark:bg-[#0B0F19]/80 border border-slate-200 dark:border-emerald-500/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-[0_0_40px_rgba(16,185,129,0.1)] dark:shadow-[0_0_40px_rgba(16,185,129,0.15)] mb-8 mx-auto overflow-hidden relative ${!logoImage ? 'p-5' : ''}`}
         >
           {logoImage ? (
-            <img
+            <Image
               src={logoImage.startsWith('/') ? logoImage : `/assets/uploads/${logoImage}`}
               alt="Logo"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 768px) 80px, 96px"
+              className="object-cover"
             />
           ) : (
             <Bot className="w-full h-full" />

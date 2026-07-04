@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { FadeIn } from '../shared/FadeIn'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
 
 interface ShowcaseSectionProps {
   images: string[]
@@ -61,10 +62,12 @@ export function ShowcaseSection({ images }: ShowcaseSectionProps) {
                 }}
               >
                 <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border-4 border-[#0B0F19] shadow-2xl bg-[#0B0F19]/50 group">
-                  <img
+                  <Image
                     src={img.startsWith('/') ? img : `/assets/uploads/${img}`}
                     alt={`Showcase ${index + 1}`}
-                    className="w-full h-full object-cover object-top"
+                    fill
+                    sizes="(max-width: 768px) 280px, 400px"
+                    className="object-cover object-top"
                   />
                   {/* Overlay for inactive cards */}
                   {!isCenter && (
