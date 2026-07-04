@@ -28,7 +28,7 @@ export function ShowcaseSection({ images }: ShowcaseSectionProps) {
           <span className="text-cyan-400 text-xs font-bold uppercase tracking-widest bg-cyan-400/10 px-3 py-1 rounded-full border border-cyan-400/20 mb-4 inline-block">
             Showcase
           </span>
-          <h2 className="text-3xl font-bold text-white">Cuplikan Layar</h2>
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Cuplikan Layar</h2>
         </div>
       </FadeIn>
 

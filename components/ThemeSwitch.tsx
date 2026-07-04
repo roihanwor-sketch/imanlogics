@@ -69,7 +69,7 @@ export default function ThemeSwitch() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.15, ease: 'easeOut' }}
-            className="absolute right-0 mt-2 w-32 origin-top-right rounded-xl glass-card bg-[#f0e3c9]/95 dark:bg-[#0F172A]/90 shadow-xl z-50 overflow-hidden py-1 border border-slate-200/80 dark:border-white/10"
+            className="absolute right-0 mt-2 w-32 origin-top-right rounded-xl glass-card bg-[#faf3e5]/95 dark:bg-[#0F172A]/90 shadow-xl z-50 overflow-hidden py-1 border border-slate-200/80 dark:border-white/10"
           >
             {options.map((opt) => (
               <button
@@ -80,8 +80,8 @@ export default function ThemeSwitch() {
                 }}
                 className={`flex w-full items-center gap-2 px-3 py-2 text-xs font-medium transition-colors ${
                   theme === opt.value
-                    ? 'bg-[#e8dabc] dark:bg-slate-800/80 text-emerald-600 dark:text-emerald-400'
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-[#f0e3c9]/50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-[#f4ebd4] dark:bg-slate-800/80 text-emerald-600 dark:text-emerald-400'
+                    : 'text-slate-600 dark:text-slate-300 hover:bg-[#faf3e5]/50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 {opt.icon}

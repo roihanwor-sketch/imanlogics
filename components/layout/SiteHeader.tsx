@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Search } from 'lucide-react'
@@ -11,6 +11,17 @@ import ThemeSwitch from '@/components/ThemeSwitch'
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { query } = useKBar()
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('overflow-hidden')
+    } else {
+      document.body.classList.remove('overflow-hidden')
+    }
+    return () => {
+      document.body.classList.remove('overflow-hidden')
+    }
+  }, [isMenuOpen])
 
   const navItems = globalData.footer.nav.filter((item) => item.label !== 'Jelajahi Produk')
   const mobileMenuItems = [
@@ -93,46 +104,65 @@ export function SiteHeader() {
         </div>
       </header>
 
-      {/* Mobile Nav */}
+      {/* Backdrop overlay */}
       <div
-        className={`fixed inset-x-0 top-0 z-40 transform transition-all duration-300 ease-in-out md:hidden flex flex-col pt-24 pb-8 px-6 items-center shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] border-b border-slate-200 dark:border-white/10 bg-brand-bg/90 dark:bg-[#0B0F19]/90 backdrop-blur-md ${
-          isMenuOpen
-            ? 'translate-y-0 opacity-100'
-            : '-translate-y-full opacity-0 pointer-events-none'
+        className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-xs transition-opacity duration-300 md:hidden ${
+          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setIsMenuOpen(false)}
+      />
+
+      {/* Side Drawer */}
+      <div
+        className={`fixed top-0 right-0 bottom-0 z-50 w-[280px] bg-brand-bg dark:bg-[#0B0F19] shadow-2xl border-l border-slate-200 dark:border-white/10 flex flex-col p-6 transition-transform duration-300 ease-in-out md:hidden ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="grid grid-cols-2 gap-3 w-full max-w-[340px] mt-2">
+        {/* Drawer Header */}
+        <div className="flex justify-between items-center mb-8 border-b border-slate-200/50 dark:border-white/5 pb-4">
+          <span className="font-bold text-slate-800 dark:text-white text-lg">Menu Navigasi</span>
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="p-2 rounded-lg text-slate-500 hover:bg-slate-500/5 transition-colors focus:outline-none"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Menu Items (Vertical Card style) */}
+        <div className="flex flex-col gap-4 flex-grow overflow-y-auto">
           {mobileMenuItems.map((item, idx) => {
-            const isLast = idx === mobileMenuItems.length - 1
-            const isCentered = isLast && isTotalOdd
             const isPrimary = 'isPrimary' in item && item.isPrimary
-            const btnClass = isPrimary ? 'btn-primary' : 'btn-glass'
+            const btnClass = isPrimary
+              ? 'btn-primary'
+              : 'bg-brand-card hover:bg-brand-card-hover border border-slate-200/60 dark:border-white/5 text-slate-800 dark:text-slate-200 shadow-xs'
 
             return (
               <Link
                 key={item.label}
                 href={item.link}
-                className={`text-center py-3 text-sm font-semibold rounded-xl flex items-center justify-center transition-all ${btnClass} ${
-                  isPrimary
-                    ? 'text-cyan-50 dark:text-emerald-50 font-bold'
-                    : 'text-slate-800 dark:text-slate-200'
-                } ${isCentered ? 'col-span-2 justify-self-center w-[calc(50%-6px)]' : 'w-full'}`}
                 onClick={() => setIsMenuOpen(false)}
+                className={`w-full py-3.5 px-5 text-sm font-semibold rounded-xl flex items-center justify-between transition-all ${btnClass}`}
               >
-                {item.label}
+                <span>{item.label}</span>
+                <svg
+                  className="w-4 h-4 opacity-60"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2.5"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
               </Link>
             )
           })}
         </div>
       </div>
-
-      {/* Backdrop detector click to close */}
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 z-30 bg-transparent md:hidden"
-          onClick={() => setIsMenuOpen(false)}
-        />
-      )}
     </>
   )
 }

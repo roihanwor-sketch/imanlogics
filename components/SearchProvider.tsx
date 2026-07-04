@@ -137,19 +137,19 @@ export function SearchProvider({ children }: { children: React.ReactNode }) {
     <KBarProvider actions={actions}>
       <KBarPortal>
         <KBarPositioner className="bg-slate-900/60 dark:bg-black/60 backdrop-blur-sm z-[100] p-4">
-          <KBarAnimator className="w-full max-w-[600px] rounded-2xl overflow-hidden glass-card shadow-2xl border border-slate-200/85 dark:border-white/10 bg-[#f0e3c9]/95 dark:bg-[#0B0F19]/95 flex flex-col">
+          <KBarAnimator className="w-full max-w-[600px] rounded-2xl overflow-hidden glass-card shadow-2xl border border-slate-200/85 dark:border-white/10 bg-[#faf3e5]/95 dark:bg-[#0B0F19]/95 flex flex-col">
             <div className="flex items-center gap-3 px-4 py-3.5 border-b border-slate-200/50 dark:border-white/5">
               <Search className="w-5 h-5 text-slate-400 dark:text-slate-500 shrink-0" />
               <KBarSearch
                 className="w-full bg-transparent border-none outline-none text-slate-800 dark:text-white placeholder-slate-400 text-sm focus:ring-0"
                 placeholder="Ketik perintah atau cari..."
               />
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#f0e3c9] dark:bg-slate-800 text-slate-400 dark:text-slate-500 shrink-0 border border-slate-200/60 dark:border-white/5">
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-[#faf3e5] dark:bg-slate-800 text-slate-400 dark:text-slate-500 shrink-0 border border-slate-200/60 dark:border-white/5">
                 ESC
               </span>
             </div>
             <RenderResults />
-            <div className="px-4 py-2.5 text-[10px] text-slate-500 dark:text-slate-400 border-t border-slate-200/50 dark:border-white/5 bg-[#e8dabc]/75 dark:bg-[#121826]/30 flex justify-between items-center select-none">
+            <div className="px-4 py-2.5 text-[10px] text-slate-500 dark:text-slate-400 border-t border-slate-200/50 dark:border-white/5 bg-[#f4ebd4]/75 dark:bg-[#121826]/30 flex justify-between items-center select-none">
               <span>Gunakan ↑↓ untuk navigasi • Enter untuk memilih</span>
               <span className="hidden sm:inline">
                 Tekan tombol huruf untuk jalan pintas (shortcut)
@@ -172,7 +172,7 @@ function RenderResults() {
       onRender={({ item, active }) => {
         if (typeof item === 'string') {
           return (
-            <div className="px-4 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 bg-[#e8dabc]/75 dark:bg-[#121826]/30 border-b border-slate-200/30 dark:border-white/5">
+            <div className="px-4 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 bg-[#f4ebd4]/75 dark:bg-[#121826]/30 border-b border-slate-200/30 dark:border-white/5">
               {item}
             </div>
           )
@@ -195,8 +195,8 @@ function RenderResults() {
           <div
             className={`flex items-center justify-between px-4 py-3.5 cursor-pointer transition-all ${
               active
-                ? 'bg-[#e8dabc]/80 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-l-4 border-emerald-500'
-                : 'text-slate-600 dark:text-slate-300 hover:bg-[#f0e3c9]/50 dark:hover:bg-[#121826]/20 border-l-4 border-transparent'
+                ? 'bg-[#f4ebd4]/80 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-l-4 border-emerald-500'
+                : 'text-slate-600 dark:text-slate-300 hover:bg-[#faf3e5]/50 dark:hover:bg-[#121826]/20 border-l-4 border-transparent'
             }`}
           >
             <div className="flex items-center gap-3.5">
@@ -219,7 +219,7 @@ function RenderResults() {
                 {item.shortcut.map((sc) => (
                   <kbd
                     key={sc}
-                    className="text-[9px] font-bold px-1.5 py-0.5 rounded uppercase bg-[#e8dabc] dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-300/40 dark:border-white/5"
+                    className="text-[9px] font-bold px-1.5 py-0.5 rounded uppercase bg-[#f4ebd4] dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-300/40 dark:border-white/5"
                   >
                     {sc}
                   </kbd>

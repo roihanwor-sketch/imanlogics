@@ -13,10 +13,10 @@
 
 @layer base {
   :root {
-    --brand-bg: #e8d7b0;
-    --brand-card: #e8dabc;
-    --brand-card-hover: #f0e3c9;
-    --brand-card-inner: #f0e3c9;
+    --brand-bg: #f0e3c9;
+    --brand-card: #f4ebd4;
+    --brand-card-hover: #faf3e5;
+    --brand-card-inner: #faf3e5;
     --border-color: rgba(15, 23, 42, 0.08);
     --border-hover-color: rgba(15, 23, 42, 0.15);
 
