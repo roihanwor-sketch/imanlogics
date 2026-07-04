@@ -1,5 +1,5 @@
 name: Deploy Next.js to Pages
-
+# Updated to Node 24 to align with local development environment (v24.18.0) and fix deprecation warnings
 on:
   push:
     branches: ["main"]
