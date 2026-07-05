@@ -18,6 +18,10 @@
         "link": "/products"
       },
       {
+        "label": "Blog",
+        "link": "https://blog.imanlogics.web.id"
+      },
+      {
         "label": "Roadmap",
         "link": "/#roadmap"
       },
