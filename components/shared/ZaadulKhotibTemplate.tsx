@@ -78,7 +78,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
       <SiteHeader />
 
-      <main className="flex-grow pt-32 pb-24 px-4 sm:px-6 min-h-screen relative z-10">
+      <main className="flex-grow pt-32 pb-24 px-2 sm:px-6 min-h-screen relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Back button */}
           <Link
@@ -90,7 +90,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
           </Link>
 
           {/* Main Landing Card Container */}
-          <div className="glass-card rounded-[2.5rem] p-6 sm:p-12 md:p-16 relative overflow-hidden shadow-2xl">
+          <div className="glass-card rounded-[2.5rem] p-4 sm:p-12 md:p-16 relative overflow-hidden shadow-2xl">
             {/* Top decorative gradient glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-gradient-to-b from-emerald-500/10 to-amber-500/0 dark:from-emerald-500/15 dark:to-amber-500/5 blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -189,11 +189,11 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                     </p>
 
                     {/* Burdens Checklist */}
-                    <div className="bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 rounded-3xl p-6 sm:p-8 my-6 text-left">
+                    <div className="bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 rounded-3xl p-4 sm:p-8 my-6 text-left">
                       <h4 className="font-bold text-slate-900 dark:text-white mb-4 text-sm sm:text-base">
                         Beban Teknis Persiapan Khutbah Setiap Pekan:
                       </h4>
-                      <ul className="space-y-3 text-sm sm:text-base text-slate-600 dark:text-slate-350">
+                      <ul className="space-y-3 text-sm sm:text-base text-slate-600 dark:text-slate-200">
                         <li className="flex items-start gap-2.5">
                           <AlertTriangle className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
                           <span>Menentukan tema pembahasan yang tepat untuk jamaah.</span>
@@ -233,7 +233,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 </FadeIn>
 
                 <FadeIn delay={0.15} className="text-center pt-8">
-                  <div className="p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
+                  <div className="p-4 sm:p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                     <h3 className="text-xl font-bold text-emerald-600 dark:text-emerald-400 mb-4">
                       Di Sinilah Zaadul Khotib 2.0 Hadir
                     </h3>
@@ -303,7 +303,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                     <FadeIn
                       key={index}
                       delay={0.05 * index}
-                      className="p-6 sm:p-8 rounded-2xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 hover:border-red-500/20 dark:hover:border-red-500/10 transition-all duration-300 shadow-sm"
+                      className="p-4 sm:p-8 rounded-2xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 hover:border-red-500/20 dark:hover:border-red-500/10 transition-all duration-300 shadow-sm"
                     >
                       <h4 className="font-extrabold text-slate-900 dark:text-white mb-3 text-lg">
                         {item.title}
@@ -343,11 +343,11 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                     </p>
 
                     {/* Integrated Workflow Checklist */}
-                    <div className="bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 rounded-3xl p-6 sm:p-8 my-6 text-left">
+                    <div className="bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 rounded-3xl p-4 sm:p-8 my-6 text-left">
                       <h4 className="font-bold text-slate-900 dark:text-white mb-4 text-sm sm:text-base">
                         Satu Alur Kerja Terintegrasi yang Membantu Anda:
                       </h4>
-                      <ul className="space-y-3 text-sm sm:text-base text-slate-650 dark:text-slate-300">
+                      <ul className="space-y-3 text-sm sm:text-base text-slate-600 dark:text-slate-300">
                         <li className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                           <span>
@@ -391,7 +391,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 <FadeIn
                   delay={0.2}
-                  className="p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 my-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]"
+                  className="p-4 sm:p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 my-8 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]"
                 >
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
                     Bukan Sekadar AI. Inilah Mekanisme yang Membuat Zaadul Khotib 2.0 Berbeda.
@@ -420,7 +420,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 {/* Important alert */}
                 <FadeIn
                   delay={0.25}
-                  className="p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-amber-500/0 dark:from-amber-500/5 dark:to-transparent border border-amber-500/20 dark:border-amber-500/10 text-sm shadow-[0_4px_25px_rgba(245,158,11,0.02)]"
+                  className="p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-amber-500/0 dark:from-amber-500/5 dark:to-transparent border border-amber-500/20 dark:border-amber-500/10 text-sm shadow-[0_4px_25px_rgba(245,158,11,0.02)]"
                 >
                   <div className="flex gap-3">
                     <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
@@ -433,7 +433,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                       membantu menjaga struktur, memilih tema yang lebih relevan, dan membantu
                       penyusunan dalil, AI tetap dapat melakukan kesalahan. Karena itu, setiap hasil
                       yang dihasilkan harus ditinjau kembali, termasuk memverifikasi dalil,
-                      memastikan kesesuaian isi, and menyesuaikannya dengan kebutuhan jamaah sebelum
+                      memastikan kesesuaian isi, dan menyesuaikannya dengan kebutuhan jamaah sebelum
                       dibacakan di atas mimbar. Keilmuan, amanah, dan tanggung jawab khutbah
                       sepenuhnya tetap berada di tangan khatib.
                     </div>
@@ -466,14 +466,14 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
               </FadeIn>
 
               {/* Detailed 6 Stages Timeline Layout */}
-              <div className="relative border-l-2 border-emerald-500/20 dark:border-emerald-500/10 pl-6 sm:pl-12 ml-4 sm:ml-8 space-y-12 max-w-3xl mx-auto">
+              <div className="relative border-l-2 border-emerald-500/20 dark:border-emerald-500/10 pl-4 sm:pl-12 ml-2 sm:ml-8 space-y-12 max-w-3xl mx-auto">
                 {/* Stage 1 */}
                 <div className="relative">
                   {/* Timeline dot */}
-                  <div className="absolute -left-[39px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
+                  <div className="absolute -left-[25px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
                     1
                   </div>
-                  <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
+                  <FadeIn className="p-4 sm:p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
                     <h3 className="font-extrabold text-slate-900 dark:text-white text-lg sm:text-xl mb-4">
                       🧭 Tahap 1 — Memilih Tema yang Tepat, Bukan Sekadar Menarik
                     </h3>
@@ -493,13 +493,13 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                       <p>
                         Karena itu, Zaadul Khotib 2.0 tidak hanya menerima tema dari pengguna.
                         Sistem juga mampu membantu memberikan rekomendasi tema berdasarkan berbagai
-                        konteks, sehingga materi khutbah terasa lebih relevan dan dekat dengan
+                        konteks, sehingga materi khutbah terasa lebih relevan and dekat dengan
                         kehidupan jamaah.
                       </p>
 
                       {/* Interactive Tabs for Stage 1 */}
                       <div className="mt-6 border border-slate-200/30 dark:border-white/5 rounded-2xl p-4 sm:p-6 bg-slate-500/5 dark:bg-black/20">
-                        <div className="flex flex-wrap gap-2 mb-4 border-b border-slate-250 dark:border-white/5 pb-3">
+                        <div className="flex flex-wrap gap-2 mb-4 border-b border-slate-200 dark:border-white/5 pb-3">
                           {[
                             { id: 'hijriyah', label: '📅 Kalender Hijriyah' },
                             { id: 'masehi', label: '📆 Kalender Masehi' },
@@ -552,10 +552,10 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 {/* Stage 2 */}
                 <div className="relative">
-                  <div className="absolute -left-[39px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
+                  <div className="absolute -left-[25px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
                     2
                   </div>
-                  <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
+                  <FadeIn className="p-4 sm:p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
                     <h3 className="font-extrabold text-slate-900 dark:text-white text-lg sm:text-xl mb-4">
                       📚 Tahap 2 — Penyaringan Dalil yang Lebih Selektif
                     </h3>
@@ -608,10 +608,10 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 {/* Stage 3 */}
                 <div className="relative">
-                  <div className="absolute -left-[39px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
+                  <div className="absolute -left-[25px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
                     3
                   </div>
-                  <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
+                  <FadeIn className="p-4 sm:p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
                     <h3 className="font-extrabold text-slate-900 dark:text-white text-lg sm:text-xl mb-4">
                       🏗️ Tahap 3 — Menyusun Kerangka Khutbah yang Lebih Alami
                     </h3>
@@ -641,10 +641,10 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 {/* Stage 4 */}
                 <div className="relative">
-                  <div className="absolute -left-[39px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
+                  <div className="absolute -left-[25px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
                     4
                   </div>
-                  <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
+                  <FadeIn className="p-4 sm:p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
                     <h3 className="font-extrabold text-slate-900 dark:text-white text-lg sm:text-xl mb-4">
                       🕌 Tahap 4 — Dua Pilihan Muqaddimah Sesuai Gaya Khatib
                     </h3>
@@ -691,10 +691,10 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 {/* Stage 5 */}
                 <div className="relative">
-                  <div className="absolute -left-[39px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
+                  <div className="absolute -left-[25px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
                     5
                   </div>
-                  <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
+                  <FadeIn className="p-4 sm:p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
                     <h3 className="font-extrabold text-slate-900 dark:text-white text-lg sm:text-xl mb-4">
                       📝 Tahap 5 — Menyusun Naskah yang Lebih Nyaman Dibaca
                     </h3>
@@ -715,10 +715,10 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 {/* Stage 6 */}
                 <div className="relative">
-                  <div className="absolute -left-[39px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
+                  <div className="absolute -left-[25px] sm:-left-[65px] top-1.5 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-black text-xs sm:text-sm ring-4 ring-slate-100 dark:ring-slate-900 shadow-md">
                     6
                   </div>
-                  <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
+                  <FadeIn className="p-4 sm:p-8 rounded-3xl bg-brand-card-inner border border-slate-200/50 dark:border-white/5 hover:border-emerald-500/30 transition-all duration-300 shadow-sm">
                     <h3 className="font-extrabold text-slate-900 dark:text-white text-lg sm:text-xl mb-4">
                       🤲 Tahap 6 — Doa Penutup yang Selaras dengan Isi Khutbah
                     </h3>
@@ -745,7 +745,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
               {/* Workflow Alur Kerja Summary Box */}
               <FadeIn
                 delay={0.35}
-                className="mt-16 p-8 rounded-3xl bg-slate-500/5 border border-slate-200/50 dark:border-white/5 max-w-3xl mx-auto shadow-sm"
+                className="mt-16 p-4 sm:p-8 rounded-3xl bg-slate-500/5 border border-slate-200/50 dark:border-white/5 max-w-3xl mx-auto shadow-sm"
               >
                 <h4 className="font-extrabold text-slate-900 dark:text-white text-xl mb-6 text-center">
                   Dari Ide Menjadi Draf Khutbah dalam Satu Alur Kerja
@@ -822,7 +822,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
                     Bayangkan Persiapan Khutbah Anda Mulai Pekan Depan
                   </h2>
-                  <p className="text-slate-650 dark:text-slate-400 mt-4 leading-relaxed">
+                  <p className="text-slate-600 dark:text-slate-400 mt-4 leading-relaxed">
                     Sekarang bayangkan dua kondisi berikut yang akan Anda alami secara nyata:
                   </p>
                 </div>
@@ -832,7 +832,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 {/* Without */}
                 <FadeIn
                   delay={0.1}
-                  className="p-8 rounded-3xl bg-gradient-to-b from-red-500/5 to-transparent border border-red-500/20 dark:border-red-500/10 flex flex-col justify-between shadow-[0_4px_25px_rgba(239,68,68,0.01)]"
+                  className="p-4 sm:p-8 rounded-3xl bg-gradient-to-b from-red-500/5 to-transparent border border-red-500/20 dark:border-red-500/10 flex flex-col justify-between shadow-[0_4px_25px_rgba(239,68,68,0.01)]"
                 >
                   <div>
                     <h3 className="text-lg font-bold text-red-500 mb-6 flex items-center gap-2">
@@ -877,7 +877,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 {/* With */}
                 <FadeIn
                   delay={0.2}
-                  className="p-8 rounded-3xl bg-gradient-to-b from-emerald-500/5 to-transparent border border-emerald-500/30 dark:border-emerald-500/20 flex flex-col justify-between shadow-[0_4px_30px_rgba(16,185,129,0.03)]"
+                  className="p-4 sm:p-8 rounded-3xl bg-gradient-to-b from-emerald-500/5 to-transparent border border-emerald-500/30 dark:border-emerald-500/20 flex flex-col justify-between shadow-[0_4px_30px_rgba(16,185,129,0.03)]"
                 >
                   <div>
                     <h3 className="text-lg font-bold text-emerald-500 mb-6 flex items-center gap-2">
@@ -954,7 +954,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 </div>
               </FadeIn>
 
-              <div className="text-sm sm:text-base text-slate-600 dark:text-slate-350 leading-relaxed text-center space-y-6">
+              <div className="text-sm sm:text-base text-slate-600 dark:text-slate-200 leading-relaxed text-center space-y-6">
                 <FadeIn delay={0.1}>
                   <div className="space-y-6">
                     <p>Karena mereka memahami satu hal penting:</p>
@@ -974,7 +974,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                     </p>
 
                     {/* Khatib Control Checklist */}
-                    <div className="text-left bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 rounded-3xl p-6 sm:p-8 my-6">
+                    <div className="text-left bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 rounded-3xl p-4 sm:p-8 my-6">
                       <h4 className="font-bold text-slate-900 dark:text-white mb-4 text-sm sm:text-base">
                         Anda tetap memegang kendali penuh untuk menentukan:
                       </h4>
@@ -1032,7 +1032,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
               {/* Main Pricing Box */}
               <FadeIn
                 delay={0.1}
-                className="max-w-2xl mx-auto rounded-[2rem] bg-brand-card-inner border-2 border-emerald-500/20 p-8 sm:p-12 shadow-2xl relative overflow-hidden"
+                className="max-w-2xl mx-auto rounded-[2rem] bg-brand-card-inner border-2 border-emerald-500/20 p-4 sm:p-12 shadow-2xl relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 px-4 py-1.5 bg-emerald-500 text-white font-bold text-[10px] uppercase tracking-widest rounded-bl-xl">
                   Best Value
@@ -1193,7 +1193,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
             {/* --- IMPORTANT READ BEFORE USING --- */}
             <section className="mb-20 pt-16 border-t border-slate-200/50 dark:border-white/5 relative z-10 max-w-3xl mx-auto">
               <FadeIn>
-                <div className="p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 to-amber-500/0 dark:from-amber-500/5 dark:to-transparent border border-amber-500/20 dark:border-amber-500/10 text-sm shadow-[0_4px_25px_rgba(245,158,11,0.02)]">
+                <div className="p-4 sm:p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 to-amber-500/0 dark:from-amber-500/5 dark:to-transparent border border-amber-500/20 dark:border-amber-500/10 text-sm shadow-[0_4px_25px_rgba(245,158,11,0.02)]">
                   <div className="flex gap-3">
                     <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
                     <div>
@@ -1249,7 +1249,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                       <div className="rounded-xl border border-slate-200/50 dark:border-white/5 bg-slate-500/5 overflow-hidden transition-all duration-300">
                         <button
                           onClick={() => toggleFaq(index)}
-                          className="w-full px-6 py-4 text-left flex justify-between items-center font-bold text-sm sm:text-base text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition-colors focus:outline-none"
+                          className="w-full px-4 py-3 sm:px-6 sm:py-4 text-left flex justify-between items-center font-bold text-sm sm:text-base text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition-colors focus:outline-none"
                         >
                           <span>{faq.q}</span>
                           <ChevronDown
@@ -1257,7 +1257,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                           />
                         </button>
                         {isOpen && (
-                          <div className="px-6 pb-4 text-xs sm:text-sm text-slate-650 dark:text-slate-400 leading-relaxed border-t border-slate-200/30 dark:border-white/5 pt-3 bg-slate-500/10">
+                          <div className="px-4 py-3 sm:px-6 sm:pb-4 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-200/30 dark:border-white/5 pt-3 bg-slate-500/10">
                             {faq.a}
                           </div>
                         )}
