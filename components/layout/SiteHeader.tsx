@@ -55,7 +55,7 @@ export function SiteHeader() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600 dark:text-slate-400">
-            {globalData.footer.nav.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.link}
