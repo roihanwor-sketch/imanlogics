@@ -14,6 +14,7 @@ collections:
         name: "global"
         file: "data/global.json"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
           - {label: "Warna Background Utama", name: "bg_color", widget: "color", default: "#0B0F19"}
           - label: "Footer"
             name: "footer"
@@ -44,6 +45,7 @@ collections:
         name: "beranda"
         file: "data/beranda.json"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
           - label: "Hero Section"
             name: "hero"
             widget: "object"
@@ -105,6 +107,7 @@ collections:
         name: "profil"
         file: "data/profil.json"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
           - {label: "Nama", name: "name", widget: "string", default: "Iman Logics"}
           - {label: "Deskripsi Profil", name: "description", widget: "text"}
           - label: "Daftar Badge (Keahlian/Minat)"
@@ -116,6 +119,7 @@ collections:
         name: "links"
         file: "data/links.json"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
           - {label: "Avatar Profil", name: "avatar", widget: "image", default: "/logo.png"}
           - {label: "Nama Profil", name: "title", widget: "string", default: "Iman Logics"}
           - {label: "Tagline", name: "tagline", widget: "string", default: "AI Systems • Digital Products"}
@@ -143,6 +147,7 @@ collections:
             name: "items"
             widget: "list"
             fields:
+              - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
               - {label: "Slug (URL)", name: "slug", widget: "string"}
               - {label: "Nama/Judul", name: "name", widget: "string"}
               - {label: "Kategori/Badge", name: "badge", widget: "string"}
@@ -272,6 +277,7 @@ collections:
             name: "items"
             widget: "list"
             fields:
+              - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
               - {label: "Slug (URL)", name: "slug", widget: "string"}
               - {label: "Nama/Judul", name: "name", widget: "string"}
               - {label: "Kategori/Badge", name: "badge", widget: "string"}
@@ -400,6 +406,7 @@ collections:
             name: "items"
             widget: "list"
             fields:
+              - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
               - {label: "Judul Tahapan", name: "title", widget: "string"}
               - {label: "Deskripsi", name: "description", widget: "text"}
               - label: "Status Badge"
@@ -415,6 +422,7 @@ collections:
         name: "privacy_policy"
         file: "data/privacy-policy.json"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
           - {label: "Judul", name: "title", widget: "string"}
           - {label: "Tanggal Update", name: "last_updated", widget: "string"}
           - {label: "SEO Title", name: "seo_title", widget: "string"}
@@ -424,6 +432,7 @@ collections:
         name: "terms_of_service"
         file: "data/terms-of-service.json"
         fields:
+          - {label: "Draft", name: "draft", widget: "boolean", default: true, required: false}
           - {label: "Judul", name: "title", widget: "string"}
           - {label: "Tanggal Update", name: "last_updated", widget: "string"}
           - {label: "SEO Title", name: "seo_title", widget: "string"}

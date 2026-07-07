@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { notFound } from 'next/navigation'
 import { SiteHeader } from '@/components/layout/SiteHeader'
 import { SiteFooter } from '@/components/layout/SiteFooter'
 import { FadeIn } from '@/components/shared/FadeIn'
@@ -16,6 +17,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function TermsOfServicePage() {
+  if (process.env.NODE_ENV !== 'development' && (termsData as any).draft) {
+    notFound()
+  }
+
   const contentHtml = await marked.parse(termsData.body)
 
   return (

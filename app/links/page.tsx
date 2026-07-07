@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import { globalData } from '@/lib/data'
 import linksDataRaw from '@/data/links.json'
 import { LinksData } from '@/types/data'
@@ -17,6 +18,10 @@ export const metadata: Metadata = {
 }
 
 export default function LinksPage() {
+  if (process.env.NODE_ENV !== 'development' && (linksData as any).draft) {
+    notFound()
+  }
+
   const getSocialIcon = (label: string) => {
     switch (label.toLowerCase()) {
       case 'instagram':

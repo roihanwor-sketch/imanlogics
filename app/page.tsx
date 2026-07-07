@@ -16,6 +16,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const { hero, fokus, tentang, alur, cta } = berandaData
+  const roadmapItems =
+    process.env.NODE_ENV === 'development'
+      ? roadmapData.items
+      : roadmapData.items.filter((item: any) => !item.draft)
 
   return (
     <>
@@ -481,7 +485,7 @@ export default function Home() {
               {/* Garis penghubung timeline di belakang kartu pada desktop */}
               <div className="hidden lg:block absolute top-[110px] left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-cyan-500/25 to-transparent pointer-events-none z-0"></div>
 
-              {roadmapData.items.map((item, index) => {
+              {roadmapItems.map((item, index) => {
                 const accentClasses: Record<string, string> = {
                   inprogress:
                     'hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(6,182,212,0.15)]',
