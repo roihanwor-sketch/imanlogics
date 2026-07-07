@@ -4,7 +4,7 @@
       "slug": "zaadul-khotib",
       "name": "Zaadul Khotib 2.0",
       "badge": "Asisten AI Khutbah",
-      "description": "Asisten AI Khutbah Jum'at untuk menyusun draft khutbah berkualitas secara sistematis dalam hitungan menit.",
+      "description": "Platform Persiapan Khutbah Jumat Berbasis AI yang Membantu Anda Menyusun Draf Khutbah Secara Lebih Terstruktur, Lebih Relevan, dan Lebih Siap Ditinjau Sebelum Dibacakan di Mimbar.",
       "status": "live",
       "icon": "book",
       "hero": {
@@ -330,10 +330,7 @@
           }
         ]
       },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"]
     },
     {
       "slug": "ai-personality-analyzer",
@@ -504,10 +501,7 @@
           }
         ]
       },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"]
     },
     {
       "slug": "digital-product-maker",
@@ -528,12 +522,7 @@
           "href": "#masalah"
         }
       },
-      "trustBar": [
-        "Idea Validation",
-        "Product Blueprint",
-        "Feature Planning",
-        "Launch Strategy"
-      ],
+      "trustBar": ["Idea Validation", "Product Blueprint", "Feature Planning", "Launch Strategy"],
       "problems": {
         "title": "Tantangan Pengembangan",
         "subtitle": "Masalah yang Dipecahkan",
@@ -678,10 +667,7 @@
           }
         ]
       },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"]
     },
     {
       "slug": "cv-maker",
@@ -702,12 +688,7 @@
           "href": "#masalah"
         }
       },
-      "trustBar": [
-        "ATS Friendly",
-        "CV Analyzer",
-        "Professional Rewrite",
-        "Career Optimization"
-      ],
+      "trustBar": ["ATS Friendly", "CV Analyzer", "Professional Rewrite", "Career Optimization"],
       "problems": {
         "title": "Tantangan Pengembangan",
         "subtitle": "Masalah yang Dipecahkan",
@@ -852,10 +833,7 @@
           }
         ]
       },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"]
     },
     {
       "slug": "youtube-analyzer",
@@ -1026,10 +1004,7 @@
           }
         ]
       },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"]
     },
     {
       "slug": "website-etalase",
@@ -1201,10 +1176,7 @@
           }
         ]
       },
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ]
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"]
     }
   ]
 }

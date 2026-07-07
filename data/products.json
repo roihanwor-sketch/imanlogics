@@ -180,14 +180,11 @@
           "icon": "mic"
         }
       },
-      "description": "Asisten AI Khutbah Jum'at untuk menyusun draft khutbah berkualitas secara sistematis dalam hitungan menit."
+      "description": "Platform Persiapan Khutbah Jumat Berbasis AI yang Membantu Anda Menyusun Draf Khutbah Secara Lebih Terstruktur, Lebih Relevan, dan Lebih Siap Ditinjau Sebelum Dibacakan di Mimbar."
     },
     {
       "badge": "AI Coach • Cognitive Training",
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ],
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"],
       "pricing": {
         "title": "Ambil Kendali atas Cara Berpikir Anda",
         "subtitle": "Orang sukses tidak selalu memiliki informasi paling banyak, tetapi mampu mengolah informasi dengan lebih baik. ThinkForge membantu Anda membangun kemampuan tersebut sedikit demi sedikit.",
@@ -380,10 +377,7 @@
     },
     {
       "badge": "AI • Self Development",
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ],
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"],
       "pricing": {
         "title": "Memahami Diri Adalah Investasi Terbaik",
         "subtitle": "Semakin baik Anda mengenal diri sendiri, semakin kecil kemungkinan mengambil keputusan hanya karena ikut-ikutan. Bangun masa depan berdasarkan potensi Anda sendiri.",
@@ -576,10 +570,7 @@
     },
     {
       "badge": "System / Framework",
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ],
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"],
       "pricing": {
         "title": "Bangun Produk dengan Cara yang Lebih Cerdas",
         "subtitle": "Kesalahan terbesar bukanlah gagal meluncurkan produk, tetapi menghabiskan waktu membangun sesuatu yang sejak awal tidak dibutuhkan pasar. Mulailah dengan fondasi yang tepat.",
@@ -724,12 +715,7 @@
           "href": "#masalah"
         }
       },
-      "trustBar": [
-        "Idea Validation",
-        "Product Blueprint",
-        "Feature Planning",
-        "Launch Strategy"
-      ],
+      "trustBar": ["Idea Validation", "Product Blueprint", "Feature Planning", "Launch Strategy"],
       "benefits": {
         "title": "Mengapa Memilih Gem End-to-End Digital Product Maker?",
         "items": [
@@ -775,10 +761,7 @@
     },
     {
       "badge": "AI Tool",
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ],
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"],
       "pricing": {
         "title": "Tingkatkan Peluang Dipanggil Interview",
         "subtitle": "Recruiter sering hanya menghabiskan beberapa detik untuk melihat sebuah CV. Pastikan beberapa detik tersebut cukup untuk membuat mereka ingin mengenal Anda lebih jauh.",
@@ -921,12 +904,7 @@
           "href": "#masalah"
         }
       },
-      "trustBar": [
-        "ATS Friendly",
-        "CV Analyzer",
-        "Professional Rewrite",
-        "Career Optimization"
-      ],
+      "trustBar": ["ATS Friendly", "CV Analyzer", "Professional Rewrite", "Career Optimization"],
       "benefits": {
         "title": "Mengapa Memilih Gem Ini?",
         "items": [
@@ -972,10 +950,7 @@
     },
     {
       "badge": "AI Research Assistant",
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ],
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"],
       "pricing": {
         "title": "Belajar Lebih Banyak dengan Waktu yang Lebih Sedikit",
         "subtitle": "Tidak semua ilmu harus dipelajari dengan menghabiskan berjam-jam di depan layar. Gunakan waktu Anda untuk memahami inti, bukan sekadar menonton.",
@@ -1169,10 +1144,7 @@
     },
     {
       "badge": "Website Template",
-      "showcaseImages": [
-        "placeholder-showcase-1.png",
-        "placeholder-showcase-2.png"
-      ],
+      "showcaseImages": ["placeholder-showcase-1.png", "placeholder-showcase-2.png"],
       "pricing": {
         "title": "Bangun Kepercayaan Sebelum Menawarkan Produk",
         "subtitle": "Calon pelanggan sering kali menilai kualitas bisnis dari tampilan websitenya. Website yang profesional membantu membangun kredibilitas bahkan sebelum mereka membaca detail produk Anda.",
