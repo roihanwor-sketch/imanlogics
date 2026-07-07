@@ -15,6 +15,8 @@ import {
   Calendar,
   Globe,
   MapPin,
+  Flame,
+  Plus,
 } from 'lucide-react'
 
 interface ZaadulKhotibTemplateProps {
@@ -33,33 +35,35 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
   const faqs = [
     {
       q: 'Apakah saya masih perlu mengecek hasil AI?',
-      a: 'Ya. Justru itulah yang sangat kami anjurkan. Zaadul Khotib 2.0 membantu mempercepat proses penyusunan draf, tetapi pemeriksaan akhir, verifikasi dalil, dan kesesuaian isi tetap menjadi tanggung jawab dan amanah keilmuan pengguna.',
+      a: 'Ya. Justru itulah yang kami anjurkan. Zaadul Khotib 2.0 membantu mempercepat proses penyusunan, tetapi pemeriksaan akhir tetap menjadi tanggung jawab pengguna.',
     },
     {
       q: 'Saya sudah memakai ChatGPT. Mengapa saya masih membutuhkan Zaadul Khotib 2.0?',
-      a: "ChatGPT adalah AI serbaguna (generalist). Zaadul Khotib 2.0 dirancang dan dilatih khusus untuk memahami struktur khutbah Jumat (khutbah pertama/kedua, muqaddimah syar'iyyah, doa penutup terarah) serta mempertimbangkan momentum lokal (Hijriyah, Masehi, Indonesia) sehingga hasilnya jauh lebih terstruktur dan referensial.",
+      a: 'ChatGPT adalah AI serbaguna. Zaadul Khotib 2.0 dirancang secara khusus untuk membantu proses persiapan khutbah Jumat. Perbedaannya bukan hanya pada hasil akhirnya, tetapi pada mekanisme penyusunannya yang disesuaikan dengan kebutuhan seorang khatib.',
     },
     {
       q: 'Apakah hasilnya pasti benar?',
-      a: 'Tidak ada sistem AI yang dapat menjamin hasilnya selalu 100% benar. Itulah mengapa setiap hasil yang dihasilkan tetap harus ditinjau kembali, diedit, dan diselaraskan oleh khatib sebelum dibacakan di atas mimbar.',
+      a: 'Tidak ada sistem AI yang dapat menjamin hasilnya selalu benar. Karena itu setiap hasil tetap harus ditinjau kembali sebelum digunakan.',
     },
     {
       q: 'Apakah semua dalil dijamin shahih?',
-      a: 'Sistem dirancang untuk memprioritaskan dalil yang kuat (maqbul) dan dikenal luas dalam khazanah Islam. Namun, pengguna tetap berkewajiban melakukan verifikasi mandiri terhadap status riwayat dalil tersebut.',
+      a: 'Sistem dirancang untuk memprioritaskan dalil yang lebih kuat dan lebih dikenal dalam literatur Islam. Namun pengguna tetap berkewajiban memverifikasi setiap dalil yang digunakan.',
     },
     {
       q: 'Apakah saya boleh mengubah hasilnya?',
-      a: 'Tentu. Bahkan kami sangat menganjurkannya. Anda dapat menambahkan pengalaman pribadi, mengubah gaya bahasa agar sesuai dengan karakter jamaah setempat, serta mempersingkat atau memperpanjang materi.',
+      a: 'Tentu. Bahkan kami sangat menganjurkannya. Sesuaikan dengan kondisi jamaah, waktu, tempat, dan gaya penyampaian Anda.',
     },
     {
       q: 'Apakah saya harus bisa membuat prompt?',
-      a: 'Tidak. Anda cukup memilih tema, memilih gaya muqaddimah, dan mengikuti alur kerja terarah yang telah disediakan oleh sistem. Seluruh proses teknis pembuatan perintah (prompts) ditangani oleh sistem di belakang layar.',
+      a: 'Tidak. Anda cukup memilih tema dan mengikuti alur yang telah disediakan. Seluruh proses teknis dilakukan oleh sistem.',
     },
     {
       q: 'Apakah ada batas penggunaan?',
-      a: 'Selama layanan tersedia sesuai ketentuan yang berlaku, Anda dapat menggunakannya tanpa batasan untuk menyusun berbagai draf khutbah sesuai kebutuhan dakwah Anda.',
+      a: 'Selama layanan tersedia sesuai ketentuan yang berlaku, Anda dapat menggunakannya untuk membantu menyusun berbagai draf khutbah sesuai kebutuhan.',
     },
   ]
+
+  const waLink = 'https://wa.me/6285190846209?text=Saya%20tertarik%20dengan%20Zaadul%20Khotib%202.0'
 
   return (
     <>
@@ -114,13 +118,16 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 </p>
               </FadeIn>
 
+              {/* CTA 1 (Hero) */}
               <FadeIn delay={0.4}>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="#harga"
+                    href={waLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-8 py-4 text-base font-bold rounded-2xl text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/25 transition-transform hover:-translate-y-0.5"
                   >
-                    🚀 Mulai Gunakan Zaadul Khotib 2.0
+                    🚀 Ya, Saya Siap Menggunakan Zaadul Khotib 2.0
                   </a>
                   <a
                     href="#masalah"
@@ -156,7 +163,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
               <FadeIn>
                 <div className="text-center mb-12">
                   <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-500 block mb-2">
-                    Gelisah & Tantangan Khatib
+                    Tantangan Khatib
                   </span>
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
                     Menjelang Hari Jumat, Banyak Khatib Menghadapi Tantangan yang Sama
@@ -164,73 +171,56 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 </div>
               </FadeIn>
 
-              <div className="space-y-6 text-base sm:text-lg text-slate-600 dark:text-slate-350 leading-relaxed max-w-3xl mx-auto">
+              <div className="space-y-6 text-base sm:text-lg text-slate-650 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto">
                 <FadeIn delay={0.1}>
-                  <div className="font-medium text-slate-800 dark:text-slate-200 text-center text-xl italic py-4 bg-slate-500/5 rounded-2xl border border-slate-200/30 dark:border-white/5 px-6">
-                    {
-                      '"Bukan karena kekurangan ilmu, bukan pula tidak mampu menyampaikan nasihat. Namun karena proses mempersiapkan khutbah berkualitas memang menyita banyak waktu."'
-                    }
-                  </div>
-                </FadeIn>
-
-                <FadeIn delay={0.15}>
-                  <p className="mt-6">
-                    Mempersiapkan materi khutbah membutuhkan perhatian ekstra pada detail teknis:
-                    menentukan tema yang tepat, menyaring dalil referensial, merapikan struktur dua
-                    khutbah, menerjemahkan teks Arab secara presisi, hingga menyusun doa penutup.
+                  <p>Bukan karena mereka kekurangan ilmu.</p>
+                  <p>Bukan pula karena mereka tidak mampu menyampaikan nasihat.</p>
+                  <p className="font-semibold text-slate-900 dark:text-white">
+                    Namun karena proses mempersiapkan satu khutbah yang baik memang membutuhkan
+                    banyak waktu dan perhatian.
                   </p>
-                </FadeIn>
-
-                {/* Pain Points Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
-                  {[
-                    'Menentukan tema yang tepat untuk jamaah',
-                    'Mencari dalil yang shahih & relevan',
-                    'Memastikan struktur khutbah tetap tertata',
-                    'Merapikan teks Arab beserta terjemahannya',
-                  ].map((point, index) => (
-                    <FadeIn
-                      key={index}
-                      delay={0.1 * index}
-                      className="flex items-start gap-3 p-4 rounded-xl bg-amber-500/5 dark:bg-amber-500/5 border border-amber-500/10"
-                    >
-                      <div className="w-6 h-6 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center flex-shrink-0 text-sm font-bold">
-                        !
-                      </div>
-                      <span className="text-sm font-semibold text-slate-800 dark:text-slate-300">
-                        {point}
-                      </span>
-                    </FadeIn>
-                  ))}
-                </div>
-
-                <FadeIn delay={0.2}>
+                  <p>
+                    Mulai dari menentukan tema yang tepat, mencari dalil yang relevan, memastikan
+                    susunan khutbah tetap tertata, merapikan teks Arab beserta terjemahannya, hingga
+                    menyiapkan penutup yang sesuai dengan isi khutbah.
+                  </p>
                   <p>
                     Di tengah kesibukan mengajar, bekerja, berdakwah, atau mengurus keluarga, proses
-                    ini sering kali menjadi beban berulang setiap pekan. Akibatnya, naskah sering
-                    kali baru selesai disusun pada Kamis malam—bahkan hanya beberapa jam sebelum
-                    azan Jumat berkumandang.
+                    ini sering kali menjadi beban yang harus diulang setiap pekan.
                   </p>
-                </FadeIn>
-
-                <FadeIn delay={0.25}>
-                  <p className="font-semibold text-slate-900 dark:text-white border-l-4 border-emerald-500 pl-4 my-6">
+                  <p>
+                    Akibatnya, tidak sedikit khatib yang baru mulai menyusun khutbah pada Kamis
+                    malam, bahkan ada yang masih menyelesaikannya beberapa jam sebelum azan Jumat
+                    dikumandangkan.
+                  </p>
+                  <p className="font-semibold text-slate-900 dark:text-white border-l-4 border-emerald-500 pl-4 py-1">
                     {
-                      "Padahal waktu berharga itu seharusnya digunakan untuk muraja'ah, memperdalam pemahaman materi, melatih penyampaian, dan menata ketulusan hati sebelum menaiki mimbar."
+                      "Padahal waktu yang paling berharga seharusnya digunakan untuk muraja'ah, memperdalam pemahaman materi, memperbaiki penyampaian, dan mempersiapkan hati sebelum berdiri di atas mimbar."
                     }
                   </p>
                 </FadeIn>
 
-                <FadeIn delay={0.3} className="text-center pt-8">
+                <FadeIn delay={0.15} className="text-center pt-8">
                   <div className="p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]">
                     <h3 className="text-xl font-bold text-emerald-600 dark:text-emerald-400 mb-4">
                       Di Sinilah Zaadul Khotib 2.0 Hadir
                     </h3>
-                    <p className="text-sm sm:text-base leading-relaxed">
-                      Kami hadir **bukan untuk menggantikan peran khatib**, melainkan meringankan
-                      pekerjaan teknis penyusunan draf khutbah. Dengan begitu, Anda memiliki waktu
-                      penuh untuk fokus pada pendalaman ilmu dan penyampaian yang ikhlas.
+                    <p className="text-sm sm:text-base leading-relaxed mb-6">
+                      Bukan untuk menggantikan peran seorang khatib. Melainkan membantu meringankan
+                      pekerjaan teknis penyusunan draf khutbah, sehingga Anda dapat lebih fokus pada
+                      ilmu, dakwah, dan penyampaian. Karena AI seharusnya membantu Anda menyiapkan
+                      khutbah dengan lebih tenang, bukan menambah pekerjaan baru.
                     </p>
+
+                    {/* CTA 2 (Post-Problem) */}
+                    <a
+                      href={waLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 text-sm font-bold rounded-xl text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
+                    >
+                      🚀 Ya, Saya Mau Akses Zaadul Khotib 2.0
+                    </a>
                   </div>
                 </FadeIn>
               </div>
@@ -241,279 +231,510 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
               <FadeIn>
                 <div className="text-center mb-12">
                   <span className="text-xs font-extrabold uppercase tracking-widest text-red-500 block mb-2">
-                    Perbandingan Alat
+                    Kelemahan AI Umum
                   </span>
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
-                    Mengapa AI Umum (seperti ChatGPT) Belum Cukup untuk Menyusun Khutbah Jumat?
+                    Mengapa AI Umum Belum Cukup untuk Membantu Menyusun Khutbah Jumat?
                   </h2>
+                  <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
+                    Banyak orang mencoba menggunakan AI seperti ChatGPT untuk membuat khutbah.
+                    Sekilas memang terlihat praktis. Namun setelah dicoba, biasanya muncul masalah
+                    yang sama berulang kali.
+                  </p>
                 </div>
               </FadeIn>
 
               <div className="space-y-6 max-w-3xl mx-auto">
-                <FadeIn delay={0.1}>
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-center font-medium">
-                    Banyak orang menggunakan ChatGPT untuk menulis naskah khutbah. Hasilnya sekilas
-                    praktis, namun khatib biasanya menemui masalah-masalah struktural berikut:
-                  </p>
-                </FadeIn>
-
-                <div className="space-y-4 mt-8">
+                <div className="space-y-6">
                   {[
                     {
-                      title: 'Struktur Khutbah Masih Berantakan',
-                      desc: 'AI umum menghasilkan satu tulisan panjang layaknya artikel blog atau ceramah biasa. Padahal khutbah Jumat wajib terbagi atas khutbah pertama dan kedua dengan kaidah rukun khutbah yang jelas.',
+                      title: '❌ Struktur Khutbah Masih Berantakan',
+                      desc: 'AI umum sering menghasilkan satu tulisan panjang seperti artikel atau ceramah biasa. Padahal khutbah Jumat memiliki struktur tersendiri. Khutbah pertama dan khutbah kedua perlu tersusun dengan jelas agar lebih mudah ditinjau, disesuaikan, dan disampaikan di atas mimbar.',
                     },
                     {
-                      title: 'Dalil Kurang Kaya atau Tidak Alami',
-                      desc: "Sering kali hanya disisipkan satu dalil, terjemahan tanpa teks Arab asli, atau dalil menumpuk di satu bagian. Khutbah yang baik membutuhkan dalil terintegrasi (Al-Qur'an, hadits, atsar sahabat, hikmah salaf) secara bertahap.",
+                      title: '❌ Dalil Kurang Kaya atau Tidak Disisipkan Secara Alami',
+                      desc: "Sering kali AI hanya memberikan satu atau dua dalil, kemudian sisanya diisi dengan penjelasan panjang. Ada pula yang hanya menampilkan terjemahan tanpa teks Arab, atau justru menumpuk dalil di satu bagian sehingga alur khutbah terasa kurang mengalir. Padahal dalam praktiknya, khutbah yang baik biasanya membangun pembahasan secara bertahap, dengan ayat Al-Qur'an, hadits, atsar, maupun perkataan ulama yang disisipkan pada bagian-bagian yang paling relevan.",
                     },
                     {
-                      title: 'Muqaddimah Terasa Seperti Paragraf Pembuka Biasa',
-                      desc: 'Alih-alih menggunakan Khutbatul Hajah syar\'iyyah atau pembuka berkarakter, AI umum sering memulainya dengan sapaan kaku seperti "Jamaah Jumat yang dirahmati Allah...".',
+                      title: '❌ Muqaddimah Terasa Seperti Paragraf Pembuka Biasa',
+                      desc: 'Alih-alih membuka khutbah dengan nuansa yang lazim dikenal oleh para khatib, AI umum sering memulai dengan kalimat seperti: "Jamaah Jumat yang dirahmati Allah..." Padahal banyak khatib menginginkan pembuka yang lebih sesuai dengan tradisi khutbah, baik menggunakan Khutbatul Hajah maupun muqaddimah yang disusun secara dinamis sesuai tema.',
                     },
                     {
-                      title: 'Tema Kurang Relevan dengan Momentum',
-                      desc: 'AI umum tidak memahami konteks waktu, seperti kalender Hijriyah (Ramadan, Dzulhijjah), kalender Masehi (tahun ajaran baru), atau fenomena bencana alam aktual di Indonesia.',
+                      title: '❌ Tema Kurang Relevan dengan Momentum',
+                      desc: 'Ketika diminta membuat khutbah, AI biasanya hanya mengembangkan tema yang diberikan. AI tidak memahami bahwa khutbah Jumat sering kali perlu menyesuaikan momentum. Misalnya: memasuki Ramadan, menjelang Idul Adha, awal Muharram, musim keberangkatan haji, tahun ajaran baru, bencana yang terjadi di Indonesia, ataupun peristiwa penting yang sedang menjadi perhatian umat. Akibatnya, tema terasa generik dan kurang membumi.',
                     },
                     {
-                      title: 'Terlalu Banyak Hal yang Masih Harus Dibereskan',
-                      desc: 'Hasil akhirnya memerlukan banyak penyuntingan manual: mencari teks Arab, memformat doa, menyesuaikan struktur rukun, dsb. Pada akhirnya, tidak menghemat waktu.',
+                      title: '❌ Terlalu Banyak Hal yang Masih Harus Dibereskan',
+                      desc: 'Setelah hasil keluar, pekerjaan belum selesai. Anda masih harus: memperbaiki struktur, memindahkan dalil, mencari teks Arab, memeriksa referensi, menyesuaikan muqaddimah, merapikan doa, memastikan alurnya enak dibaca. Yang seharusnya menghemat waktu, justru sering menambah pekerjaan.',
                     },
                   ].map((item, index) => (
                     <FadeIn
                       key={index}
                       delay={0.1 * index}
-                      className="p-6 rounded-2xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 hover:border-red-500/20 transition-all"
+                      className="p-6 sm:p-8 rounded-2xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/50 dark:border-white/5 hover:border-red-500/20 transition-all"
                     >
-                      <div className="flex gap-4">
-                        <div className="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center flex-shrink-0 font-bold mt-1">
-                          <X className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-slate-900 dark:text-white mb-2 text-base sm:text-lg">
-                            {item.title}
-                          </h4>
-                          <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                            {item.desc}
-                          </p>
-                        </div>
-                      </div>
+                      <h4 className="font-extrabold text-slate-900 dark:text-white mb-3 text-lg">
+                        {item.title}
+                      </h4>
+                      <p className="text-sm sm:text-base text-slate-650 dark:text-slate-400 leading-relaxed">
+                        {item.desc}
+                      </p>
                     </FadeIn>
                   ))}
                 </div>
               </div>
             </section>
 
-            {/* --- MEKANISME ZAADUL KHOTIB 2.0 --- */}
+            {/* --- THE MECHANISM & WORKFLOW --- */}
+            <section className="mb-20 pt-16 border-t border-slate-200/50 dark:border-white/5 relative z-10">
+              <FadeIn>
+                <div className="text-center mb-12">
+                  <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-500 block mb-2">
+                    Alur Kerja Baru
+                  </span>
+                  <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                    Bayangkan Jika Semua Proses Itu Bisa Dibantu Dalam Satu Alur Kerja
+                  </h2>
+                </div>
+              </FadeIn>
+
+              <div className="space-y-6 text-base sm:text-lg text-slate-650 dark:text-slate-350 leading-relaxed max-w-3xl mx-auto">
+                <FadeIn delay={0.1}>
+                  <p>
+                    Bukan sekadar menghasilkan teks. Tetapi membantu Anda sejak tahap paling awal.
+                    Mulai dari memilih tema yang tepat, menyusun kerangka, menempatkan dalil pada
+                    bagian yang sesuai, menyediakan pilihan muqaddimah, merapikan teks Arab dan
+                    terjemahan, hingga menghasilkan draf khutbah yang jauh lebih siap untuk
+                    ditinjau.
+                  </p>
+                  <p className="font-bold text-slate-900 dark:text-white">
+                    Itulah alasan kami membangun Zaadul Khotib 2.0.
+                  </p>
+                  <p>
+                    Bukan sebagai AI pembuat khutbah. Melainkan sebagai Platform Persiapan Khutbah
+                    Jumat Berbasis AI yang dirancang khusus untuk membantu proses persiapan khutbah
+                    secara lebih sistematis.
+                  </p>
+                </FadeIn>
+
+                <FadeIn
+                  delay={0.2}
+                  className="p-8 rounded-3xl bg-emerald-500/5 border border-emerald-500/10 my-8"
+                >
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
+                    Bukan Sekadar AI. Inilah Mekanisme yang Membuat Zaadul Khotib 2.0 Berbeda.
+                  </h3>
+                  <p className="text-sm sm:text-base leading-relaxed mb-4">
+                    Sebagian besar AI bekerja dengan cara yang sederhana: Anda memberi perintah
+                    &rarr; AI langsung menulis. Zaadul Khotib 2.0 tidak berhenti sampai di sana.
+                    Sebelum draf khutbah disusun, sistem terlebih dahulu melewati serangkaian
+                    tahapan yang dirancang khusus untuk kebutuhan khutbah Jumat.
+                  </p>
+                  <p className="text-sm sm:text-base leading-relaxed">
+                    Mulai dari memahami tema, menyesuaikannya dengan momentum yang sedang
+                    berlangsung, menyusun kerangka dua khutbah, memilih muqaddimah sesuai preferensi
+                    pengguna, membantu memilih dalil yang relevan, hingga merangkai seluruh
+                    pembahasan menjadi alur yang lebih alami dan mudah ditinjau.
+                  </p>
+                  <p className="text-sm sm:text-base leading-relaxed mt-4 font-semibold text-emerald-600 dark:text-emerald-400">
+                    Dengan pendekatan inilah hasil yang diperoleh tidak lagi terasa seperti artikel
+                    AI yang dipotong menjadi dua, tetapi lebih menyerupai draf khutbah yang memang
+                    disusun dengan mempertimbangkan karakteristik khutbah Jumat. AI membantu
+                    menyusun drafnya. Khatib tetap memegang kendali atas ilmu, ketelitian, dan
+                    amanah penyampaiannya.
+                  </p>
+                </FadeIn>
+
+                {/* Important alert */}
+                <FadeIn
+                  delay={0.25}
+                  className="p-6 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-sm"
+                >
+                  <div className="flex gap-3">
+                    <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-bold text-slate-900 dark:text-white block mb-1">
+                        ⚠️ Penting untuk Diketahui
+                      </span>
+                      Zaadul Khotib 2.0 adalah asisten penyusun draf khutbah, bukan pengganti peran
+                      seorang khatib. Meskipun sistem dirancang dengan berbagai mekanisme untuk
+                      membantu menjaga struktur, memilih tema yang lebih relevan, dan membantu
+                      penyusunan dalil, AI tetap dapat melakukan kesalahan. Karena itu, setiap hasil
+                      yang dihasilkan harus ditinjau kembali, termasuk memverifikasi dalil,
+                      memastikan kesesuaian isi, dan menyesuaikannya dengan kebutuhan jamaah sebelum
+                      dibacakan di atas mimbar. Keilmuan, amanah, dan tanggung jawab khutbah
+                      sepenuhnya tetap berada di tangan khatib.
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+            </section>
+
+            {/* --- THE 6 STAGES (UNABRIDGED DETAILS) --- */}
             <section className="mb-20 pt-16 border-t border-slate-200/50 dark:border-white/5 relative z-10">
               <FadeIn>
                 <div className="text-center mb-16">
                   <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-500 block mb-2">
-                    Di Balik Layar
+                    Mengapa Berbeda?
                   </span>
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
-                    Mekanisme Sistem Zaadul Khotib 2.0
+                    Mengapa Zaadul Khotib 2.0 Berbeda?
                   </h2>
-                  <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
-                    Berbeda dengan cara kerja AI biasa yang langsung menulis dari satu perintah,
-                    Zaadul Khotib 2.0 bekerja melalui 6 tahapan terstruktur yang dirancang khusus:
+                  <p className="text-slate-650 dark:text-slate-400 mt-4 max-w-2xl mx-auto leading-relaxed">
+                    Banyak produk AI menjual hasil akhir. Zaadul Khotib 2.0 justru dibangun dengan
+                    cara yang berbeda. Kami percaya bahwa khutbah yang baik lahir dari proses
+                    persiapan yang baik. Karena itu, sebelum menghasilkan satu naskah khutbah,
+                    sistem tidak langsung menulis. Ia terlebih dahulu melewati serangkaian tahapan
+                    yang dirancang khusus untuk kebutuhan khutbah Jumat. Setiap tahapan memiliki
+                    tujuan yang berbeda, menyelesaikan masalah yang berbeda, dan seluruh tahapan
+                    tersebut bekerja bersama agar hasil akhirnya jauh lebih terarah dibanding
+                    sekadar meminta AI menulis sebuah khutbah.
                   </p>
                 </div>
               </FadeIn>
 
-              {/* 6 Stages Timeline / Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Detailed 6 Stages Layout */}
+              <div className="space-y-12 max-w-3xl mx-auto">
                 {/* Stage 1 */}
-                <FadeIn
-                  delay={0.1}
-                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                        1
-                      </div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-lg">
-                        Tahap 1 — Memilih Tema yang Tepat & Relevan
-                      </h3>
+                <FadeIn className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black">
+                      1
                     </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                      Menentukan tema adalah tantangan tersendiri. Sistem membantu memberikan
-                      rekomendasi tema berdasarkan berbagai konteks:
+                    <h3 className="font-extrabold text-slate-900 dark:text-white text-xl">
+                      🧭 Tahap 1 — Memilih Tema yang Tepat, Bukan Sekadar Menarik
+                    </h3>
+                  </div>
+                  <div className="text-sm sm:text-base text-slate-650 dark:text-slate-350 space-y-4 leading-relaxed">
+                    <p>
+                      {
+                        'Salah satu tantangan terbesar seorang khatib bukanlah berbicara. Tetapi menentukan... '
+                      }
+                      <span className="font-semibold text-slate-900 dark:text-white">
+                        {'"Jumat ini, saya harus membahas apa?"'}
+                      </span>
                     </p>
-                    <ul className="space-y-3 text-xs font-semibold text-slate-700 dark:text-slate-350">
-                      <li className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-emerald-500" />
-                        <span>**Kalender Hijriyah:** Ramadan, Syawal, Muharram, dll.</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Globe className="w-4 h-4 text-emerald-500" />
-                        <span>**Kalender Masehi:** Tahun ajaran baru, awal/akhir tahun, dll.</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-emerald-500" />
-                        <span>**Konteks Indonesia:** Fenomena sosial, bencana alam, dll.</span>
-                      </li>
-                    </ul>
+                    <p>
+                      Tema yang baik bukan hanya menarik. Tetapi juga harus tepat. Tepat dengan
+                      waktu. Tepat dengan kondisi masyarakat. Tepat dengan kebutuhan jamaah.
+                    </p>
+                    <p>
+                      Karena itu, Zaadul Khotib 2.0 tidak hanya menerima tema dari pengguna. Sistem
+                      juga mampu membantu memberikan rekomendasi tema berdasarkan berbagai konteks,
+                      sehingga materi khutbah terasa lebih relevan dan dekat dengan kehidupan
+                      jamaah.
+                    </p>
+
+                    <div className="mt-6 space-y-4 pl-4 border-l-2 border-emerald-500/40">
+                      <div>
+                        <h5 className="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 text-sm sm:text-base">
+                          <Calendar className="w-4 h-4 text-emerald-500" />
+                          📅 Kalender Hijriyah
+                        </h5>
+                        <p className="text-xs sm:text-sm">
+                          {
+                            "Sistem dapat mempertimbangkan momentum seperti: Ramadan, Syawal, Dzulqa'dah, Dzulhijjah, Muharram, Rabiul Awal, Rajab, Sya'ban serta momentum Hijriyah lainnya. Misalnya... Menjelang Ramadan, sistem tidak sekadar mengusulkan tema \"Puasa\". Tetapi dapat mengarahkan ke pembahasan seperti: menyambut Ramadan, persiapan hati, taubat, keutamaan Al-Qur'an, adab berpuasa, memperbaiki hubungan antarsesama yang lebih sesuai dengan fase waktu tersebut."
+                          }
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 text-sm sm:text-base">
+                          <Calendar className="w-4 h-4 text-emerald-500" />
+                          📆 Kalender Masehi
+                        </h5>
+                        <p className="text-xs sm:text-sm">
+                          Momentum masyarakat juga diperhatikan. Contohnya: awal tahun, akhir tahun,
+                          tahun ajaran baru, musim liburan, musim ujian, musim haji, musim hujan,
+                          ataupun momentum sosial lainnya yang relevan. Tujuannya bukan mengikuti
+                          budaya semata. Tetapi membantu memilih tema yang lebih dekat dengan
+                          kondisi jamaah saat itu.
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-2 text-sm sm:text-base">
+                          <Globe className="w-4 h-4 text-emerald-500" />
+                          🇮🇩 Konteks Indonesia
+                        </h5>
+                        <p className="text-xs sm:text-sm">
+                          {
+                            "Setiap negara memiliki tantangan dakwah yang berbeda. Karena itu, sistem juga dirancang untuk membantu mempertimbangkan konteks Indonesia. Misalnya ketika terjadi: bencana alam, kekeringan, banjir, gempa, kebakaran, fenomena sosial, meningkatnya budaya konsumtif, maraknya fitnah di media sosial, isu persatuan umat. Tema khutbah dapat diarahkan agar lebih relevan dengan kondisi tersebut, tanpa kehilangan pijakan pada Al-Qur'an dan Sunnah. Karena khutbah yang baik bukan hanya benar. Tetapi juga hadir pada waktu yang tepat."
+                          }
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </FadeIn>
 
                 {/* Stage 2 */}
                 <FadeIn
-                  delay={0.2}
-                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all flex flex-col justify-between"
+                  delay={0.1}
+                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                        2
-                      </div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-lg">
-                        Tahap 2 — Penyaringan Dalil Selektif
-                      </h3>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black">
+                      2
                     </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                      Bukan sekadar list dalil di akhir naskah. Sistem menyaring dan menyisipkan
-                      berbagai referensi secara alami di dalam naskah:
+                    <h3 className="font-extrabold text-slate-900 dark:text-white text-xl">
+                      📚 Tahap 2 — Penyaringan Dalil yang Lebih Selektif
+                    </h3>
+                  </div>
+                  <div className="text-sm sm:text-base text-slate-650 dark:text-slate-350 space-y-4 leading-relaxed">
+                    <p>
+                      Inilah salah satu pembeda terbesar Zaadul Khotib 2.0. AI umum biasanya hanya
+                      mencari dalil yang paling mudah ditemukan. Kadang hanya satu ayat. Kadang satu
+                      hadits. Kadang bahkan mengulang dalil yang sama untuk berbagai tema.
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <p>
+                      Padahal dalam praktiknya, satu khutbah yang baik sering kali dibangun dari
+                      beberapa dalil yang saling menguatkan. Karena itu, Zaadul Khotib 2.0 membantu
+                      menyusun materi dengan dalil yang lebih kaya dan lebih relevan terhadap tema.
+                    </p>
+                    <p>Sistem dapat membantu menghadirkan:</p>
+                    <div className="flex flex-wrap gap-2 py-2">
                       {[
-                        "Ayat Al-Qur'an",
-                        'Hadits Nabi ﷺ',
-                        'Atsar Sahabat',
-                        'Perkataan Ulama',
-                        'Hikmah Salaf',
-                      ].map((t) => (
+                        "📖 Ayat Al-Qur'an",
+                        '🕌 Hadits Nabi ﷺ',
+                        '👥 Atsar para sahabat',
+                        '📚 Perkataan ulama',
+                        '💎 Hikmah para salaf',
+                      ].map((dalil) => (
                         <span
-                          key={t}
-                          className="px-3 py-1 rounded bg-slate-500/5 border border-slate-200/50 dark:border-white/5 text-[10px] font-bold text-slate-600 dark:text-slate-400"
+                          key={dalil}
+                          className="px-3 py-1 rounded bg-slate-500/5 border border-slate-200/50 dark:border-white/5 text-xs font-bold text-slate-700 dark:text-slate-300"
                         >
-                          {t}
+                          {dalil}
                         </span>
                       ))}
                     </div>
+                    <p>
+                      Seluruhnya disusun agar saling mendukung pembahasan, bukan sekadar memenuhi
+                      halaman.
+                    </p>
+                    <p className="font-semibold text-slate-900 dark:text-white">
+                      Lebih penting lagi... Dalil tersebut tidak dikumpulkan menjadi satu daftar
+                      panjang. Melainkan disisipkan secara alami di berbagai bagian khutbah.
+                    </p>
+                    <p>
+                      Ketika menjelaskan satu poin... AI dapat menyisipkan ayat yang relevan. Pada
+                      poin berikutnya... Hadits yang menguatkan. Kemudian atsar atau perkataan ulama
+                      ketika dibutuhkan. Dengan begitu alur khutbah terasa lebih hidup, lebih
+                      mengalir, dan lebih mudah diikuti oleh jamaah.
+                    </p>
                   </div>
                 </FadeIn>
 
                 {/* Stage 3 */}
                 <FadeIn
-                  delay={0.3}
-                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all flex flex-col justify-between"
+                  delay={0.15}
+                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                        3
-                      </div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-lg">
-                        Tahap 3 — Kerangka Khutbah Alami
-                      </h3>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black">
+                      3
                     </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Menyusun struktur khutbah pertama (pengantar & pembahasan) dan khutbah kedua
-                      (kesimpulan, nasihat ringkas, doa) secara terpisah namun mengalir lancar,
-                      memenuhi rukun-rukun khutbah yang sah.
+                    <h3 className="font-extrabold text-slate-900 dark:text-white text-xl">
+                      🏗️ Tahap 3 — Menyusun Kerangka Khutbah yang Lebih Alami
+                    </h3>
+                  </div>
+                  <div className="text-sm sm:text-base text-slate-650 dark:text-slate-350 space-y-4 leading-relaxed">
+                    <p>
+                      Kesalahan paling sering dari AI umum adalah memperlakukan khutbah seperti
+                      artikel. Zaadul Khotib 2.0 tidak.
+                    </p>
+                    <p>
+                      Sistem membantu menyusun dua khutbah secara terpisah dengan alur pembahasan
+                      yang saling berkaitan.
+                    </p>
+                    <p>
+                      Khutbah pertama menjadi ruang untuk membuka tema dan membangun pembahasan.
+                      Khutbah kedua membantu memperkuat pesan utama, memberikan penegasan, nasihat
+                      penutup, serta doa yang selaras dengan materi.
+                    </p>
+                    <p>
+                      Di dalam kedua khutbah tersebut, dalil dapat ditempatkan pada bagian-bagian
+                      yang paling sesuai sehingga pembahasan tidak terasa dipaksakan. Hasil akhirnya
+                      bukan dua blok teks yang dipisahkan secara asal, tetapi dua khutbah yang
+                      saling melengkapi.
                     </p>
                   </div>
                 </FadeIn>
 
                 {/* Stage 4 */}
                 <FadeIn
-                  delay={0.4}
-                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all flex flex-col justify-between"
+                  delay={0.2}
+                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                        4
-                      </div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-lg">
-                        Tahap 4 — Dua Pilihan Muqaddimah
-                      </h3>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black">
+                      4
                     </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                      Menyesuaikan kebiasaan dan gaya khatib dengan 2 opsi muqaddimah pembuka:
+                    <h3 className="font-extrabold text-slate-900 dark:text-white text-xl">
+                      🕌 Tahap 4 — Dua Pilihan Muqaddimah Sesuai Gaya Khatib
+                    </h3>
+                  </div>
+                  <div className="text-sm sm:text-base text-slate-650 dark:text-slate-350 space-y-4 leading-relaxed">
+                    <p>
+                      Setiap khatib memiliki kebiasaan yang berbeda. Karena itu, Zaadul Khotib 2.0
+                      memberikan kebebasan kepada Anda untuk memilih gaya muqaddimah sebelum proses
+                      penyusunan dimulai.
                     </p>
-                    <div className="space-y-2 text-slate-700 dark:text-slate-300">
-                      <div className="text-xs">
-                        <span className="font-bold text-emerald-600 dark:text-emerald-400">
-                          ✨ Muqaddimah Dinamis:
-                        </span>{' '}
-                        Menyesuaikan tema pembahasan khutbah agar transisi ke materi terasa alami.
+                    <div className="space-y-4 my-4 pl-4 border-l-2 border-emerald-500/40">
+                      <div>
+                        <h5 className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                          ✨ Muqaddimah Dinamis
+                        </h5>
+                        <p className="text-xs sm:text-sm mt-1">
+                          Sistem menyusun muqaddimah yang menyesuaikan dengan tema khutbah yang akan
+                          dibahas. Transisi menuju isi menjadi lebih alami, sehingga pembukaan
+                          terasa hidup dan tidak monoton dari pekan ke pekan. Sangat cocok bagi
+                          khatib yang ingin setiap khutbah memiliki nuansa pembuka yang berbeda
+                          namun tetap terarah.
+                        </p>
                       </div>
-                      <div className="text-xs">
-                        <span className="font-bold text-emerald-600 dark:text-emerald-400">
-                          🕌 Muqaddimah Klasik:
-                        </span>{' '}
-                        {
-                          "Menggunakan teks *Khutbatul Hajah* syar'iyyah yang kokoh dan penuh berkah."
-                        }
+                      <div>
+                        <h5 className="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                          🕌 Muqaddimah Klasik — Khutbatul Hajah
+                        </h5>
+                        <p className="text-xs sm:text-sm mt-1">
+                          Bagi khatib yang lebih nyaman menggunakan pembuka yang telah dikenal luas
+                          dalam tradisi khutbah, tersedia pilihan Khutbatul Hajah. Sistem akan
+                          menggunakan format pembuka tersebut sebagai dasar muqaddimah sebelum
+                          melanjutkan kepada isi khutbah.
+                        </p>
                       </div>
                     </div>
+                    <p>
+                      Dengan adanya dua pilihan ini, Anda dapat menyesuaikan gaya khutbah sesuai
+                      kebutuhan, kebiasaan, maupun karakter jamaah.
+                    </p>
                   </div>
                 </FadeIn>
 
                 {/* Stage 5 */}
                 <FadeIn
-                  delay={0.5}
-                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all flex flex-col justify-between"
+                  delay={0.25}
+                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                        5
-                      </div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-lg">
-                        Tahap 5 — Naskah Nyaman Dilafalkan
-                      </h3>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black">
+                      5
                     </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Bukan sekadar tulisan, tapi didesain untuk dibacakan di atas mimbar.
-                      Memisahkan teks Arab dan terjemahan dengan rapi, serta menggunakan pembagian
-                      paragraf yang pas untuk intonasi berkhotbah.
+                    <h3 className="font-extrabold text-slate-900 dark:text-white text-xl">
+                      📝 Tahap 5 — Menyusun Naskah yang Lebih Nyaman Dibaca
+                    </h3>
+                  </div>
+                  <div className="text-sm sm:text-base text-slate-650 dark:text-slate-350 space-y-4 leading-relaxed">
+                    <p>Khutbah bukan hanya untuk dibaca. Tetapi untuk dilafalkan.</p>
+                    <p>
+                      Karena itu, sistem membantu menghasilkan naskah yang lebih nyaman dibaca dari
+                      mimbar. Mulai dari pemisahan paragraf, penempatan dalil, pemisahan teks Arab
+                      dan terjemahan, hingga alur pembahasan dibuat lebih mudah diikuti.
+                    </p>
+                    <p>
+                      Tujuannya bukan sekadar menghasilkan teks yang bagus dilihat. Tetapi membantu
+                      khatib menyampaikan materi dengan lebih tenang.
                     </p>
                   </div>
                 </FadeIn>
 
                 {/* Stage 6 */}
                 <FadeIn
-                  delay={0.6}
-                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all flex flex-col justify-between"
+                  delay={0.3}
+                  className="p-8 rounded-3xl bg-brand-card-inner border border-emerald-500/10 hover:border-emerald-500/30 transition-all"
                 >
-                  <div>
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold">
-                        6
-                      </div>
-                      <h3 className="font-bold text-slate-900 dark:text-white text-lg">
-                        Tahap 6 — Doa Penutup Selaras
-                      </h3>
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-black">
+                      6
                     </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Menghindari doa yang melenceng. Doa penutup dirangkai secara relevan dengan
-                      isi dan tema utama khutbah yang baru saja disampaikan kepada jamaah agar
-                      terasa menyatu penuh.
+                    <h3 className="font-extrabold text-slate-900 dark:text-white text-xl">
+                      🤲 Tahap 6 — Doa Penutup yang Selaras dengan Isi Khutbah
+                    </h3>
+                  </div>
+                  <div className="text-sm sm:text-base text-slate-650 dark:text-slate-350 space-y-4 leading-relaxed">
+                    <p>
+                      Sering kali doa penutup pada AI umum terasa tidak berhubungan dengan isi
+                      materi.
+                    </p>
+                    <p>
+                      Zaadul Khotib 2.0 membantu menyusun doa penutup yang tetap relevan dengan tema
+                      yang baru saja dibahas.
+                    </p>
+                    <p>
+                      Misalnya setelah membahas taubat, doa diarahkan kepada permohonan ampun dan
+                      keteguhan hati. Setelah membahas persatuan umat, doa diarahkan kepada
+                      persaudaraan, persatuan, dan keselamatan kaum muslimin. Dengan demikian,
+                      khutbah memiliki penutup yang terasa menyatu dengan keseluruhan pembahasan.
                     </p>
                   </div>
                 </FadeIn>
               </div>
 
-              {/* Warning Alert */}
+              {/* Workflow Alur Kerja Summary Box */}
               <FadeIn
-                delay={0.7}
-                className="mt-12 max-w-3xl mx-auto p-6 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-slate-700 dark:text-slate-350 text-sm"
+                delay={0.35}
+                className="mt-16 p-8 rounded-3xl bg-slate-500/5 border border-slate-200/50 dark:border-white/5 max-w-3xl mx-auto"
               >
-                <div className="flex gap-3">
-                  <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold text-slate-900 dark:text-white block mb-1">
-                      ⚠️ Penting untuk Diketahui
-                    </span>
-                    Zaadul Khotib 2.0 adalah asisten penyusun draf khutbah, bukan pengganti khatib.
-                    AI tetap memiliki kemungkinan melakukan kesalahan. Setiap naskah wajib ditinjau
-                    kembali, diverifikasi dalilnya, dan diselaraskan sebelum dibacakan di atas
-                    mimbar.
-                  </div>
+                <h4 className="font-extrabold text-slate-900 dark:text-white text-xl mb-6 text-center">
+                  Dari Ide Menjadi Draf Khutbah dalam Satu Alur Kerja
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm leading-relaxed mb-6 text-slate-700 dark:text-slate-300">
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Pilih atau minta rekomendasi tema.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Sistem membantu menentukan arah pembahasan.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Dalil yang relevan diseleksi dan disusun.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Muqaddimah dipilih sesuai preferensi.</span>
+                    </li>
+                  </ul>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Kerangka dua khutbah dibangun.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Dalil disisipkan secara alami di seluruh pembahasan.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>Doa penutup disesuaikan dengan tema.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-emerald-500 font-bold">•</span>
+                      <span>
+                        {
+                          "Draf khutbah siap untuk Anda tinjau, muraja'ah, sesuaikan, dan sempurnakan sebelum disampaikan di atas mimbar."
+                        }
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-sm font-semibold text-center text-slate-900 dark:text-white">
+                  Karena tujuan Zaadul Khotib 2.0 bukan menggantikan peran khatib, tetapi membantu
+                  Anda mempersiapkan khutbah dengan lebih efisien, lebih terarah, dan tetap menjaga
+                  amanah ilmu.
+                </p>
+
+                {/* CTA 3 (Post-Mechanism) */}
+                <div className="text-center mt-8">
+                  <a
+                    href={waLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-4 text-base font-bold rounded-2xl text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
+                  >
+                    🚀 Mulai Siapkan Khutbah Jumat Sekarang
+                  </a>
                 </div>
               </FadeIn>
             </section>
@@ -523,11 +744,14 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
               <FadeIn>
                 <div className="text-center mb-12">
                   <span className="text-xs font-extrabold uppercase tracking-widest text-emerald-500 block mb-2">
-                    Simulasi Waktu
+                    Simulasi Perbandingan
                   </span>
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
                     Bayangkan Persiapan Khutbah Anda Mulai Pekan Depan
                   </h2>
+                  <p className="text-slate-600 dark:text-slate-400 mt-4">
+                    Sekarang bayangkan dua kondisi berikut yang akan Anda alami secara nyata:
+                  </p>
                 </div>
               </FadeIn>
 
@@ -542,19 +766,26 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                       <X className="w-5 h-5" />
                       Tanpa Zaadul Khotib 2.0
                     </h3>
-                    <p className="text-xs font-bold text-slate-500 uppercase mb-4 tracking-wider">
-                      Kamis Malam Panik
-                    </p>
-                    <ul className="space-y-3 text-sm text-slate-650 dark:text-slate-400">
-                      <li>• Mencari tema acak di internet.</li>
-                      <li>• Buka banyak tab web untuk cari ayat & hadits.</li>
-                      <li>• Mencocokkan naskah Arab & terjemahan secara manual.</li>
-                      <li>• Mengedit teks AI umum yang terasa seperti artikel.</li>
-                      <li>
-                        • **Hasilnya:** Waktu habis untuk mengetik. Anda tidak sempat {"muraja'ah"},
-                        melatih penyampaian, dan menata hati sebelum naik mimbar.
-                      </li>
-                    </ul>
+                    <div className="text-sm text-slate-650 dark:text-slate-400 space-y-4">
+                      <p className="font-bold text-slate-900 dark:text-white">Hari Kamis malam.</p>
+                      <p>
+                        Anda baru mulai mencari tema. Membuka beberapa website. Mencari ayat.
+                        Mencari hadits. Mencari teks Arab. Memastikan terjemahan.
+                      </p>
+                      <p>
+                        Menyusun kerangka. Mengubah urutan pembahasan. Mengedit hasil AI. Menghapus
+                        bagian yang terasa seperti artikel. Mengganti doa penutup. Memeriksa kembali
+                        seluruh isi.
+                      </p>
+                      <p className="font-semibold text-slate-900 dark:text-white">
+                        Selesai... Tetapi waktu sudah habis.
+                      </p>
+                      <p>
+                        {
+                          "Anda belum sempat muraja'ah. Belum sempat berlatih. Belum sempat benar-benar menghayati materi yang akan disampaikan kepada jamaah."
+                        }
+                      </p>
+                    </div>
                   </div>
                 </FadeIn>
 
@@ -568,29 +799,88 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                       <Check className="w-5 h-5" />
                       Dengan Zaadul Khotib 2.0
                     </h3>
-                    <p className="text-xs font-bold text-emerald-500 uppercase mb-4 tracking-wider">
-                      Persiapan Tenang
-                    </p>
-                    <ul className="space-y-3 text-sm text-slate-650 dark:text-slate-350">
-                      <li>✓ Pilih tema atau gunakan rekomendasi momentum otomatis.</li>
-                      <li>✓ Pilih jenis muqaddimah sesuai karakter Anda.</li>
-                      <li>✓ Klik generate dan peroleh draf naskah yang terstruktur dalam menit.</li>
-                      <li>
-                        ✓ **Hasilnya:** Pekerjaan mengetik selesai instan. Anda punya banyak waktu
-                        untuk {"muraja'ah"}, verifikasi referensi, dan menambahkan hikmah personal.
-                      </li>
-                    </ul>
+                    <div className="text-sm text-slate-650 dark:text-slate-350 space-y-4">
+                      <p>
+                        Anda membuka sistem. Memilih tema. Atau membiarkan sistem membantu
+                        memberikan rekomendasi tema yang relevan dengan momentum.
+                      </p>
+                      <p>Menentukan pilihan muqaddimah. Menekan tombol generate.</p>
+                      <p className="font-bold text-slate-900 dark:text-white">
+                        Dalam waktu singkat Anda sudah memperoleh sebuah{' '}
+                        <strong>draf khutbah yang lebih tertata</strong>.
+                      </p>
+                      <p>
+                        Bukan berarti pekerjaan selesai. Justru pekerjaan yang paling penting baru
+                        dimulai. Anda memiliki lebih banyak waktu untuk:
+                      </p>
+                      <ul className="space-y-1.5 pl-4 list-disc">
+                        <li>membaca ulang seluruh isi</li>
+                        <li>memeriksa setiap dalil</li>
+                        <li>menambahkan pengalaman pribadi</li>
+                        <li>memperbaiki gaya bahasa</li>
+                        <li>menyesuaikan dengan karakter jamaah</li>
+                        <li>memperbaiki penyampaian</li>
+                        <li>memperbanyak doa sebelum naik mimbar</li>
+                      </ul>
+                    </div>
                   </div>
                 </FadeIn>
               </div>
 
-              <FadeIn delay={0.3} className="text-center mt-12">
-                <div className="text-base font-bold text-slate-700 dark:text-slate-300 italic">
+              {/* Quotation block */}
+              <FadeIn delay={0.3} className="text-center mt-12 max-w-2xl mx-auto">
+                <p className="text-lg font-black text-slate-800 dark:text-slate-200 italic leading-relaxed">
                   {
-                    '"Yang membekas di hati jamaah bukan siapa yang mengetik naskahnya, melainkan siapa yang menyampaikannya dengan ilmu, keikhlasan, dan ketulusan."'
+                    '"Yang membekas di hati jamaah bukan siapa yang menulis naskahnya. Tetapi siapa yang menyampaikannya dengan ilmu, keikhlasan, dan ketulusan."'
                   }
+                </p>
+              </FadeIn>
+
+              {/* CTA 4 (Post-Simulation) */}
+              <FadeIn delay={0.35} className="text-center mt-10">
+                <a
+                  href={waLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 text-base font-bold rounded-2xl text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/20"
+                >
+                  🚀 Dapatkan Draf Khutbah Terstruktur Sekarang
+                </a>
+              </FadeIn>
+            </section>
+
+            {/* --- PHILOSOPHY: AI IS A TOOL --- */}
+            <section className="mb-20 pt-16 border-t border-slate-200/50 dark:border-white/5 relative z-10 max-w-3xl mx-auto">
+              <FadeIn>
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                    Mengapa Banyak Khatib Memilih Tetap Meninjau Hasil AI?
+                  </h2>
                 </div>
               </FadeIn>
+
+              <div className="space-y-4 text-sm sm:text-base text-slate-650 dark:text-slate-350 leading-relaxed text-center">
+                <FadeIn delay={0.1}>
+                  <p>Karena mereka memahami satu hal.</p>
+                  <p className="font-bold text-slate-900 dark:text-white">
+                    AI adalah alat. Bukan guru. Bukan mufti. Bukan pengganti seorang penuntut ilmu.
+                  </p>
+                  <p>
+                    Dan memang seperti itulah Zaadul Khotib 2.0 dirancang. Sistem ini membantu
+                    mempercepat pekerjaan yang berulang setiap pekan. Namun keputusan akhir tetap
+                    berada di tangan Anda.
+                  </p>
+                  <p>
+                    Anda tetap menentukan: mana dalil yang ingin dipakai, bagian mana yang ingin
+                    ditambah, contoh apa yang ingin disampaikan, bahasa apa yang paling sesuai
+                    dengan jamaah, dan bagaimana khutbah tersebut akan dibawakan.
+                  </p>
+                  <p className="font-bold text-emerald-600 dark:text-emerald-400 text-lg mt-6">
+                    Dengan kata lain... AI membantu menyiapkan naskah. Khatib tetap memegang amanah
+                    mimbar.
+                  </p>
+                </FadeIn>
+              </div>
             </section>
 
             {/* --- WHAT YOU GET & OFFER --- */}
@@ -604,7 +894,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                     Akses & Penawaran
                   </span>
                   <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">
-                    Investasi Dakwah Terbaik Anda
+                    Apa yang Akan Anda Dapatkan?
                   </h2>
                 </div>
               </FadeIn>
@@ -619,17 +909,21 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 </div>
 
                 <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-6">
-                  Akses Zaadul Khotib 2.0 Seumur Hidup
+                  ✅ Akses Zaadul Khotib 2.0 Seumur Hidup
                 </h3>
 
                 <ul className="space-y-4 mb-8 text-sm sm:text-base text-slate-700 dark:text-slate-300">
                   {[
                     'Platform Persiapan Khutbah Jumat Berbasis AI',
-                    'Penyusunan struktur khutbah pertama & kedua',
-                    'Pilihan Muqaddimah Dinamis / Klasik (Khutbatul Hajah)',
-                    'Rekomendasi tema (Hijriyah, Masehi, & Konteks Indonesia)',
-                    'Penyaringan & penyisipan dalil secara alami di naskah',
-                    'Pemisahan teks Arab dan terjemahan yang rapi',
+                    'Penyusunan struktur dua khutbah',
+                    'Pilihan Muqaddimah Dinamis',
+                    'Pilihan Muqaddimah Klasik (Khutbatul Hajah)',
+                    'Rekomendasi tema berdasarkan momentum Hijriyah',
+                    'Rekomendasi tema berdasarkan momentum Masehi',
+                    'Penyesuaian tema terhadap konteks Indonesia',
+                    'Penyusunan dalil yang lebih kaya dan relevan',
+                    'Penyisipan dalil secara alami di seluruh pembahasan',
+                    'Pemisahan teks Arab dan terjemahan yang lebih rapi',
                     'Penyusunan doa penutup yang selaras dengan tema',
                     'Update pengembangan sistem tanpa biaya tambahan*',
                   ].map((feat, i) => (
@@ -642,51 +936,111 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
                 {/* Bonuses */}
                 <div className="border-t border-slate-200/50 dark:border-white/5 pt-6 mb-8">
-                  <h4 className="font-extrabold text-amber-500 text-xs uppercase tracking-wider mb-4 flex items-center gap-2">
+                  <h4 className="font-extrabold text-amber-500 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
                     <Sparkles className="w-4 h-4" />
-                    Bonus Eksklusif Hari Ini
+                    🎁 Bonus Eksklusif
                   </h4>
                   <div className="space-y-4">
-                    <div className="p-4 rounded-xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/30 dark:border-white/5">
-                      <span className="font-bold text-slate-900 dark:text-white text-xs block mb-1">
-                        🎁 BONUS 1: Bank 200 Tema Khutbah
+                    <div className="p-5 rounded-xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/30 dark:border-white/5">
+                      <span className="font-bold text-slate-900 dark:text-white text-sm block mb-1">
+                        Bonus 1: Bank 200 Tema Khutbah
                       </span>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
-                        Ratusan inspirasi tema khutbah siap pakai yang disusun berdasarkan Aqidah,
-                        Ibadah, Akhlak, Muamalah, hingga Isu Sosial.
+                      <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+                        Tidak perlu lagi bingung setiap Kamis malam. Ratusan tema disusun secara
+                        sistematis berdasarkan:
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {[
+                          'Aqidah',
+                          'Ibadah',
+                          'Akhlak',
+                          'Muamalah',
+                          'Keluarga',
+                          'Dakwah',
+                          'Pendidikan',
+                          'Hari Besar Islam',
+                          'Momentum Hijriyah',
+                          'Momentum Masehi',
+                          'Isu Sosial',
+                        ].map((cat) => (
+                          <span
+                            key={cat}
+                            className="px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 text-[10px] font-bold"
+                          >
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-2">
+                        Sehingga Anda selalu memiliki inspirasi ketika membutuhkan.
                       </p>
                     </div>
-                    <div className="p-4 rounded-xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/30 dark:border-white/5">
-                      <span className="font-bold text-slate-900 dark:text-white text-xs block mb-1">
-                        🎁 BONUS 2: Referensi Naskah Khutbah Bahasa Arab
+                    <div className="p-5 rounded-xl bg-slate-500/5 dark:bg-white/3 border border-slate-200/30 dark:border-white/5">
+                      <span className="font-bold text-slate-900 dark:text-white text-sm block mb-1">
+                        Bonus 2: Referensi Naskah Khutbah Bahasa Arab
                       </span>
-                      <p className="text-xs text-slate-500 dark:text-slate-400">
-                        Kumpulan naskah khutbah berbahasa Arab utuh sebagai referensi pembelajaran
-                        dan perbandingan struktur khutbah.
+                      <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Kumpulan referensi khutbah berbahasa Arab sebagai bahan pembelajaran,
+                        perbandingan struktur, dan inspirasi penyusunan materi. Bukan untuk disalin
+                        mentah-mentah, melainkan sebagai tambahan referensi dalam proses belajar dan
+                        penyusunan khutbah.
                       </p>
                     </div>
+                  </div>
+                </div>
+
+                {/* Total Value stacking list */}
+                <div className="border-t border-slate-200/50 dark:border-white/5 pt-6 mb-8 text-sm text-slate-700 dark:text-slate-350">
+                  <h5 className="font-bold text-slate-900 dark:text-white mb-4">
+                    Total Nilai yang Anda Dapatkan:
+                  </h5>
+                  <div className="bg-slate-500/5 dark:bg-black/20 rounded-2xl p-4 border border-slate-200/30 dark:border-white/5 space-y-2">
+                    <div className="flex justify-between font-semibold">
+                      <span>• Platform Zaadul Khotib 2.0</span>
+                      <span className="text-emerald-500">Terdaftar</span>
+                    </div>
+                    <div className="w-full border-t border-dashed border-slate-200/20 my-1"></div>
+                    <div className="flex justify-between font-semibold">
+                      <span>• Seluruh pembaruan sistem</span>
+                      <span className="text-emerald-500">Gratis</span>
+                    </div>
+                    <div className="w-full border-t border-dashed border-slate-200/20 my-1"></div>
+                    <div className="flex justify-between font-semibold">
+                      <span>• Bonus Bank Tema</span>
+                      <span className="text-emerald-500">Disertakan</span>
+                    </div>
+                    <div className="w-full border-t border-dashed border-slate-200/20 my-1"></div>
+                    <div className="flex justify-between font-semibold">
+                      <span>• Referensi Khutbah Arab</span>
+                      <span className="text-emerald-500">Disertakan</span>
+                    </div>
+                  </div>
+                  <div className="text-right font-black text-slate-900 dark:text-white text-base mt-4">
+                    Total Value Rp549.000
                   </div>
                 </div>
 
                 {/* Price Display */}
                 <div className="text-center bg-slate-500/5 dark:bg-[#0B0F19]/50 rounded-2xl p-6 mb-8 border border-slate-200/30 dark:border-white/5">
                   <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 line-through block mb-1">
-                    Total Value Rp549.000 (Normal Rp299.000)
+                    Harga Normal Rp299.000
                   </div>
                   <div className="text-xs font-bold text-emerald-500 uppercase tracking-widest block mb-2">
-                    Hari Ini Cukup Berinvestasi
+                    Hari Ini Anda Cukup Berinvestasi
                   </div>
                   <div className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white block">
                     Rp 199.000
                   </div>
-                  <div className="text-[10px] text-slate-400 dark:text-slate-500 block mt-2">
-                    Sekali Bayar • Akses Seumur Hidup • Tanpa Langganan Bulanan
+                  <div className="text-[11px] text-slate-650 dark:text-slate-400 font-semibold block mt-3 space-y-1">
+                    <div>Sekali Bayar.</div>
+                    <div>Akses Seumur Hidup.</div>
+                    <div>Tanpa Biaya Langganan Bulanan.</div>
                   </div>
                 </div>
 
-                {/* Buy Button */}
+                {/* Buy Button - CTA 5 (Final checkout) */}
                 <a
-                  href="https://wa.me/6285190846209?text=Saya%20tertarik%20dengan%20Zaadul%20Khotib%202.0"
+                  href={waLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-4 rounded-xl text-base font-bold text-emerald-50 btn-primary inline-flex items-center justify-center shadow-lg shadow-emerald-500/25 transition-transform hover:-translate-y-0.5"
@@ -703,6 +1057,44 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 *Selama layanan dan pengembangan produk masih berlangsung. Penggunaan AI adalah alat
                 bantu. Tanggung jawab dan amanah keilmuan isi khutbah sepenuhnya berada di tangan
                 khatib.
+              </FadeIn>
+            </section>
+
+            {/* --- IMPORTANT READ BEFORE USING --- */}
+            <section className="mb-20 pt-16 border-t border-slate-200/50 dark:border-white/5 relative z-10 max-w-3xl mx-auto">
+              <FadeIn>
+                <div className="p-6 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-sm">
+                  <div className="flex gap-3">
+                    <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-bold text-slate-900 dark:text-white block mb-2 text-base">
+                        ⚠️ Penting Dibaca Sebelum Menggunakan
+                      </span>
+                      <div className="space-y-3 leading-relaxed text-slate-700 dark:text-slate-350">
+                        <p>
+                          Zaadul Khotib 2.0 adalah{' '}
+                          <strong>alat bantu penyusunan draf khutbah</strong>. Bukan pengganti
+                          seorang khatib. Bukan pemberi fatwa. Bukan pengganti proses belajar.
+                        </p>
+                        <p>
+                          Walaupun sistem dirancang dengan berbagai mekanisme untuk membantu
+                          menyusun tema, memilih dalil yang lebih relevan, dan menjaga struktur
+                          khutbah,{' '}
+                          <strong>AI tetap memiliki kemungkinan menghasilkan kekeliruan</strong>.
+                        </p>
+                        <p className="font-semibold text-slate-900 dark:text-white">
+                          {
+                            "Karena itu kami sangat menganjurkan agar setiap hasil: diperiksa kembali, dimuraja'ah, diverifikasi dalilnya, disesuaikan dengan kebutuhan jamaah, serta dipastikan kembali sebelum dibacakan di atas mimbar."
+                          }
+                        </p>
+                        <p className="font-bold text-emerald-600 dark:text-emerald-400">
+                          Kami meyakini bahwa amanah ilmu tetap berada di tangan khatib, bukan pada
+                          teknologi.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </FadeIn>
             </section>
 
@@ -735,7 +1127,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                           />
                         </button>
                         {isOpen && (
-                          <div className="px-6 pb-4 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-200/30 dark:border-white/5 pt-3 bg-slate-500/10">
+                          <div className="px-6 pb-4 text-xs sm:text-sm text-slate-650 dark:text-slate-400 leading-relaxed border-t border-slate-200/30 dark:border-white/5 pt-3 bg-slate-500/10">
                             {faq.a}
                           </div>
                         )}
@@ -744,6 +1136,18 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                   )
                 })}
               </div>
+            </section>
+
+            {/* Bottom brand footer block */}
+            <section className="mt-20 pt-12 border-t border-slate-200/30 dark:border-white/5 text-center relative z-10">
+              <FadeIn>
+                <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">
+                  IMAN LOGICS
+                </div>
+                <div className="text-xs text-slate-500 dark:text-slate-400 italic">
+                  {'"Teknologi yang membantu manusia berkarya, tanpa menggantikan amanahnya."'}
+                </div>
+              </FadeIn>
             </section>
           </div>
         </div>
