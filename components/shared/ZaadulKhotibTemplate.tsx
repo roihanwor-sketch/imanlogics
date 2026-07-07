@@ -845,7 +845,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
 
               {/* Quotation block */}
               <FadeIn delay={0.3} className="text-center mt-12 max-w-2xl mx-auto">
-                <p className="text-lg font-black text-slate-800 dark:text-slate-250 italic leading-relaxed">
+                <p className="text-lg font-black text-slate-800 dark:text-slate-100 italic leading-relaxed">
                   {
                     '"Yang membekas di hati jamaah bukan siapa yang menulis naskahnya. Tetapi siapa yang menyampaikannya dengan ilmu, keikhlasan, dan ketulusan."'
                   }
@@ -1004,7 +1004,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                 </div>
 
                 {/* Total Value stacking list */}
-                <div className="border-t border-slate-200/50 dark:border-white/5 pt-6 mb-8 text-sm text-slate-700 dark:text-slate-350">
+                <div className="border-t border-slate-200/50 dark:border-white/5 pt-6 mb-8 text-sm text-slate-700 dark:text-slate-300">
                   <h5 className="font-bold text-slate-900 dark:text-white mb-4">
                     Total Nilai yang Anda Dapatkan:
                   </h5>
@@ -1084,7 +1084,7 @@ export function ZaadulKhotibTemplate({ backUrl, backLabel }: ZaadulKhotibTemplat
                       <span className="font-bold text-slate-900 dark:text-white block mb-2 text-base">
                         ⚠️ Penting Dibaca Sebelum Menggunakan
                       </span>
-                      <div className="space-y-3 leading-relaxed text-slate-700 dark:text-slate-350">
+                      <div className="space-y-3 leading-relaxed text-slate-700 dark:text-slate-200">
                         <p>
                           Zaadul Khotib 2.0 adalah{' '}
                           <strong>alat bantu penyusunan draf khutbah</strong>. Bukan pengganti
